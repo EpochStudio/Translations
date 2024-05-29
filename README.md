@@ -10,3 +10,5 @@ viet: rin (Akira)
 urdu: Sylvrs Celeste
 
 cz: CZghost
+
+hi-IN: sujal
