@@ -1,6 +1,7 @@
 {
     "uNotFound": "I cannot find the specified user",
     "cannotBeAuth": "The mentioned user cannot be the Command Author",
+    "uNoPfp": "The specified user does not have a Profile Picture",
     "dbErr": "Something went wrong while writing the Database! Please try again later.",
     "timeout": "Timeout! Please try again.",
     "opCan": "Operation Canceled",
