@@ -1,16 +1,18 @@
 # Translations
-Locale Translations for EternalGaius Responses.
+The official repo for Locale Translations for EternalGaius Responses.
 
-zh-TW: electric (Adrian), chrissch (Chris)
 
-zh-Hans: chrissch (Chris)
+## List of Translators
+zh-TW: electric, chrissch-dev
 
-viet: rin (Akira)
+zh-Hans: chrissch-dev
 
-urdu: Sylvrs Celeste
+vi-VN: rin (buttermilk)
 
-cz: CZghost
+ur-PK: Sylvrs-Celeste
 
-hi-IN: sujal commandernikhil
+cs-CZ: CZghost
+
+hi-IN: sujal, commandernikhil
 
 ml-IN: commandernikhil
