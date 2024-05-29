@@ -817,5 +817,25 @@
                 "obReply": "You can use this link to vote for us on **{{botlist_name}}**\n{{vLink}}"
             }
         }
+    },
+    "giveaway": {
+        "giveaway": {
+            "description": "Create/End/Reroll/List/Giveaways",
+            "data": {
+                "maxGiveaway": "10 Giveaways is the maximum amount of giveaway you can run at the same time.",
+                "invalidTime": "An invalid time has been entered. Please enter a time period between 1 minute and 31 days.",
+                "giveawaySuccess": "Successfully created a giveaway in the channel {{channel}}",
+                "giveawayNotFound": "The inserted giveaway-id was not found in the database",
+                "endedGiveaway": "Successfully ended the specified giveaway",
+                "deleteGiveaway": "Successfully removed the giveaway entry from the database",
+                "rerollGiveaway": "Successfully rerolled the winner of the specified giveaway",
+                "id": "ID",
+                "channel": "Channel",
+                "host": "Host",
+                "prize": "Prize",
+                "noActive": "There are no active giveaways in this server.",
+                "actGiveaway": "Currently Active Giveaways"
+            }
+        }
     }
 }
