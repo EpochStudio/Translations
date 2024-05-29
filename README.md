@@ -11,4 +11,6 @@ urdu: Sylvrs Celeste
 
 cz: CZghost
 
-hi-IN: sujal
+hi-IN: sujal commandernikhil
+
+ml-IN: commandernikhil
