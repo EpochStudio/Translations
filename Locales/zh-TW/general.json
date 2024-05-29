@@ -1,0 +1,31 @@
+{
+    "uNotFound": "找不到指定的用戶",
+    "cannotBeAuth": "被提及的用戶不能成為指令作者",
+    "dbErr": "寫入數據庫時出了問題！請稍後再試。",
+    "cmdExeFail": "指令執行失敗",
+    "permissions": {
+        "client": "我沒有足夠的權限執行此指令。",
+        "user": "您沒有足夠的權限執行此指令。",
+        "missing": "缺少權限"
+    },
+    "args": {
+        "missing": "您缺少一些指令參數",
+        "missingArgs": "缺少參數"
+    },
+    "category": {
+        "title": "分類已停用",
+        "disabled": "該命令所在的分類當前在此服務器中已停用。\n請聯繫您的服務器管理員以獲取更多信息。"
+    },
+    "error": {
+        "faulty": "執行此指令時出現問題！",
+        "exceptStatus": {
+            "title": "異常狀態",
+            "field": "異常已記錄到控制台"
+        },
+        "errCode": {
+            "title": "錯誤碼",
+            "notFound": "無法使用",
+            "message": "錯誤消息"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "uNotFound": "找不到指定的用户",
+    "cannotBeAuth": "被提及的用户不能成为指令作者",
+    "dbErr": "写入数据库时出了问题！请稍后再试。",
+    "cmdExeFail": "指令执行失败",
+    "permissions": {
+        "client": "我没有足够的权限执行此指令。",
+        "user": "您没有足够的权限执行此指令。",
+        "missing": "缺少权限"
+    },
+    "args": {
+        "missing": "您缺少一些指令参数",
+        "missingArgs": "缺少参数"
+    },
+    "category": {
+        "title": "分类已停用",
+        "disabled": "该命令所在的分类当前在此服务器中已停用。\n请联系您的服务器管理员获取更多信息。"
+    },
+    "error": {
+        "faulty": "执行此指令时出现问题！",
+        "exceptStatus": {
+            "title": "异常状态",
+            "field": "异常已记录到控制台"
+        },
+        "errCode": {
+            "title": "错误码",
+            "notFound": "无法使用",
+            "message": "错误消息"
+        }
+    }
+}

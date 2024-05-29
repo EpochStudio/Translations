@@ -1,0 +1,10 @@
+{
+    "general": {
+        "ping": {
+            "clientLan": "客户端延迟",
+            "apiLan": "API延迟",
+            "dataLan": "数据库延迟",
+            "tpsLan": "TPS延迟"
+        }
+    }
+}
