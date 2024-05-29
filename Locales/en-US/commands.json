@@ -231,32 +231,34 @@
         }
     },
     "fun": {
-        "description": "The magic 8ball",
-        "data": {
-            "question": "Question",
-            "res": "Response",
-            "possibleAnswer": [
-                "It is certain",
-                "It is decidedly so",
-                "Without a doubt",
-                "Yes - Definitely",
-                "As i see it, yes",
-                "Most Likely",
-                "You may rely on it",
-                "Most likely",
-                "Outlook Good",
-                "Yes",
-                "Signs points to yes",
-                "Don't count on it",
-                "My sources say no",
-                "Outlook not so good",
-                "Very doubtful",
-                "Reply hazy, try again",
-                "Ask again later",
-                "Better not tell you now",
-                "Cannot predict now",
-                "Concentrate and ask again"            
-            ]
+        "8ball": {
+            "description": "The magic 8ball",
+            "data": {
+                "question": "Question",
+                "res": "Response",
+                "possibleAnswer": [
+                    "It is certain",
+                    "It is decidedly so",
+                    "Without a doubt",
+                    "Yes - Definitely",
+                    "As i see it, yes",
+                    "Most Likely",
+                    "You may rely on it",
+                    "Most likely",
+                    "Outlook Good",
+                    "Yes",
+                    "Signs points to yes",
+                    "Don't count on it",
+                    "My sources say no",
+                    "Outlook not so good",
+                    "Very doubtful",
+                    "Reply hazy, try again",
+                    "Ask again later",
+                    "Better not tell you now",
+                    "Cannot predict now",
+                    "Concentrate and ask again"            
+                ]
+            }    
         },
         "choose": {
             "description": "Choose a random element from the supplied options, use a comma for multiple world selection.",
