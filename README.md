@@ -16,3 +16,6 @@ cs-CZ: CZghost
 hi-IN: sujal, commandernikhil
 
 ml-IN: commandernikhil
+
+## Contribution
+If you are interested in helping translating the EN Locales into another language, please do contact us via Discord at https://discord.gg/9PnUBeu
