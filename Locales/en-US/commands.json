@@ -140,7 +140,6 @@
         }
     },
     "economy": {
-        "cooldow": "Hey! You cannot {{action}} now! Please wait {{cooldown}} to execute this command again!",
         "balance": {
             "description": "Display your balance",
             "data": {
@@ -160,7 +159,8 @@
         "daily": {
             "description": "Claim your daily rewards",
             "data": {
-                "success": "You claimed your daily reward, and obtained $500"
+                "success": "You claimed your daily reward, and obtained $500",
+                "onCooldown": "Hey! You cannot claim your daily rewards yet! Please wait {{remaining}} until claiming it again!"
             }
         },
         "eco-cooldown": {
@@ -211,19 +211,22 @@
                 "vNoEp": "The victim does not have an Economy Profile in this server!",
                 "belowStandard": "You cannot rob this user as they have a balance lower than $100",
                 "caught": "You were caught while stealing this person!\nYou paid a fine of ${{amount}} to the police",
-                "success": "You stole ${{bal}} from {{user}}\nYou can steal from someone else again in 2 hours."
+                "success": "You stole ${{bal}} from {{user}}\nYou can steal from someone else again in 2 hours.",
+                "onCooldown": "Hey! You cannot rob another user yet! Please wait {{remaining}} until robbing again!"
             }
         },
         "weekly": {
             "description": "Claim your weekly rewards.",
             "data": {
-                "success": "You claimed your weekly reward, and obtained $1000"
+                "success": "You claimed your weekly reward, and obtained $1000",
+                "onCooldown": "Hey! You cannot claim your weekly rewards yet! Please wait {{remaining}} until claiming it again!"
             }
         },
         "work": {
             "description": "Work so that you can get money",
             "data": {
-                "success": "You worked as a {{job}} and earned ${{salary}}. You can work again in 5 minutes"
+                "success": "You worked as a {{job}} and earned ${{salary}}. You can work again in 5 minutes",
+                "onCooldown": "Hey! You cannot work again yet! Please wait {{remaining}} until claiming it again!"
             }
         }
     },
