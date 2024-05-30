@@ -1,5 +1,8 @@
 {
     "uNotFound": "I cannot find the specified user",
+    "cNotFound": "I cannot find the specified channel",
+    "rNotFound": "I cannot find the specified role",
+    "uNotInVc": "The specified user is not in a voice channel.",
     "cannotBeAuth": "The mentioned user cannot be the Command Author",
     "uNoPfp": "The specified user does not have a Profile Picture",
     "dbErr": "Something went wrong while writing the Database! Please try again later.",
