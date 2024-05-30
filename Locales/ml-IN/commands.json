@@ -1,83 +1,83 @@
 {
     "admin": {
-        "ena": "Enabled",
-        "dis": "Disabled",
+        "ena": "പ്രവർത്തനക്ഷമമാക്കി",
+        "dis": "പ്രവർത്തനരഹിതമാക്കി",
         "categories": {
-            "description": "Disables/Enables the specified category",
+            "description": "നിർദ്ദിഷ്ട വിഭാഗത്തെ പ്രവർത്തനരഹിതമാക്കുക/പ്രവർത്തനക്ഷമമാക്കുക",
             "data": {
-                "enabled": "Successfully enabled the `{{cat}}` category.",
-                "disabled": "Successfully disabled the `{{cat}}` category."
+                "enabled": "നിർദ്ദിഷ്ട `{{cat}}` വിഭാഗം വിജയകരമായി പ്രവർത്തനക്ഷമമാക്കി.",
+                "disabled": "നിർദ്ദിഷ്ട `{{cat}}` വിഭാഗം വിജയകരമായി പ്രവർത്തനരഹിതമാക്കി."
             }
         },
         "commands": {
-            "description": "Disables/Enables the specified command",
+            "description": "നിർദ്ദിഷ്ട കമാൻഡ് പ്രവർത്തനരഹിതമാക്കുക/പ്രവർത്തനക്ഷമമാക്കുക",
             "data": {
-                "notFound": "The specified command does not exist.",
-                "removed": "Successfully removed `{{cmdName}}` from the disabled commands list.",
-                "added": "Successfully added `{{cmdName}}` to the disabled commands list."
+                "notFound": "നിർദ്ദിഷ്ട കമാൻഡ് നിലവിലില്ല.",
+                "removed": "പ്രവർത്തനരഹിത കമാൻഡ് പട്ടികയിൽ നിന്ന് `{{cmdName}}` വിജയകരമായി നീക്കം ചെയ്തു.",
+                "added": "പ്രവർത്തനരഹിത കമാൻഡ് പട്ടികയിൽ `{{cmdName}}` വിജയകരമായി ചേർത്തു.."
             }
         },
         "configure": {
-            "description": "Configure the Mute Role/Mod Log Settings",
+            "description": "മ്യൂട്ട് റോൾ/മോഡ് ലോഗ് ക്രമീകരണങ്ങൾ ക്രമീകരിക്കുക",
             "data": {
-                "mrole": "Successfully set the server mute role to {{role}}",
-                "mlog": "Successfully set the serveer mod log channel to {{channel}}",
-                "updated": "Server Configuration updated"
+                "mrole": "സെർവർ മ്യൂട്ട് റോൾ {{role}} വിജയകരമായി സജ്ജമാക്കി",
+                "mlog": "സെർവർ മ്യൂട്ട് റോൾ {{role}} വിജയകരമായി സജ്ജമാക്കി",
+                "updated": "സെർവർ ക്രമീകരണം അപ്ഡേറ്റ് ചെയ്തു"
             }
         },
         "greet": {
-            "description": "Configure the Welcome Channel/Message, Leave Channel/Message",
+            "description": "സ്വാഗത ചാനൽ/സന്ദേശം, ലീവ് ചാനൽ/സന്ദേശം ക്രമീകരിക്കുക",
             "data": {
-                "setwelcomeChan": "Successfully set the Welcome Channel to {{channel}}",
-                "setwelcomeMsg": "Successfully set the Welcome Message to\n`{{msg}}`",
-                "resetWelcome": "Successfully reset the welcome configuration to the default settings",
-                "setleaveChan": "Successfully set the Leave Channel to {{channel}}",
-                "setleaveMsg": "Successfully set the Leave Message to\n`{{msg}}`",
-                "resetLeave": "Successfully reset the leave configuration to the default settings",
-                "arrExist": "This role is already in the auto role configuration system",
-                "arrMax": "You are currently at the max Auto Role Configuration limit! (Max 5)",
-                "arrAdd": "Successfully added {{role}} to the Auto Role Configuration",
-                "arrNotFound": "I did not find the given role in the Auto Role Configuration",
-                "arrRemove": "Successfully removed {{role}} from the Auto Role Configuration",
-                "arrReset": "Successfully reset the autorole configuration",
-                "variables": "Variables for Welcome/Goodbye Messages"
+                "setwelcomeChan": "സ്വാഗത ചാനൽ {{channel}} വിജയകരമായി സജ്ജമാക്കി",
+                "setwelcomeMsg": "സ്വാഗത സന്ദേശം വിജയകരമായി `{{msg}}` ആയി സജ്ജമാക്കി",
+                "resetWelcome": "സ്വാഗത കോൺഫിഗറേഷൻ വിജയകരമായി ഡീഫോൾട്ട് ക്രമീകരണങ്ങൾക്ക് പുനഃസജ്ജമാക്കി",
+                "setleaveChan": "ലീവ് ചാനൽ {{channel}} വിജയകരമായി സജ്ജമാക്കി",
+                "setleaveMsg": "ലീവ് സന്ദേശം വിജയകരമായി `{{msg}}` ആയി സജ്ജമാക്കി",
+                "resetLeave": "ലീവ് കോൺഫിഗറേഷൻ വിജയകരമായി ഡീഫോൾട്ട് ക്രമീകരണങ്ങൾക്ക് പുനഃസജ്ജമാക്കി",
+                "arrExist": "ഈ റോൾ ഓട്ടോ കോൺഫിഗറേഷൻ സിസ്റ്റത്തിൽ ഇതിനാൽ നേരത്തേ ഉണ്ട് ",
+                "arrMax": "നിങ്ങൾ നിലവിലെത്ത പരമാവധി ഓട്ടോ റോൾ കോൺഫിഗറേഷൻ പരിമിതിയിൽ ആണ്! (പരമാവധി 5)",
+                "arrAdd": "ഓട്ടോ റോൾ കോൺഫിഗറേഷൻക്ക് {{role}} വിജയകരമായി ചെർത്തിരിക്കുന്നു",
+                "arrNotFound": "ഓട്ടോ റോൾ കോൺഫിഗറേഷനിൽ നൽകിയ റോൾ കാണുന്നില്ല ",
+                "arrRemove": "ഓട്ടോ റോൾ കോൺഫിഗറേഷനിൽ നിന്ന് {{role}} വിജയകരമായി നീക്കം ചെയ്തു",
+                "arrReset": "ഓട്ടോ റോൾ കോൺഫിഗറേഷൻ വിജയകരമായി പുനഃസജ്ജമാക്കി.",
+                "variables": "സ്വാഗത/ലീവ് സന്ദേശങ്ങളിക്കുള്ള വേരിയബിൾസ്"
             }
         },
         "pauseinvites": {
-            "description": "Pause/resume invites for the current server",
+            "description": "നിലവിലെ സെർവർക്കായി ഇൻവൈറ്റുകൾ നിർത്തുക/പുനരാരംഭിക്കുക",
             "data": {
-                "msg": "Successfully {{status}} server invites on this server!"
+                "msg": "ഈ സെർവറിൽ സെർവർ ക്ഷണങ്ങൾ വിജയകരമായി {{status}}!"
             }
         },
         "settings": {
-            "description": "Displays the server settings",
+            "description": "സെർവറിന്റെ സെറ്റിങ്ങുകൾ പ്രദർശിപ്പിക്കുന്നു",
             "data": {
                 "general": {
-                    "genSett": "EternalGaius Settings",
-                    "configuration": "Configuration",
-                    "disCmd": "Disabled Commands",
-                    "mr": "Mute Role",
-                    "ml": "Mod Log",
-                    "nMr": "No Mute Role",
-                    "nMl": "No Mod Log",
-                    "nDisCmd": "None"
+                    "genSett": "EternalGaius സെറ്റിംഗ്",
+                    "configuration": "കോൺഫിഗുറേഷൻ",
+                    "disCmd": "പ്രവർത്തനരഹിതമായ കമാൻഡുകൾ",
+                    "mr": "മ്യൂട്ട് റോൾ",
+                    "ml": "മോഡ് ലോഗ്",
+                    "nMr": "മ്യൂട്ട് റോൾ ഇല്ല",
+                    "nMl": "മോഡ് ലോഗ് ഇല്ല",
+                    "nDisCmd": "ഒന്നുമില്ല"
                 },
                 "module": {
-                    "modSett": "Module Settings",
-                    "mod": "Modules"    
+                    "modSett": "മോഡ്യൂൾ സെറ്റിംഗ്സ്",
+                    "mod": "മോഡ്യൂളുകൾ"    
                 },
                 "verification": {
-                    "verifSett": "Verification System Settings",
+                    "verifSett": "വെറിഫിക്കേഷൻ സിസ്റ്റം സെറ്റിംഗുകൾ",
                     "status": {
-                        "title": "Status"
+                        "title": "സ്റ്റാറ്റസ്"
                     },
-                    "verifChan": "Verification Channel",
-                    "nVerifChan": "Not Configured",
+                    "verifChan": "വെരിഫിക്കേഷൻ ചാനൽ",
+                    "nVerifChan": "ക്രമീകരിച്ചിട്ടില്ല",
                     "verifRole": "Verified Role",
-                    "nVerifRole": "Not Configured"
+                    "nVerifRole": "വെരിഫൈഡ് റോൾ"
                 },
                 "greet": {
-                    "greSett": "Greet System Settings",
+                    "greSett": "ഗ്രീറ്റ് സിസ്റ്റം സെറ്റിംഗുകൾ",
                     "arList": "Auto Role List",
                     "nAr": "No Auto Role Added",
                     "welChan": "Welcome Channel",
