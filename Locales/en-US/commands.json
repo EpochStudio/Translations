@@ -1095,5 +1095,117 @@
                 }    
             }
         }
+    },
+    "music": {
+        "filters": {
+            "description": "Activates/Deactivates a cretain music filter",
+            "data": {
+                "onGoingFilter": "There is an on going music filter, please cancel that one before adding more filters.",
+                "eight_d": "8d",
+                "bassboos": "Bassboost",
+                "daycore": "Daycore",
+                "demon": "Demon",
+                "nightcore": "Nightcore",
+                "trebblebas": "Trebblebass",
+                "tremolo": "Tremolo",
+                "vaporwave": "Vaporwave",
+                "vibrato": "Vibrato",
+                "reset": "Reset",
+                "resetDesc": "Successfully reset audio filters",
+                "filterAdd": "Successfully added {{filter}} audio filter."
+            }
+        },
+        "leave": {
+            "description": "This comand allows you to destroy the music player.",
+            "data": {
+                "destroy": "Destroyed the music player."
+            }
+        },
+        "loop": {
+            "description": "This command allows you to loop current playing track or the entire queue."
+        },
+        "nowplaying": {
+            "description": "This command allows you to view the current platying song.",
+            "data": {
+                "noTrack": "There is no track playing currently.",
+                "currentPlaying": "Currently PLaying",
+                "sName": "Song Name",
+                "vChannel": "Voice Channel",
+                "loopMode": "Loop Mode",
+                "off": "off",
+                "repeat": "repeat",
+                "queue": "queue",
+                "pVol": "Player Volume",
+                "pBar": "Progress Bar"
+            }
+        },
+        "pause": {
+            "description": "This command allows you to pause the player.",
+            "data": {
+                "alrdyPaused": "The music player is already paused",
+                "pause": "Successfully paused the music player."
+            }
+        },
+        "play": {
+            "description": "Plays Music",
+            "data": {
+                "nthFound": "Nothing found with the given query",
+                "loadSuccess": "I have successfully added {{item}} to the queue.",
+                "ssmCancelOpt": {
+                    "label": "Click to Cancel",
+                    "description": "Click this to cancel this query."
+                },
+                "selectMsg": "Please select the songs you would like to add. Select `cancel` if you wish to cancel selecting.",
+                "addReq": "Successfully added the requested songs",
+                "cancel": "Successfully cancelled the song selection menu",
+                "addMultiple": "I have successfully added **{{amount}}** songs(s) to the queue"
+            }
+        },
+        "queue": {
+            "description": "This command allows you to view the queue.",
+            "data": {
+                "qTitle": "{{gName}}'s Queue",
+                "np": "Now Playing",
+                "niq": "Next in Queue",
+                "page": "Page",
+                "song": "songs(s)",
+                "td": "total duration",
+                "errOnSelect": "Please provide a valid number and a number that is not larger than {{total}} page(s)",
+                "nthPlaying": "Nothing Playing"
+            }
+        },
+        "remove": {
+            "description": "This command allows you to remove tracks from the queue",
+            "data": {
+                "provideTrack": "Please provide a valid track.",
+                "success": "Successfully removed {{track}} from the queue."
+            }
+        },
+        "resume": {
+            "description": "This command allows you to resume the music player",
+            "data": {
+                "alrdyResumed": "The music player is already resumed",
+                "resume": "Successfully resumed the music player"
+            }
+        },
+        "shuffle": {
+            "description": "This command allows you to shuffle the queue",
+            "data": {
+                "shuffle": "Successfully shuffled the music queue"
+            }
+        },
+        "skip": {
+            "description": "This command allows you to skip the currently playing song.",
+            "data": {
+                "skip": "Successfully skipped the currently playing song."
+            }
+        },
+        "volume": {
+            "description": "This command allows you to change the volume",
+            "data": {
+                "inputExceed": "Please provide a number between 1 and 200.",
+                "success": "Successfully adjusted the volume to {{volume}}%"
+            }
+        }
     }
 }
