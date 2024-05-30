@@ -3,6 +3,8 @@ The official repo for Locale Translations for EternalGaius Responses.
 
 
 ## List of Translators
+en-US: chrissch-dev
+
 zh-TW: electric, chrissch-dev
 
 zh-Hans: chrissch-dev
