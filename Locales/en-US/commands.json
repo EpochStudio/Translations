@@ -837,5 +837,251 @@
                 "actGiveaway": "Currently Active Giveaways"
             }
         }
+    },
+    "moderation": {
+        "na": "Not Applicable",
+        "permanent": "Permanent",
+        "unknown": "Unknown",
+        "ended": "Ended",
+        "inProg": "In Progress",
+        "noReason": "No Reason Specified",
+        "punishSelf": "You cannot punish yourself.",
+        "punishOwn": "You cannot punish the server owner",
+        "higherAuthority": "You cannot punish someone that is higher or the same rank as you.",
+        "ownerOnly": "Only the server owner can execute this sub command.",
+        "punishClient": "You cannot punish me with my own commands",
+        "ban": {
+            "description": "Bans the specified user",
+            "data": {
+                "unable": "I am unable to ban this member.",
+                "dmMsg": "You have been banned from **{{gName}}** by the Moderator **{{mod}}**\nReason: {{reason}}",
+                "embed": {
+                    "title": "User Banned",
+                    "description": "{{victim}} has been banned for the following reason.\nReason: {{reason}}"
+                },
+                "banned": "banned"
+            }
+        },
+        "channelaccess": {
+            "description": "Revoke/Re-grant a user's access from viewing a certain channel",
+            "data": {
+                "nChanBanned": "The specified user is not channel-banned from the specified channel!",
+                "errUnbanning": "Something went wrong while channel-unbanning the specified user!",
+                "chanUnbannedTitle": "Channel Unbanned",
+                "chanUnbannedDesc": "{{user}} has been unbanned from the channel **{{name}}**",
+                "chanBanned": "Channel Banned",
+                "chanBannedDesc": "{{user}} has been banned from the channel ***{{name}}**",
+                "alrdyTimeout": "This user is already in timeout.",
+                "nTimeout": "This user is not in timeout, therefore cannot be un-timeout",
+                "timeoutIssTitle": "Timeout Issued",
+                "timeoutRemTitle": "Timeout Removed",
+                "timeoutRemDesc": "Successfully removed {{user}}'s timeout.",
+                "timeoutIssDesc": "Successfully set {{user}} in timeout mode for {{length}}",
+                "mLog": {
+                    "re-grant": "unbanned from {{channel}}",
+                    "revoke": "banned from {{channel}}",
+                    "uTimeout": "un-timeout",
+                    "gTimeout": "timeout"
+                }
+            }
+        },
+        "clone": {
+            "description": "Deletes a channel and cloen it",
+            "data": {
+                "cloneInvalidChannel": "You cannot clone System Channels, Rule Channels or Public Update Channels",
+                "cloneWait": "Cloning {{channel}}, stay tight!",
+                "errOnClone": "Something went wrong while cloning this channel",
+                "successTitle": "Success",
+                "successDesc": "Successfully cloned the channel!",
+                "reqBy": "Requested By"
+            }
+        },
+        "infractions": {
+            "description": "Manage user infractions",
+            "data": {
+                "noInfract": "The specified user does not have any infractions.",
+                "issuedBy": "Issued By",
+                "reason": "Reason",
+                "issTime": "Issued Time",
+                "punishType": "Punishment Type",
+                "punishAct": "Punishment Activity",
+                "punishDur": "Punishment Duration",
+                "infraRapsheet": {
+                    "title": "{{user}}'s Infraction Rapsheet"
+                },
+                "infraRemoved": {
+                    "title": "Infractions Removed",
+                    "description": "Successfully removed the infraction `{{str}}` from **{{user}}**"
+                },
+                "userInfraPurge": {
+                    "title": "Infractions Purged",
+                    "description": "Successfully purged all of **{{user}}**'s infractions."
+                },
+                "guildInfraPurge": {
+                    "description": "Successfully wiped all infractions belonging in this guild."
+                }
+            }
+        },
+        "kick": {
+            "description": "Kicks the specified user",
+            "data": {
+                "unable": "I am unable to kick this member.",
+                "dmMsg": "You have been kicked from **{{gName}}** by the Moderator **{{mod}}**\nReason: {{reason}}",
+                "embed": {
+                    "title": "User Kicked",
+                    "description": "{{victim}} has been kicked for the following reason.\nReason: {{reason}}"
+                },
+                "kicked": "kicked"
+            }
+        },
+        "lockdown": {
+            "description": "Lock or unlocks the specified channel.",
+            "data": {
+                "lock": {
+                    "title": "Channel Locked",
+                    "description": "{{channel}} has been locked by ***{{user}}**"
+                },
+                "unlock": {
+                    "title": "Channel Unlocked",
+                    "description": "{{channel}} has been unlocked by **{{user}}**"
+                }
+            }
+        },
+        "managechannel": {
+            "description": "Creates/Deletes a channel",
+            "data": {
+                "inputExceed": "The channel name cannot exceed 100 character letter.",
+                "createReason": "{{user}}: Created a channel named {{name}}",
+                "create": {
+                    "description": "Successfully created the channel {{channel}}"
+                },
+                "delInvalidChan": "You cannot delete a System Channel, Rule Channel or Public Update Channels",
+                "deleteReason": "{{user}}: Deleted a channel named {{name}}",
+                "delete": {
+                    "description": "Successfully deleted the channel {{name}*"
+                }
+            }
+        },
+        "managerole": {
+            "description": "Creates/Deletes a role",
+            "data": {
+                "inputExceed": "The role name cannot exceed 100 character letters.",
+                "invalidHex": "Please insert a valid Hex Code",
+                "createReason":"{{user}}: Created a role named {{name}}",
+                "create": {
+                    "description": "Successfully created the role {{name}}"
+                },
+                "higherAuth": "The role stated is higher than my highest role.",
+                "deleteReason": "{{user}}: Deleted a role named {{name}}",
+                "delete": {
+                    "description": "Successfully deleted the role {{name}}"
+                }
+            }
+        },
+        "mute": {
+            "description": "Mutes the specified user",
+            "data": {
+                "nMrSet": "This server does not have a muterole setup! Please do `setmuterole` to setup a mute role.",
+                "pMrNotFound": "The determined muterole does not exist in this server! Please reconfigure the mute role config.",
+                "alrdyMuted": "The specified member is already muted!",
+                "invalidTimeString": "Invalid time string entered. Enter time must be above 60 seconds.",
+                "dmMsg": "You have been muted in **{{gName}}** by the Moderator **{{mod}}**\nReason: {{reason}}",
+                "embed": {
+                    "title": "User Muted",
+                    "description": "{{victim}} has been muted for the following reason.\nReason: {{reason}}"
+                },
+                "muted": "muted"                
+            }
+        },
+        "purge": {
+            "description": "Purges the specified amount of message. Max is 99 messages per time.",
+            "data": {
+                "invalidInput": "Please state a number between 2 and 99",
+                "success": "Successfully purged `{{amount}}` {{plural}}",
+                "14daysOld": "You cannot delete messages that are older than 14 days.",
+                "err": "Something went wrong while purging the messages."
+            }
+        },
+        "setratelimit": {
+            "description": "Sets the slowmode for the current channel.",
+            "data": {
+                "invalidInput": "The number stated cannot be higher than 21600 or lower than 0",
+                "smRemoved": "Channel slowmode has been removed from the channel **{{name}}**",
+                "smAdded": "**{{amount}}** seconds of slowmode has been applied to the channel **{{channel}}**"
+            }
+        },
+        "softban": {
+            "description": "Bans and unbans the specified user and deletes their messages.",
+            "data": {
+                "unable": "I am unable to softban this member.",
+                "dmMsg": "You have been softbanned from **{{gName}}** by the Moderator **{{mod}}**\nReason: {{reason}}",
+                "embed": {
+                    "title": "User Softbanned",
+                    "description": "{{victim}} has been softbanned for the following reason.\nReason: {{reason}}"
+                },
+                "softbanned": "softbanned"
+            }
+        },
+        "unban": {
+            "description": "Unbans the specified user",
+            "data": {
+                "inputNotNum": "The specified ID stated is not a number",
+                "notbanned": "The specified user is not banned",
+                "unban": {
+                    "title": "User Unbanned",
+                    "description": "**{{user}}** has been unbanned"
+                },
+                "unbanned": "unbanned"
+            }
+        },
+        "unmute": {
+            "description": "Unmutes a muted member",
+            "data": {
+                "notMuted": "the specified user is not muted.",
+                "dmMsg": "You have been unmuted in **{{gName}}** by the Moderator **{{mod}}**",
+                "embed": {
+                    "title": "User Unmuted",
+                    "description": "{{user}} has been unmuted"
+                },
+                "unmuted": "unmuted"
+            }
+        },
+        "voicemod": {
+            "description": "Voice Channel Moderation Commands",
+            "data": {
+                "deaf": {
+                    "alrdyDeaf": "The specified user is already deafened",
+                    "success": "Successfully server deafened the specified member."
+                },
+                "undeaf": {
+                    "alrdyUndeaf": "The specified user is already undeafened",
+                    "success": "Successfully server undeafened the specified member."
+                },
+                "mute": {
+                    "alrdyMuted": "The specified user is already muted.",
+                    "success": "Successfully server muted the speciifed member"
+                },
+                "unmute": {
+                    "alrdyUnmuted": "The specified user is already unmuted",
+                    "success": "Successfully server unmuted the specified member"
+                },
+                "kick": {
+                    "success": "Successfully kicked {{user}} from the voice channel"
+                }
+            }
+        },
+        "warn": {
+            "description": "Warns the specified user",
+            "data": {
+                "data": {
+                    "dmMsg": "You have been warned from **{{gName}}** by the Moderator **{{mod}}**\nReason: {{reason}}",
+                    "embed": {
+                        "title": "User Warned",
+                        "description": "{{victim}} has been warned for the following reason.\nReason: {{reason}}"
+                    },
+                    "warned": "warned"
+                }    
+            }
+        }
     }
 }
