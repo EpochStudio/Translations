@@ -651,7 +651,11 @@
       "description": "About EternalGaius",
       "data": {
         "title": "About EternalGaius",
-        "description": "EternalGaius was never meant to be a permanent project, I originally made it for fun, however after the support and positive feedback I received, I've decided to make EternalGaius a long term project! At EternalGaius we strive to give our users the best experience while using our bot while maintaining stability and security for our users data."
+        "description": "EternalGaius was never meant to be a permanent project, I originally made it for fun, however after the support and positive feedback I received, I've decided to make EternalGaius a long term project! At EternalGaius we strive to give our users the best experience while using our bot while maintaining stability and security for our users data.\n\nIt is all thanks to the following amazing people that we're here today! Big kudos to them!",
+        "dev": "Our Development Team",
+        "staff": "Our Staff Members",
+        "partner": "Our Partners",
+        "contri": "Our Contributors"
       }
     },
     "badgeinfo": {
@@ -852,6 +856,7 @@
     "punishSelf": "You cannot punish yourself.",
     "punishOwn": "You cannot punish the server owner",
     "higherAuthority": "You cannot punish someone that is higher or the same rank as you.",
+    "clientLowerAuthority": "The person specified has a higher role or the same role level as me!",
     "ownerOnly": "Only the server owner can execute this sub command.",
     "punishClient": "You cannot punish me with my own commands",
     "ban": {
@@ -890,7 +895,7 @@
       }
     },
     "clone": {
-      "description": "Deletes a channel and cloen it",
+      "description": "Deletes a channel and clone it",
       "data": {
         "cloneInvalidChannel": "You cannot clone System Channels, Rule Channels or Public Update Channels",
         "cloneWait": "Cloning {{channel}}, stay tight!",
@@ -910,12 +915,13 @@
         "punishType": "Punishment Type",
         "punishAct": "Punishment Activity",
         "punishDur": "Punishment Duration",
+        "infraNotFound": "I cannot find the infraction `{{id}}` from the user **{{user}}**",
         "infraRapsheet": {
           "title": "{{user}}'s Infraction Rapsheet"
         },
         "infraRemoved": {
           "title": "Infractions Removed",
-          "description": "Successfully removed the infraction `{{str}}` from **{{user}}**"
+          "description": "Successfully removed the infraction `{{id}}` from **{{user}}**"
         },
         "userInfraPurge": {
           "title": "Infractions Purged",
@@ -973,7 +979,7 @@
         "invalidHex": "Please insert a valid Hex Code",
         "createReason": "{{user}}: Created a role named {{name}}",
         "create": {
-          "description": "Successfully created the role {{name}}"
+          "description": "Successfully created the role {{name}} with the color {{hex}}"
         },
         "higherAuth": "The role stated is higher than my highest role.",
         "deleteReason": "{{user}}: Deleted a role named {{name}}",
@@ -989,10 +995,10 @@
         "pMrNotFound": "The determined muterole does not exist in this server! Please reconfigure the mute role config.",
         "alrdyMuted": "The specified member is already muted!",
         "invalidTimeString": "Invalid time string entered. Enter time must be above 60 seconds.",
-        "dmMsg": "You have been muted in **{{gName}}** by the Moderator **{{mod}}**\nReason: {{reason}}",
+        "dmMsg": "You have been muted in **{{gName}}** by the Moderator **{{mod}}**\nReason: {{reason}}\nDuration: {{dur}}",
         "embed": {
           "title": "User Muted",
-          "description": "{{victim}} has been muted for the following reason.\nReason: {{reason}}"
+          "description": "{{victim}} has been muted for the following reason.\nReason: {{reason}}\nDuration: {{dur}}"
         },
         "muted": "muted"
       }
@@ -1010,6 +1016,7 @@
       "description": "Sets the slowmode for the current channel.",
       "data": {
         "invalidInput": "The number stated cannot be higher than 21600 or lower than 0",
+        "title": "Channel Slowmode",
         "smRemoved": "Channel slowmode has been removed from the channel **{{name}}**",
         "smAdded": "**{{amount}}** seconds of slowmode has been applied to the channel **{{channel}}**"
       }
@@ -1041,7 +1048,7 @@
     "unmute": {
       "description": "Unmutes a muted member",
       "data": {
-        "notMuted": "the specified user is not muted.",
+        "notMuted": "The specified user is not muted.",
         "dmMsg": "You have been unmuted in **{{gName}}** by the Moderator **{{mod}}**",
         "embed": {
           "title": "User Unmuted",
