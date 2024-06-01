@@ -19,7 +19,6 @@
       "description": "Configure the Mute Role/Mod Log Settings",
       "data": {
         "mrole": "Successfully set the server mute role to {{role}}",
-        "mlog": "Successfully set the serveer mod log channel to {{channel}}",
         "updated": "Server Configuration updated"
       }
     },
@@ -55,9 +54,7 @@
           "configuration": "Configuration",
           "disCmd": "Disabled Commands",
           "mr": "Mute Role",
-          "ml": "Mod Log",
           "nMr": "No Mute Role",
-          "nMl": "No Mod Log",
           "nDisCmd": "None"
         },
         "module": {
@@ -679,7 +676,7 @@
       }
     },
     "customize": {
-      "description": "Customize your EternalGaius Settings",
+      "description": "Customize your EternalGaius Settings/Experience",
       "data": {
         "bdayInputPrompt": "Please insert your birthday date in this format: `MM/DD`",
         "bdayNotNum": "The given information is not a number",
