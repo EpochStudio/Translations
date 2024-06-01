@@ -760,6 +760,12 @@
         "tpsLan": "TPS Latency"
       }
     },
+    "premium": {
+      "description": "Premium details command",
+      "data": {
+        
+      }
+    },
     "profile": {
       "description": "Displays the specified user profile",
       "data": {
