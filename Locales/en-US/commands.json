@@ -1121,13 +1121,16 @@
       }
     },
     "loop": {
-      "description": "This command allows you to loop current playing track or the entire queue."
+      "description": "This command allows you to loop current playing track or the entire queue.",
+      "data": {
+        "success": "Successfully {{type}} {{mode}} repeat."
+      }
     },
     "nowplaying": {
       "description": "This command allows you to view the current platying song.",
       "data": {
         "noTrack": "There is no track playing currently.",
-        "currentPlaying": "Currently PLaying",
+        "currentPlaying": "Currently Playing",
         "sName": "Song Name",
         "vChannel": "Voice Channel",
         "loopMode": "Loop Mode",
@@ -1177,7 +1180,7 @@
       "description": "This command allows you to remove tracks from the queue",
       "data": {
         "provideTrack": "Please provide a valid track.",
-        "success": "Successfully removed {{track}} from the queue."
+        "success": "Successfully removed [{{track}}] from the queue."
       }
     },
     "resume": {
@@ -1219,6 +1222,7 @@
     "avatar": {
       "description": "Displays the specified user's display avatar",
       "data": {
+        "avatar": "{{user}}'s Avatar",
         "linkAs": "Link As"
       }
     },
@@ -1254,7 +1258,6 @@
         "eId": "Emoji ID",
         "animated": "Animated",
         "link": "Link",
-        "cm": "Click Me",
         "noCe": "No custom emojis have been found from your input.",
         "sLeft": "slot left",
         "sEmojis": "Static Emojis",
@@ -1270,7 +1273,7 @@
     "github": {
       "description": "Display a Github Repo Information",
       "data": {
-        "formatErr": "Repository must be in the format `TheFateAkira/miyako`",
+        "formatErr": "Repository must be in the format `EternalGaiusOfficial/Translations`",
         "invalidRepo": "You did not enter a valid repository",
         "forked": "**Forked** from",
         "noi": "No Other Information",
@@ -1291,6 +1294,7 @@
         "uname": "Username",
         "hireable": "Hireable",
         "twt": "Twitter",
+        "nTwt": "No Twitter Attached",
         "pr": "Public Repo",
         "pg": "Public Gists",
         "followers": "Followers"
@@ -1306,7 +1310,7 @@
           "ca": "Created At",
           "nsfw": "NSFW",
           "sm": "Slowmode",
-          "sec": "Seconds",
+          "sec": "Second(s)",
           "nsm": "No Slowmode",
           "fm": "First Message",
           "ct": "Channel Topic",
@@ -1338,7 +1342,7 @@
           "eBadges": "EternalGaius Badges",
           "dBadges": "Discord Badges",
           "nb": "No Badges",
-          "uname": "Username",
+          "uName": "Username",
           "dName": "Display Name",
           "accType": "Account Type",
           "bot": "🤖 Bot",
@@ -1346,9 +1350,15 @@
           "jd": "Joined Discord",
           "js": "Joined Server",
           "uc": "User Color",
+          "nc": "No Color",
           "uid": "User ID",
           "acknowledgement": "Acknowledgement",
-          "roles": "Roles"
+          "roles": "Roles",
+          "dev": "Bot Developer",
+          "owner": "Server Owner",
+          "admin": "Server Administrator",
+          "mod": "Server Moderator",
+          "mem": "Server Member"
         },
         "discordstatus": {
           "services": "Discord Status - Services",
@@ -1444,6 +1454,7 @@
     "servericon": {
       "description": "Display's the server icon",
       "data": {
+        "desc": "[{{guild}}'s Icon]",
         "linkAs": "Link As"
       }
     },
@@ -1451,6 +1462,7 @@
       "description": "Search up the specified word on the urban dictionary",
       "data": {
         "nthFound": "No result found for **{{string}}**",
+        "title": "{{word}} Definition",
         "rf": "Result Found",
         "def": "Definition",
         "od": "Other Details",
@@ -1471,8 +1483,7 @@
         "invalidDate": "Follow the extension: MM/DD (example: 09/13)",
         "zodSign": "Zodiac Sign",
         "bday": "Birthday",
-        "zs": "Your Zodiac Sign is {{zodiac}}",
-        "ele": "and your Element is {{element}}"
+        "desc": "Your Zodiac Sign is {{zodiac}} and your Element is {{element}}"
       }
     }
   }
