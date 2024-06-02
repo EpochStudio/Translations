@@ -1,1 +1,59 @@
-
+{
+    "ownerOnly": "此命令僅適用於機器人擁有者。",
+    "catDisabledGlob": "該命令所屬的類別目前被全局禁用。請稍後再來!",
+    "cmdDisabledGlob": "此命令目前被全局禁用。請稍後再來。",
+    "catDisabledGui": "該命令所屬的類別目前已被伺服器管理員禁用。\n請聯繫您的伺服器管理員獲取更多詳細資訊。",
+    "cmdDisabledGui": "此命令目前已被伺服器管理員禁用。\n請聯繫您的伺服器管理員獲取更多詳細資訊。",
+    "nsfwOnly": "此命令僅可在NSFW頻道中使用",
+    "lavalinkConnectionNotEstablished": "客戶端目前未連接到Lavalink伺服器。請稍後再試。",
+    "noDispatch": "此公會中沒有正在播放的音樂系統",
+    "notConnectedToVc": "您必須連接到語音頻道才能運行此命令。",
+    "notSameVc": "您必須連接到與我相同的語音頻道才能運行此命令。",
+    "reason": "原因",
+    "blOn": "列入黑名單時間",
+    "dur": "持續時間",
+    "uBlacklist": "您無權運行此命令,因為\n您目前已被列入EternalGaius的黑名單\n要上訴列入黑名單,請加入我們的[支援伺服器](https://discord.gg/9PnUBeu)。",
+    "gBlacklist": "您無權運行此命令,因為\n您正在執行此命令的伺服器目前已被列入EternalGaius的黑名單\n伺服器代表可以加入我們的[支援伺服器](https://discord.gg/9PnUBeu)來上訴這個列入黑名單的情況。",
+    "mentionMsg": ":wave: 嘿!使用**/help**來獲取有關我的更多資訊!",
+    "interactonResponse": {
+        "message": {
+            "afk": {
+                "rtm": "重定向到消息",
+                "embed": {
+                    "title": "AFK 資訊",
+                    "nData": "此頁面上沒有資訊",
+                    "footer": "要求者: {{username}} | 第 {{page}} 頁,共 {{pages}} 頁"
+                },
+                "btns": [
+                    "刪除",
+                    "首頁",
+                    "上一頁",
+                    "下一頁",
+                    "尾頁"
+                ],
+                "remAfk": "我已經移除了你的AFK狀態!\n你已經AFK了 **{{time}}**\n你AFK的時候被提到了 **{{pTimes}}** 次",
+                "curAfk": "嘿!該用戶目前AFK中!\n原因: **{{reason}}**"
+            }
+        },
+        "interaction": {
+            "verification": {
+                "disabled": "該伺服器上的驗證系統已被禁用。請聯繫伺服器管理員以獲取更多詳細資訊。",
+                "missingPerms": "我缺少`管理身分組`權限。請聯繫伺服器管理員以獲得進一步協助。",
+                "rNotFound": "先前確定的驗證身分組不再存在。請聯繫伺服器管理員以獲得進一步協助。",
+                "higherAuthority": "驗證的身公組目前高於我的最高角色。請聯繫伺服器管理員以獲得進一步協助。",
+                "ongoing": "您已經有一個正在進行的驗證過程!",
+                "alrdyVerified": "您已在此公會中驗證。",
+                "verificationInProg": "您有60秒的時間來解決下面的驗證碼!\n輸入 `cancel` 取消驗證過程。",
+                "dmsDisabled": "您目前已禁用私信。請再次按下 \"驗證\" 按鈕前打開私信。",
+                "err": "在發送驗證消息時發生了一些問題。此異常已被記錄。",
+                "cancel": "已成功取消驗證過程。",
+                "success": "嘿 {{user}}，您已成功在 **{{gName}}** 中被驗證。",
+                "fail": "您未能在 60 秒內完成驗證碼。請再次按下 \"驗證\" 按鈕重試。",
+                "timeout": "您未能在 60 秒內完成驗證碼。"
+            }
+        },
+        "automated": {
+            "unmute": "您已在 **{{gName}}** 中被管理員 **EternalGaius** (自動解禁) 取消靜音"
+        }
+    }
+}

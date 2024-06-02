@@ -1,31 +1,48 @@
 {
-    "uNotFound": "找不到指定的用戶",
-    "cannotBeAuth": "被提及的用戶不能成為指令作者",
-    "dbErr": "寫入數據庫時出了問題！請稍後再試。",
-    "cmdExeFail": "指令執行失敗",
+    "uNotFound": "無法找到指定的使用者",
+    "cNotFound": "無法找到指定的頻道",
+    "rNotFound": "無法找到指定的身分組",
+    "uNotInVc": "指定的使用者不在語音頻道中",
+    "cannotBeAuth": "提及的使用者不能是命令作者",
+    "uNoPfp": "指定的使用者沒有自定個人頭像",
+    "sNoIcon": "目前的伺服器沒有自定司服器頭像",
+    "dbErr": "寫入資料庫時發生錯誤！請稍後再試",
+    "timeout": "已逾時！請重試",
+    "opCan": "操作已取消",
+    "none": "無",
+    "ena": "啟用",
+    "dis": "禁用",
+    "yes": "是",
+    "no": "否",
+    "na": "不適用",
+    "naa": "不可用",
+    "cm": "點擊我",
+    "unknown": "未知",
+    "permanent": "永久",
+    "cmdExeFail": "命令執行失敗",
     "permissions": {
-        "client": "我沒有足夠的權限執行此指令。",
-        "user": "您沒有足夠的權限執行此指令。",
+        "client": "我沒有足夠的權限來執行此命令。",
+        "user": "您沒有足夠的權限來執行此命令。",
         "missing": "缺少權限"
     },
     "args": {
-        "missing": "您缺少一些指令參數",
+        "missing": "您遺漏了一些命令參數",
         "missingArgs": "缺少參數"
     },
     "category": {
-        "title": "分類已停用",
-        "disabled": "該命令所在的分類當前在此服務器中已停用。\n請聯繫您的服務器管理員以獲取更多信息。"
+        "title": "類別已禁用",
+        "disabled": "此命令所屬的類別目前在此伺服器中已被禁用。\n請聯繫您的伺服器管理員以了解更多資訊。"
     },
     "error": {
-        "faulty": "執行此指令時出現問題！",
+        "faulty": "在執行此命令時發生錯誤！",
         "exceptStatus": {
             "title": "異常狀態",
-            "field": "異常已記錄到控制台"
+            "field": "已記錄到控制台的異常"
         },
         "errCode": {
-            "title": "錯誤碼",
-            "notFound": "無法使用",
-            "message": "錯誤消息"
+            "title": "錯誤代碼",
+            "notFound": "不適用",
+            "message": "錯誤訊息"
         }
     }
 }

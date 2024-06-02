@@ -1,10 +1,1513 @@
 {
-    "general": {
-        "ping": {
-            "clientLan": "客戶端延遲",
-            "apiLan": "API延遲",
-            "dataLan": "資料庫延遲",
-            "tpsLan": "TPS延遲"
+  "admin": {
+    "categories": {
+      "description": "禁用/啟用指定的類別",
+      "data": {
+        "enabled": "已成功啟用 {{cat}} 類別。",
+        "disabled": "已成功禁用 {{cat}} 類別。"
+      }
+    },
+    "commands": {
+      "description": "禁用/啟用指定的命令",
+      "data": {
+        "notFound": "指定的命令不存在。",
+        "removed": "已成功從禁用命令列表中移除 {{cmdName}}。",
+        "added": "已成功將 {{cmdName}} 添加到禁用命令列表中。"
+      }
+    },
+    "configure": {
+      "description": "配置靜音身分組設置",
+      "data": {
+        "mrole": "已成功將伺服器靜音身分組設置為 {{role}}",
+        "updated": "伺服器配置已更新"
+      }
+    },
+    "greet": {
+      "description": "配置歡迎頻道/消息，離開頻道/消息",
+      "data": {
+        "setwelcomeChan": "已成功將歡迎頻道設置為 {{channel}}",
+        "setwelcomeMsg": "已成功將歡迎消息設置為\n{{msg}}",
+        "resetWelcome": "已成功將歡迎配置重置為默認設置",
+        "setleaveChan": "已成功將離開頻道設置為 {{channel}}",
+        "setleaveMsg": "已成功將離開消息設置為\n{{msg}}",
+        "resetLeave": "已成功將離開配置重置為默認設置",
+        "arrExist": "此角色已經在自動身分組配置系統中",
+        "arrMax": "您目前已達到自動身分組配置的最大限制！(最多 5 個)",
+        "arrAdd": "已成功將 {{role}} 添加到自動身分組配置",
+        "arrNotFound": "我在自動身分組配置中沒有找到給定的角色",
+        "arrRemove": "已成功從自動身分組配置中移除 {{role}}",
+        "arrReset": "已成功重置自動身分組配置",
+        "variables": "歡迎/再見消息的變數"
+      }
+    },
+    "pauseinvites": {
+      "description": "暫停/恢復當前伺服器的邀請",
+      "data": {
+        "msg": "已成功在此伺服器 {{status}} 邀請!"
+      }
+    },
+    "settings": {
+      "description": "顯示伺服器設定",
+      "data": {
+        "general": {
+          "genSett": "EternalGaius 設定",
+          "configuration": "配置",
+          "disCmd": "禁用指令",
+          "mr": "靜音身分組",
+          "nMr": "無靜音身分組",
+          "nDisCmd": "無"
+        },
+        "module": {
+          "modSett": "模組設定",
+          "mod": "模組"
+        },
+        "verification": {
+          "verifSett": "驗證系統設定",
+          "status": {
+            "title": "狀態"
+          },
+          "verifChan": "驗證頻道",
+          "nVerifChan": "尚未配置",
+          "verifRole": "已驗證身分組",
+          "nVerifRole": "尚未配置"
+        },
+        "greet": {
+          "greSett": "問候系統設定",
+          "arList": "自動身分組列表",
+          "nAr": "未添加自動身分組",
+          "welChan": "歡迎頻道",
+          "nWelChan": "尚未配置歡迎頻道",
+          "leaChan": "離開頻道",
+          "nLeaChan": "尚未配置離開頻道",
+          "welMsg": "歡迎消息",
+          "nWelMsg": "預設歡迎消息",
+          "leaMsg": "離開消息",
+          "nLeaMsg": "預設離開消息"
         }
+      }
+    },
+    "stickymsg": {
+      "description": "為此伺服器配置置頂消息",
+      "data": {
+        "alrExist": "此頻道已存在置頂消息！",
+        "inputPrompt": "請輸入置頂消息的顯示內容。\n或輸入 `cancel` 取消此過程。",
+        "lengthExceed": "置頂消息長度不能超過 900 個字符！",
+        "addStick": "成功為頻道 {{channel}} 添加置頂消息",
+        "notExist": "指定的頻道沒有置頂消息。",
+        "removeStick": "成功刪除頻道 {{channel}} 的置頂消息。",
+        "status": "成功 {{status}} 頻道 {{channel}} 的置頂消息！",
+        "editConPrompt": "請輸入置頂消息的新顯示內容\n或輸入 `cancel` 取消此過程。",
+        "editContent": "成功更新 {{channel}} 置頂消息的內容\n置頂消息將在下次刷新時更新。",
+        "invalidTextAmt": "文字數量不能低於 2 或高於 20！",
+        "updateTxtAmt": "成功將重新發送置頂消息所需的文字數量更新為 `{{integer}}` 條消息。",
+        "invalidAttachAmt": "附件數量不能低於 1 或高於 5！",
+        "updateAttachAmt": "成功將重新發送置頂消息所需的附件數量更新為 `{{integer}}`！",
+        "noStick": "此伺服器未配置任何置頂消息！",
+        "sm": "置頂消息",
+        "noDataFound": "找不到數據",
+        "missPerm": "缺少在該頻道發送消息的權限",
+        "wrong": "嘗試將置頂消息發送到該頻道時出現錯誤！",
+        "content": "內容",
+        "moreChar": "以及 {{length}} 個額外字符",
+        "latestStick": "最新置頂",
+        "clickMe": "點擊我",
+        "txtBeforeRepost": "重發前所需的文字數量",
+        "attachBeforeRepost": "重發前所需的附件數量"
+      }
+    },
+    "verification": {
+      "description": "配置驗證系統",
+      "data": {
+        "notConfigured": "請先配置驗證頻道和已驗證身分組。",
+        "verifyEmbed": {
+          "content": "點擊下方按鈕開始驗證過程!\n如果您沒有收到私信, 請打開您的私信並再次點擊按鈕。"
+        },
+        "preChanNotExist": "所確定的驗證頻道不存在! 請重新配置驗證頻道",
+        "preRoleNotExist": "所確定的已驗證身分組不存在! 請重新配置已驗證身分組",
+        "errOnSend": "在將驗證消息發送到驗證頻道時出現錯誤。請稍後再試。",
+        "enabled": "成功啟用驗證系統",
+        "disabled": "成功禁用驗證系統",
+        "setVerChan": "驗證頻道設置為 {{channel}}",
+        "setVerRole": "驗證身分組設置為 {{role}}"
+      }
     }
+  },
+  "economy": {
+    "balance": {
+      "description": "顯示你的餘額",
+      "data": {
+        "bal": "餘額",
+        "ba": "銀行"
+      }
+    },
+    "bank": {
+      "description": "將錢存入或提取出銀行",
+      "data": {
+        "insufficientSelf": "你現在身上沒有這麼多錢!",
+        "depositSuccess": "成功將 ${{amount}} 存入您的銀行!",
+        "insufficientBank": "你的銀行帳戶沒有這麼多錢!",
+        "withdraw": "成功從您的銀行提取 ${{amount}}!"
+      }
+    },
+    "daily": {
+      "description": "領取您的每日獎勵",
+      "data": {
+        "success": "您領取了每日獎勵,獲得了 $500",
+        "onCooldown": "嘿!您尚未可以領取您的每日獎勵! 請等待 {{remaining}} 再次領取!"
+      }
+    },
+    "eco-cooldown": {
+      "description": "顯示您所有的經濟冷卻時間",
+      "data": {
+        "now": "現在",
+        "clIn": "可領取於: {{time}}"
+      }
+    },
+    "eco-manage": {
+      "description": "管理此伺服器的經濟系統",
+      "data": {
+        "epNotFound": "此使用者在此伺服器中沒有經濟模式檔案!",
+        "balAdd": "成功在 {{user}} 的 {{location}} 中增加 ${{amount}}",
+        "insufficient": "指定的使用者在他們的 {{location}} 中沒有這麼多",
+        "balRemove": "成功從 {{user}} 的 {{location}} 中移除 ${{amount}}",
+        "balSet": "成功將 {{user}} 的 {{location}} 設定為 {{amount}}",
+        "sReset": "請稍候... 正在嘗試重置伺服器的經濟",
+        "noEpInGuild": "此伺服器沒有經濟模式檔案,因此無法進行此操作",
+        "resetSuccess": "成功重置伺服器的經濟",
+        "ecoNotFound": "此伺服器沒有經濟!",
+        "calTotalGuildAmt": "請稍候... 正在計算伺服器經濟",
+        "accVal": "此伺服器所有經濟模式檔案的累計值",
+        "monVal": "總金錢價值",
+        "bankVal": "總銀行價值",
+        "totalBal": "總餘額"
+      }
+    },
+    "leaderboard": {
+      "description": "顯示經濟排行榜",
+      "data": {
+        "lbNotAva": "此伺服器尚未提供排行榜!",
+        "leaderboard": "排行榜",
+        "noData": "此頁面上找不到數據"
+      }
+    },
+    "pay": {
+      "description": "向另一名使用者支付金錢",
+      "data": {
+        "rNoEp": "接收者在此伺服器中沒有經濟模式檔案!",
+        "insufficient": "你現在身上沒有這麼多錢。",
+        "success": "交易已成功完成! 請查看您各自的餘額。"
+      }
+    },
+    "rob": {
+      "description": "搶劫一名使用者",
+      "data": {
+        "vNoEp": "受害者在此伺服器中沒有經濟模式檔案!",
+        "belowStandard": "你不能搶劫此使用者,因為他們的餘額低於 $100",
+        "caught": "你在偷竊時被抓到了!\n你必須向警察支付 ${{amount}} 的罰款",
+        "success": "你成功從 {{user}} 那裡偷走了 ${{bal}}\n你可以在 2 小時後再次搶劫別人。",
+        "onCooldown": "嘿!你現在還不能搶劫另一名使用者! 請等待 {{remaining}} 再次搶劫!"
+      }
+    },
+    "weekly": {
+      "description": "領取您的每週獎勵",
+      "data": {
+        "success": "你領取了每週獎勵,獲得了 $1000",
+        "onCooldown": "嘿!你尚未可以領取您的每週獎勵! 請等待 {{remaining}} 再次領取!"
+      }
+    },
+    "work": {
+      "description": "工作賺錢",
+      "data": {
+        "success": "你以 {{job}} 的身份工作,賺到了 ${{salary}}。你可以在 5 分鐘後再次工作",
+        "onCooldown": "嘿!你現在還不能工作! 請等待 {{remaining}} 再次工作!"
+      }
+    }
+  },
+  "fun": {
+    "8ball": {
+      "description": "魔法八號球",
+      "data": {
+        "question": "問題",
+        "res": "回應",
+        "possibleAnswer": [
+          "這是肯定的",
+          "這是毫無疑問的",
+          "無疑",
+          "是的 - 肯定",
+          "我看是這樣",
+          "很可能",
+          "你可以依賴它",
+          "很可能",
+          "前景良好",
+          "是的",
+          "跡象指向是的",
+          "不要指望",
+          "我的消息來源說否",
+          "前景不太好",
+          "很不可能",
+          "回答模糊,請再試一次",
+          "改天再問吧",
+          "現在還不能告訴你",
+          "現在無法預測",
+          "集中精神再問一遍"
+        ]
+      }
+    },
+    "choose": {
+      "description": "從提供的選項中隨機選擇一個,用逗號(,)分隔多個選擇",
+      "data": {
+        "tc": "總選擇數",
+        "mc": "我的選擇",
+        "emptyOpt": "選擇的選項是一個空選項。"
+      }
+    },
+    "coinflip": {
+      "description": "擲硬幣",
+      "data": {
+        "title": "擲硬幣 - 正面或反面",
+        "description": "選一個!正面還是反面?\n你有30秒鐘時間選擇!",
+        "heads": "正面",
+        "tails": "反面",
+        "win": "**{{author}}**選擇了**{{choice}}**\n\n**狀態:** 硬幣落在了**{{result}}**!恭喜你,你贏了!",
+        "lost": "**{{author}}**選擇了**{{choice}}**\n\n**狀態:** 硬幣落在了**{{result}}**!下次好運!",
+        "timeout": "你沒有回應,所以我已經結束了這輪擲硬幣!"
+      }
+    },
+    "dice": {
+      "description": "擲骰子",
+      "data": {
+        "title": "擲骰子",
+        "response": "{{author}}擲出了**{{number}}**"
+      }
+    },
+    "fish": {
+      "description": "去釣魚",
+      "data": {
+        "junk": "垃圾",
+        "common": "普通",
+        "uncommon": "不常見",
+        "rare": "稀有",
+        "epic": "史詩級",
+        "legendary": "傳說級",
+        "response": "你釣到了一條**{{rarity}}**魚{{symbol}}!你賣掉它得到了${{price}}"
+      }
+    },
+    "fortune": {
+      "description": "抽取一個幸運之語",
+      "data": {
+        "possibleAnswer": [
+          "以誠信和一致性 -- 您的功績正在累積。",
+          "伸出援手去支持今天需要您的人。",
+          "不是外在的財富,而是內心的富足才能帶來幸福。",
+          "有多黑會有多黑?有多智慧會有多智慧?",
+          "我們可以欣賞所有我們所見的,但我們只能選擇一個。",
+          "沒有想像力的人是沒有翅膀的。",
+          "勇敢地承擔自己錯誤的責任是真正的品格。",
+          "我們無法幫助所有人。但每個人都可以幫助別人。",
+          "您發現寶藏的地方,別人只看到平常。",
+          "儘可能多賺,儘可能多存,儘可能多給。",
+          "了解變化的本質,就改變了本質。",
+          "您將在商業上取得非凡的成功。",
+          "您的探險精神將引導您進入一條令人興奮的新道路。",
+          "天賦是百分之一的靈感加上百分之九十九的努力。",
+          "您是每一種情況的掌控者。",
+          "要有勇氣去創造性地生活。",
+          "餅乾變酥脆,但人生格言永恆。",
+          "您的創造力和想像力將獲得成果。",
+          "不必要的擁有就是不必要的負擔。",
+          "能力不是用來炫耀的。",
+          "如果你想看到別人的最佳一面,就展現你自己的最佳一面。",
+          "您的力量存在於您做決定的能力。",
+          "無論去到哪裡,無論何時,都要試著留下一份禮物。",
+          "親切的話語可以輕易說出,但它們的迴響是真正無窮無盡的。",
+          "您的創造力和想像力將獲得成果。",
+          "只要你的心還年輕,年齡永遠無法戰勝你。",
+          "榜樣勝過印象。",
+          "懶惰是愚蠢者的節日。",
+          "不要被你的問題推著走,而是被你的夢想引領著走。",
+          "許多人會得到建議,只有智者才能從中獲益。",
+          "您將有好運並克服許多困難。",
+          "保持健康的好方法是多吃中餐。",
+          "今天的利潤是昨天善待後果的經久耐磨。",
+          "LSDBS - 讓有益的事情被說。",
+          "在最糟糕的運氣中,也有最好的機會會有一個幸福的結局。",
+          "服務於眾多人會引領我們走向偉大。",
+          "欲望就像原子,蘊含著創造性的力量。",
+          "我思故我在。",
+          "不要以你收穫的果實來評斷一天,而是要看你種下的種子。",
+          "昨天是一次艱難的搏鬥。今天是一次必勝的勝利。",
+          "讓每一天都成為您最好的一天。您將大大提高自己。",
+          "您必須今天採取行動才能取得成功。",
+          "不要把所有的籌碼都押在一艘船上。",
+          "壓制一瞬間的憤怒可能會避免一天的悲傷。",
+          "永遠不要低於您的夢想。",
+          "好時光從我數到3開始:1... 2... 3。",
+          "一英寸的時間就是一英寸的黃金。",
+          "如果你追捕兩隻兔子,兩隻都會逃脫。",
+          "您很快就會被善良的朋友和歡笑包圍。",
+          "急於求成並不會帶來成功。",
+          "你將遇到通往幸福之路。",
+          "你在職業生涯上將一直成功。",
+          "來自遠方的好消息將降臨到你身上。",
+          "服務是你擁有這片大地的代價。",
+          "要聰明,但不要顯露出來。",
+          "唯一確定的就是,沒有什麼是確定的。",
+          "你或是你親近的朋友將很快結婚。",
+          "直到井乾涸,水的價值我們才會意識到。",
+          "你擁有多方面的才能。",
+          "盡你最大的努力,去實現它。",
+          "你會在意想不到的地方發現偉大的力量。",
+          "你看到鏡中的自己,和你真正的自己可能是兩個不同的影像。",
+          "藉口太容易製造,但很難推銷。",
+          "對他人的方式,就是你希望他人對待你的方式。",
+          "為你所信仰的一切,盡你所能地努力奮鬥。",
+          "你有一雙閃亮的眼睛。",
+          "你應該能夠承擔並完成任何事情。",
+          "你的原則對你而言比金錢或成功更重要。",
+          "原諒並不能改變過去,但它確實擴大了未來。",
+          "昂首闊步!不要自我貶低。",
+          "每一個真正偉大的成就,一開始都是不可能的。",
+          "勇氣不是沒有恐懼,而是征服恐懼。",
+          "智者少言。",
+          "如果你的工作沒有問題,那麼你就沒有真正的工作。",
+          "你的思維開放,且非常積極參與社交活動。",
+          "不要推遲到明天,你今天就可以享受的事物。",
+          "在未來幾個月內,你的家庭聚會將是巨大的成功!",
+          "充滿熱情的領導能在你最意想不到的時候得到晉升。",
+          "逆境是一個勇士心智的試金石。",
+          "你所添加的一切,都將從真理中扣除。",
+          "你將去度假。",
+          "承諾是組成性格的材料;改變事物面貌的力量。",
+          "朋友只需要你的時間,而非金錢。",
+          "朋友只需要你的時間,而非金錢。",
+          "一把耐心勝過一筐智慧。",
+          "一把耐心勝過一筐智慧。",
+          "八十歲身體健康,比四十歲滿怀希望更值得高興。",
+          "八十歲身體健康,比四十歲滿怀希望更值得高興。",
+          "僅僅因為會說很多話,並不代表一個人有智慧。",
+          "要跳出老舊的框框,需要勇氣。",
+          "最偉大的品質是服務他人的心。",
+          "大多數人一畢業於「人生磨課師」,立即就報名就讀。",
+          "每個人都需要被愛,尤其是那些無法被愛的人。",
+          "勝利不是一切,但勝利的意志很重要。",
+          "你擁有迷人的魅力和禮貌。",
+          "你將獲得一些偉大的榮譽。",
+          "不要建立在他人的悲傷之上的幸福。",
+          "變老的最好的事物就是,需要很長很長的時間。",
+          "你對一切藝術都有深入的興趣。",
+          "沒有心,吻也只是個吻。",
+          "不要害怕恐懼。",
+          "如果不能有時做個孩子氣,成長又有什麼意義。",
+          "你每天都會學到新事物。",
+          "沒有櫳板,你的橡皮艇就無法向遠處駛去。",
+          "失敗是為了未來重大責任做準備的虛擬方式。",
+          "很多人得到建議,但只有智者才能從中獲益。",
+          "銀行家是在太陽普照時,借你一把傘的人。",
+          "成熟:無需監督,也能盡職盡責。",
+          "你的樂觀情緒是你的資產之一。",
+          "你無法擁有一切...因為那裡根本放不下。",
+          "你擁有一種罕見的磁性魅力。",
+          "你擁有一種罕見的磁性魅力。",
+          "匆忙是沒有尊嚴的。",
+          "你永遠不會猶豫去解決最困難的問題。",
+          "你的情感本質是強烈而敏感的。",
+          "嚴重的麻煩將會繞過你。",
+          "如果你領先於羊群,偶爾也要回頭看看,確保它還在那裡。",
+          "你擁有一股鐵一般的意志,這助你在一切事情上成功。",
+          "要保守秘密,先得把兩個人去除。",
+          "你到哪裡,都會受到友好的迎接。",
+          "你對自己未來的願景,絲毫不受阻礙。",
+          "理解是很難的。一旦理解,行動就會變得容易。",
+          "一個世紀的哲學,就是下一個世紀的常識。",
+          "你在最終達到滿意前,會做出很多改變。",
+          "生氣時,就唱唱字母表。",
+          "財富是一種手段,而不是目標本身。",
+          "現在正是你最有前景的想法開花結果的時候。",
+          "小機遇往往是偉大事業的開始。",
+          "人們被你吸引,並尋求你的建議。",
+          "即使朋友誇獎你,也要保持腳踏實地。",
+          "匿名做一件善事。你將在生活中產生影響。",
+          "財富繁榮即將來臨!",
+          "健康的身體將永遠造福你。",
+          "此時,你的心智活動保持忙碌。",
+          "說「我愛你」,並且真心實意。你永遠不能說太多次。",
+          "世界總是準備以開放的胸懷接待才華。",
+          "欣賞你道路上發現的小事物。",
+          "美味的食物可帶來良好的健康和長壽。",
+          "施與比受更為重要。",
+          "每個負擔都是一種祝福。",
+          "財富在你的命中注定。",
+          "你下次的面試將會得到一份工作。",
+          "接受挑戰,這樣你就能感受到勝利的快感。",
+          "未來屬於相信夢想之美的人。",
+          "和平始於微笑。",
+          "參與能促進轉化的群體活動。",
+          "對自己已擁有的感到滿足。",
+          "你的事業將會蒸蒸日上。",
+          "你擁有成就的潛力和能力。",
+          "人們難以抵擋你富有說服力的方式。",
+          "行動是擔憂最強大的敵人。",
+          "人並不失敗...是他們放棄了嘗試。",
+          "你的腿累嗎?你整天都在別人的心中撩撥。",
+          "你能在平凡中發現美。不要失去這項能力。",
+          "你會讓同情心管理你的願望嗎。",
+          "一個真正偉大的人永遠不會拋棄孩子般的純真。",
+          "家在於你的心所在。",
+          "家中巨大的財富不如用於用途的金錢來得好。",
+          "幽默是尊嚴的肯定。",
+          "你的強烈願望,只讓你看到你正在尋找的。",
+          "TEAMS - 團結就是成功。",
+          "你有一顆金子般的心。",
+          "生活對你來說是一項大膽而充滿活力的責任。",
+          "想要學會愛,從恨自己的人開始。",
+          "簡單之美。",
+          "學習是隨處可尋的寶藏。",
+          "批評比正確容易得多。",
+          "這個人的愛是公正和真誠的。你可以依賴它。",
+          "你將在戶外度過時光,在山中,靠近水邊。",
+          "久違的朋友正在重新回到你身邊。",
+          "一個人的喜悅延長了他的年日。",
+          "通過飲食和運動來再生你的系統。放棄餅乾吧!",
+          "聆聽老人的智慧。",
+          "即使最艱難的日子也有光明面,盡你所能。",
+          "你的才能將受到認可並適當獎賞。",
+          "勇毅是其他美德的守護者和支撐。",
+          "當機會來臨時,選擇那個在右邊的。",
+          "老朋友是最好的朋友。",
+          "你有感知和認識更高真理的能力。",
+          "人們從成功中學到很少,但從失敗中學到很多。",
+          "緊記你最珍視的未來夢想。",
+          "你總是做正確的事。",
+          "大膽行動,看看隱藏的力量會來幫助你。",
+          "今天加入一個新的俱樂部,你會有意想不到的收穫。",
+          "你的許多隱藏才能將為周圍的人所察覺。",
+          "有些人只有想法,一味地想而不去行動。",
+          "真正的愛國者是指那個得到停車罰單而慶祝制度正在運作的人。",
+          "你更傾向於給予而非接受。",
+          "如果你咬了喂養你的手,它就不會像被餵養時那樣好吃。",
+          "心有其理,理無所知。",
+          "即使最漫長的一天也將結束。",
+          "你喜歡把自己的禮物給予他人,你將被獎賞!",
+          "沒有愚蠢的問題,只有愚蠢的答覆。",
+          "成功是一系列成功日子的積累。",
+          "你有一顆友善的心,受人敬重。",
+          "只是因為你給大象戴上踢踏舞鞋,並不意味著它就能跳舞。",
+          "如果你從未犯過錯誤,那就去尋找你的過錯吧。",
+          "良好的判斷力是人生的主宰。",
+          "你的運氣今天已完全改變。",
+          "請徵詢意見,但要運用自己的常識。",
+          "判決會有利於你。",
+          "你迷人的微笑會是你的絕佳保護。",
+          "請堅定地朝著你的夢想前進。",
+          "你積累的技能總有一天會派上用場。",
+          "恭喜您即將在未來過上富足安康的生活!",
+          "你將到訪很多地方。",
+          "你將享受到一次亞洲之行。",
+          "寧可做些不完美的事情,也不要完美地什麼都不做。",
+          "純粹的邏輯會毀掉精神。",
+          "你會擁有一個漫長而富足的人生。",
+          "你的微笑總是能驅散最陰暗的日子。",
+          "市場上的朋友比錢包裡的錢更有價值。",
+          "一個新的事業將會成功。",
+          "正是那些受過苦難的人推動了世界的進步。",
+          "任何事物都必須有一個開始。",
+          "最重要的是要表達你自己。",
+          "真正的開悟就是以無恙的眼光審視一切無恙之物。",
+          "很快就會有新的富有成就感的機會映入你的眼簾。",
+          "在有價值的情況下,請設法表達你的虔誠。",
+          "這個杯子並不是半滿的,只是太大了罷了。",
+          "感覺就是有根源的想法。",
+          "你現在的計劃將會成功。",
+          "健康的心智和身體將為你的家人帶來許多幸福的時刻。",
+          "制定工作計畫並按計畫執行。",
+          "勇氣理所當然被視為最高尚的品德,因為其他一切美德都依賴它。",
+          "向他人打招呼,你會有更愉快的一天。",
+          "不要讓你的局限性掩蓋你的才能。",
+          "愛是聯繫和吸引世界元素的親和力。",
+          "你應該能夠著手並完成任何事情。",
+          "品格培養才是教育的真正目標。",
+          "要相信他,但仍要保持警惕。",
+          "第二次遭難的人不能責怪海神。",
+          "要想獲得他人的尊重,首先必須給予他人尊重。",
+          "言行要一致,所言所行都要做到。",
+          "人們可能忘記你完成工作的速度,但他們永遠不會忘記你做得有多好。",
+          "是時候去結識新朋友了。",
+          "做正確的事,而不是你應該做的事。",
+          "準時是君王的禮儀,也是普通人的責任。",
+          "如果你過度等待完美的時機,完美的時機就會從你身邊溜走。",
+          "你的心靈純潔,思緒清晰,心地虔誠。",
+          "懷著善良的心去走,你就會取得成功。",
+          "我們不應該讓恐懼阻礙我們追求希望。",
+          "不要把誘惑當成機會。",
+          "你很快就會遇到你欽佩的那個人。",
+          "開始一些新事物的好時機。",
+          "所有的概括論都是錯誤的。",
+          "過會兒再來...我現在在睡覺。 (是的,餅乾也需要睡眠)",
+          "如果一開始沒有成功...試試更難的。",
+          "你優秀的聆聽技能將為你開啟許多大門。",
+          "兩個人能夠縮短一條路。",
+          "不要再等待!買票去旅行吧!",
+          "問題一明確就已經解決了一半。",
+          "接受你的獨立性並明智地運用它。",
+          "願天堂溫和的風輕輕吹拂你前進的方向。"
+        ]
+      }
+    },
+    "imagefilter": {
+      "description": "圖片濾鏡命令",
+      "data": {
+        "invert": "反轉圖像",
+        "trigger": "觸發",
+        "wanted": "通緝",
+        "wasted": "浪費",
+        "rip": "安息",
+        "trash": "垃圾",
+        "ytCmt": "YouTube評論",
+        "cmm": "改變我的想法",
+        "clyde": "Clyde"
+      }
+    },
+    "interact": {
+      "description": "透過各種操作與另一個使用者互動",
+      "data": {
+        "blush": "**{{user}}**臉紅了!",
+        "cry": "**{{user}}**在哭",
+        "cuddle": "**{{author}}**擁抱了**{{receiver}}**!他們真可愛!",
+        "hug": "**{{author}}**擁抱了**{{receiver}}**!他們真可愛",
+        "kiss": "***{{author}}**親吻了**{{receiver}}**!他們真可愛",
+        "pat": "**{{author}}**拍了**{{receiver}}**",
+        "slap": "***{{author}}**打了**{{receiver}}**!好痛!"
+      }
+    },
+    "meme": {
+      "description": "生成一個隨機的meme",
+      "data": {
+        "up": "上票",
+        "down": "下票",
+        "by": "作者"
+      }
+    },
+    "onthisday": {
+      "description": "獲取當天的隨機事實",
+      "data": {
+        "nthReturn": "API沒有返回任何內容!請重新執行命令!",
+        "title": "本日事實"
+      }
+    },
+    "periodic": {
+      "description": "獲取隨機元素或指定元素的周期表資訊",
+      "data": {
+        "nthFound": "找不到與給定查詢匹配的元素。",
+        "atomicNum": "原子序數",
+        "atomicMass": "原子質量",
+        "pos": "位置",
+        "posDesc": "第 {{period}} 週期, 第 {{group}} 族",
+        "summary": "概要"
+      },
+      "pp": {
+        "description": "PP Size (如果你知道,你就知道)",
+        "data": {
+          "title": "{{user}}的PP尺寸",
+          "description": "{{cock}}\n{{size}} 英吋{{plural}}"
+        }
+      },
+      "quote": {
+        "description": "獲取隨機語錄"
+      },
+      "rate": {
+        "description": "根據不同指標評價指定的使用者",
+        "data": {
+          "rate": "評價",
+          "is": "是",
+          "gay": "同性戀",
+          "furry": "獸控",
+          "simp": "殉情者"
+        }
+      },
+      "ship": {
+        "description": "查詢2個指定用戶的愛情配對度",
+        "data": {
+          "inputExceed": "輸入過長!必須少於100個字符",
+          "match": "配對情報",
+          "result": "結果",
+          "ls": "他們的愛情配對度為 {{percentage}}% 💘"
+        }
+      },
+      "text": {
+        "description": "顯示所有文本命令",
+        "data": {
+          "inputExceed": "你的文本輸入不能超過1000個字符",
+          "err": "在將給定文字轉換為表情符號時發生錯誤",
+          "binary": "已轉換為二進制"
+        }
+      }
+    }
+  },
+  "general": {
+    "aboutme": {
+      "description": "關於EternalGaius",
+      "data": {
+        "title": "關於EternalGaius",
+        "description": "EternalGaius從未被意圖成為一個永久的項目,我最初是為了好玩而製作它的,但是在收到大家的支持和正面反饋後,我決定讓EternalGaius成為一個長期項目!在EternalGaius,我們致力於為用戶提供最佳體驗,同時也維護用戶數據的穩定性和安全性。\n\n非常感謝以下的出色人物讓我們今天能在這裡!他們真是了不起!",
+        "dev": "我們的開發團隊",
+        "staff": "我們的工作人員",
+        "partner": "我們的合作夥伴",
+        "contri": "我們的貢獻者"
+      }
+    },
+    "badgeinfo": {
+      "description": "解釋EternalGaius徽章的目的",
+      "data": {
+        "title": "關於EternalGaius徽章",
+        "dev": "EternalGaius開發者",
+        "contri": "EternalGaius貢獻者",
+        "staff": "EternalGaius工作人員",
+        "partnership": "EternalGaius合作夥伴",
+        "devExp": "授予EternalGaius的開發者",
+        "contriExp": "授予對EternalGaius有貢獻的人",
+        "staffExp": "授予EternalGaius支援服務器的工作人員",
+        "partnershipExp": "授予與EternalGaius有合作關係的人"
+      }
+    },
+    "changelogs": {
+      "description": "顯示最新更新的變更日誌",
+      "data": {
+        "title": "變更日誌 - 發布"
+      }
+    },
+    "customize": {
+      "description": "自訂您的EternalGaius設定/體驗",
+      "data": {
+        "bdayInputPrompt": "請以這種格式輸入您的生日日期: `MM/DD`",
+        "bdayNotNum": "所給的資訊不是數字",
+        "lessThan1MoreThan31": "日期值不能小於 1 且大於 31",
+        "lessThan1MoreThan12": "月份值不能小於 1 且大於 12",
+        "febMoreThan29": "二月不能有超過 29 天",
+        "invalidDate": "請遵守擴充功能: MM/DD (範例: 09/13)",
+        "successBday": "您的生日已成功更新為 {{date}}",
+        "invalidHex": "請插入有效的十六進制碼",
+        "successHexCode": "您的新嵌入顏色已成功保存",
+        "successFooter": "您的新嵌入頁腳已成功保存",
+        "timestampDis": "您的個人資料頁腳的時間戳已成功禁用",
+        "timestampEna": "您的個人資料頁腳的時間戳已成功啟用",
+        "bioInputPrompt": "請輸入您的個人簡介,或輸入 `cancel` 取消操作",
+        "bioExceedLimit": "您的個人簡介超過了 600 個字的限制!請修改您的個人簡介。",
+        "bioSuccess": "您的個人簡介已成功更新",
+        "langChange": "您的語言已成功更改為 {{lang}}"
+      }
+    },
+    "debug": {
+      "description": "調試機器人權限",
+      "data": {
+        "title": "關鍵權限"
+      }
+    },
+    "guilds": {
+      "description": "顯示EternalGaius所在的公會數量",
+      "data": {
+        "title": "目前正在服務",
+        "description": "我目前正在為 **{{guilds}}** 個公會和 **{{user}}** 個使用者提供服務",
+        "guilds": "公會",
+        "uc": "使用者計數"
+      }
+    },
+    "help": {
+      "description": "發送幫助菜單",
+      "hDescription": "**連結:** <:invite:872645785408389181> [邀請](https://discord.com/api/oauth2/authorize?client_id=716248082865455174&permissions=8&scope=bot%20applications.commands) | <:vote:872646196299186176> [投票](https://top.gg/bot/716248082865455174) | <:EG_tick:871711115086794752> [支援伺服器](https://discord.gg/9PnUBeu)\n選擇一個類別查看該類別的命令",
+      "hTitle": "幫助 »",
+      "data": {
+        "ssmPlaceholder": "選擇一個類別",
+        "hp": "主頁",
+        "categories": "類別",
+        "cmds": "命令",
+        "hpDesc": "返回主頁",
+        "general": "一般",
+        "moderation": "管理",
+        "administrator": "管理員",
+        "fun": "趣味",
+        "utility": "實用工具",
+        "music": "音樂",
+        "economy": "經濟",
+        "giveaway": "抽獎",
+        "hFieldDesc": "• {{category}} 命令 ({amount}})",
+        "notValidCmd": "這不是一個有效的命令!",
+        "cannotAccess": "您無法訪問此命令的信息!",
+        "cmdInfo": "命令信息",
+        "noPermsReq": "不需要權限",
+        "cmdName": "命令名稱",
+        "upr": "需要用戶權限",
+        "bpr": "需要機器人權限",
+        "nsfw": "NSFW",
+        "devOnly": "僅開發者",
+        "i": "信息"
+      }
+    },
+    "invite": {
+      "description": "發送邀請機器人的連結",
+      "data": {
+        "title": "邀請我",
+        "description": "EternalGaius 是一個功能豐富、易於使用的多功能 Discord 機器人! 目前正在為 **{{amount}}** 個伺服器提供服務",
+        "reqPerm": "所需權限",
+        "adminPerm": "管理權限"
+      }
+    },
+    "ping": {
+      "description": "顯示機器人的延遲和連接",
+      "data": {
+        "clientLan": "客戶端延遲",
+        "apiLan": "API 延遲",
+        "dataLan": "資料庫延遲",
+        "tpsLan": "TPS 延遲"
+      }
+    },
+    "premium": {
+      "description": "高級版詳細信息命令",
+      "data": {
+        "active": "活躍",
+        "title": "EternalGaius Premium",
+        "info": {
+          "description": "什麼是 EternalGaius Premium?\nEternalGaius Premium 將為您提供獨家權益、功能、免除投票要求並訪問我們正在開發的測試版機器人!\n確認您的購買後,您還將獲得「EternalGaius Premium」徽章,以表示您對 EternalGaius 的支持!\n通過購買,您也在幫助 EternalGaius 繼續在線運行!",
+          "fields": [
+            {
+              "name": "價格",
+              "value": "月訂閱: 4.99 美元\n年訂閱: 14.99 美元"
+            },
+            {
+              "name": "購買",
+              "value": "要購買 EternalGaius Premium,請加入我們的[支援伺服器](https://discord.gg/9PnUBeu)並聯繫我們的開發人員之一!"
+            }
+          ]
+        },
+        "status": {
+          "fields": [
+            {
+              "name": "您的訂閱",
+              "value": "{{status}}"
+            },
+            {
+              "name": "剩餘時間",
+              "value": "{{time}}"
+            }
+          ]
+        }
+      }
+    },
+    "profile": {
+      "description": "顯示指定用戶的個人資料",
+      "data": {
+        "feching": "正在獲取請求資料... 請稍候...",
+        "profile": "{{user}}'s 個人資料",
+        "bl": "黑名單",
+        "wl": "白名單",
+        "nBio": "我們不太了解這位用戶,但我相信他們一定很酷!",
+        "uInfo": "用戶資訊",
+        "mInfo": "其他資訊",
+        "uname": "用戶名",
+        "cOn": "創建於",
+        "accType": "帳戶類型",
+        "bot": "🤖 Bot",
+        "human": "🧍 人類",
+        "eBadges": "EternalGaius 徽章",
+        "dBadges": "Discord 徽章",
+        "bday": "生日",
+        "nBday": "未設置生日",
+        "bfs": "被禁止進入支援伺服器",
+        "ufd": "無法獲取數據",
+        "ban": "已禁止",
+        "nban": "未被禁止",
+        "nFooter": "未設置頁腳!"
+      }
+    },
+    "stats": {
+      "description": "顯示機器人統計資料",
+      "data": {
+        "title": "EternalGaius 統計",
+        "description": "**[邀請](https://discord.com/api/oauth2/authorize?client_id=716248082865455174&permissions=8&scope=bot%20applications.commands) | [支援伺服器](https://discord.gg/9PnUBeu) | [投票](https://top.gg/bot/716248082865455174)**",
+        "general": "• __一般__",
+        "system": "• __系統__",
+        "memory": "記憶體",
+        "uc": "用戶數量",
+        "gc": "伺服器數量",
+        "cc": "指令數量",
+        "cp": "客戶端延遲",
+        "pt": "平台",
+        "arch": "架構",
+        "version": "版本",
+        "njs": "NodeJS",
+        "djs": "DiscordJS"
+      }
+    },
+    "tos": {
+      "description": "顯示機器人的服務條款或隱私政策",
+      "data": {
+        "tosTitle": "服務條款 - EternalGaius",
+        "privacyTitle": "隱私政策 - EternalGaius",
+        "tos": "點擊[這裡](https://github.com/EternalGaiusOfficial/EternalGaiusToS-Privacy/blob/main/TOS.md)閱讀我們的服務條款!",
+        "privacy": "點擊[這裡](https://github.com/EternalGaiusOfficial/EternalGaiusToS-Privacy/blob/main/Privacy.md)閱讀我們的隱私政策"
+      }
+    },
+    "upvote": {
+      "description": "顯示所有投票 EternalGaius 的鏈接",
+      "data": {
+        "vTitle": "EternalGaius - 投票",
+        "vDesc": "通過投票,您表示對我們的支持!\n想投票嗎?點擊[這裡](https://top.gg/bot/716248082865455174)!",
+        "ssmPlaceholder": "其他機器人列表",
+        "obReply": "您可以使用此鏈接在 **{{botlist_name}}** 上為我們投票\n{{vLink}}"
+      }
+    }
+  },
+  "giveaway": {
+    "giveaway": {
+      "description": "創建/結束/重新抽獎/列出/抽獎活動",
+      "data": {
+        "maxGiveaway": "最多可同時運行10個抽獎活動",
+        "invalidTime": "您輸入的時間無效。請輸入1分鐘到31天之間的時間段。",
+        "giveawaySuccess": "已在頻道 {{channel}} 成功創建一個抽獎活動",
+        "giveawayNotFound": "在資料庫中找不到您輸入的抽獎 ID",
+        "endedGiveaway": "已成功結束指定的抽獎活動",
+        "deleteGiveaway": "已成功從資料庫中刪除抽獎活動條目",
+        "rerollGiveaway": "已成功為指定抽獎活動重新抽取獲獎者",
+        "id": "ID",
+        "channel": "頻道",
+        "host": "主辦人",
+        "prize": "獎品",
+        "noActive": "此伺服器上沒有正在進行的抽獎活動。",
+        "actGiveaway": "目前進行中的抽獎活動"
+      }
+    }
+  },
+  "moderation": {
+    "permanent": "永久",
+    "unknown": "未知",
+    "ended": "已結束",
+    "inProg": "進行中",
+    "noReason": "未指定原因",
+    "punishSelf": "您不能對自己進行處罰。",
+    "punishOwn": "您不能對伺服器所有者進行處罰",
+    "higherAuthority": "您無法對比您等級更高或相同的人進行處罰。",
+    "clientLowerAuthority": "所指定的人物擁有比我更高或相同的身分組等級！",
+    "ownerOnly": "只有伺服器所有者才能執行此子命令。",
+    "punishClient": "您無法用我自己的命令來處罰我",
+    "ban": {
+      "description": "禁止指定的使用者",
+      "data": {
+        "unable": "我無法禁止這名成員。",
+        "dmMsg": "您已被來自 **{{gName}}** 的管理員 **{{mod}}** 禁止進入。\n原因: {{reason}}",
+        "embed": {
+          "title": "使用者已被禁止",
+          "description": "{{victim}} 已被禁止,原因如下。\n原因: {{reason}}"
+        },
+        "banned": "已被禁止"
+      }
+    },
+    "channelaccess": {
+      "description": "撤銷/重新授予使用者對某個頻道的存取權限",
+      "data": {
+        "nChanBanned": "指定的使用者並未被禁止存取指定的頻道!",
+        "errUnbanning": "在解除指定使用者的頻道禁令時出現了問題!",
+        "chanUnbannedTitle": "頻道解禁",
+        "chanUnbannedDesc": "{{user}} 已從頻道 **{{name}}** 中解除禁令",
+        "chanBanned": "頻道已禁令",
+        "chanBannedDesc": "{{user}} 已被禁止進入頻道 ***{{name}}**",
+        "alrdyTimeout": "此使用者已經處於超時狀態。",
+        "nTimeout": "此使用者並未處於超時狀態,因此無法解除超時",
+        "timeoutIssTitle": "已發出超時",
+        "timeoutRemTitle": "已移除超時",
+        "timeoutRemDesc": "成功移除 {{user}} 的超時狀態。",
+        "timeoutIssDesc": "成功將 {{user}} 設置為超時模式,時長為 {{length}}"
+      }
+    },
+    "clone": {
+      "description": "刪除一個頻道並複製它",
+      "data": {
+        "cloneInvalidChannel": "您無法複製系統頻道、規則頻道或公開更新頻道",
+        "cloneWait": "正在複製 {{channel}},請稍等!",
+        "errOnClone": "在複製此頻道時出現了問題",
+        "successTitle": "成功",
+        "successDesc": "成功複製了該頻道!",
+        "reqBy": "請求者"
+      }
+    },
+    "infractions": {
+      "description": "管理使用者違規記錄",
+      "data": {
+        "noInfract": "指定的使用者沒有任何違規記錄。",
+        "issuedBy": "發出者",
+        "reason": "原因",
+        "issTime": "發出時間",
+        "punishType": "處罰類型",
+        "punishAct": "處罰活動",
+        "punishDur": "處罰時長",
+        "infraNotFound": "我找不到來自使用者 **{{user}}** 的違規記錄 `{{id}}`",
+        "infraRapsheet": {
+          "title": "{{user}} 的違規紀錄"
+        },
+        "infraRemoved": {
+          "title": "違規記錄已刪除",
+          "description": "成功從 **{{user}}** 中移除了違規記錄 `{{id}}`"
+        },
+        "userInfraPurge": {
+          "title": "違規記錄已清除",
+          "description": "成功清除了 **{{user}}** 的所有違規記錄。"
+        },
+        "guildInfraPurge": {
+          "description": "成功清除了此伺服器的所有違規記錄。"
+        }
+      }
+    },
+    "kick": {
+      "description": "踢出指定的使用者",
+      "data": {
+        "unable": "我無法踢出這名成員。",
+        "dmMsg": "您已被來自 **{{gName}}** 的管理員 **{{mod}}** 踢出。\n原因: {{reason}}",
+        "embed": {
+          "title": "使用者已被踢出",
+          "description": "{{victim}} 已被踢出,原因如下。\n原因: {{reason}}"
+        },
+        "kicked": "已被踢出"
+      }
+    },
+    "lockdown": {
+      "description": "鎖定或解鎖指定的頻道。",
+      "data": {
+        "lock": {
+          "title": "頻道已鎖定",
+          "description": "{{channel}} 已被 **{{user}}** 鎖定"
+        },
+        "unlock": {
+          "title": "頻道已解鎖",
+          "description": "{{channel}} 已被 **{{user}}** 解鎖"
+        }
+      }
+    },
+    "managechannel": {
+      "description": "創建/刪除一個頻道",
+      "data": {
+        "inputExceed": "頻道名稱不能超過100個字符。",
+        "createReason": "{{user}}: 創建了一個名為 {{name}} 的頻道",
+        "create": {
+          "description": "成功創建了頻道 {{channel}}"
+        },
+        "delInvalidChan": "您無法刪除系統頻道、規則頻道或公開更新頻道",
+        "deleteReason": "{{user}}: 刪除了一個名為 {{name}} 的頻道",
+        "delete": {
+          "description": "成功刪除了頻道 {{name}*"
+        }
+      }
+    },
+    "managerole": {
+      "description": "創建/刪除一個身分組",
+      "data": {
+        "inputExceed": "身分組名稱不能超過 100 個字符。",
+        "invalidHex": "請輸入有效的十六進制代碼",
+        "createReason": "{{user}}: 創建了一個名為 {{name}} 的身分組",
+        "create": {
+          "description": "成功創建了名為 {{name}} 的身分組,顏色為 {{hex}}"
+        },
+        "higherAuth": "指定的身分組高於我的最高身分組。",
+        "deleteReason": "{{user}}: 刪除了一個名為 {{name}} 的身分組",
+        "delete": {
+          "description": "成功刪除了名為 {{name}} 的身分組"
+        }
+      }
+    },
+    "mute": {
+      "description": "使指定用戶靜音",
+      "data": {
+        "nMrSet": "此伺服器尚未設置靜音身分組!請執行 `setmuterole` 來設置靜音身分組。",
+        "pMrNotFound": "確定的靜音身分組在此伺服器中不存在!請重新配置靜音身分組設定。",
+        "alrdyMuted": "指定的成員已經被靜音了!",
+        "invalidTimeString": "輸入的時間字串無效。輸入的時間必須大於 60 秒。",
+        "dmMsg": "你已在 **{{gName}}** 伺服器被管理員 **{{mod}}** 禁言\n原因: {{reason}}\n禁言時長: {{dur}}",
+        "embed": {
+          "title": "用戶已被禁言",
+          "description": "{{victim}} 已被禁言,以下為原因.\n原因: {{reason}}\n禁言時長: {{dur}}"
+        },
+        "muted": "已禁言"
+      }
+    },
+    "purge": {
+      "description": "清除指定數量的消息。最大值為每次 99 條消息。",
+      "data": {
+        "invalidInput": "請輸入 2 到 99 之間的數字",
+        "success": "成功清除了 `{{amount}}` 條{{plural}}",
+        "14daysOld": "你無法刪除 14 天前的消息。",
+        "err": "清除消息時出現錯誤。"
+      }
+    },
+    "setratelimit": {
+      "description": "設置當前頻道的慢速模式。",
+      "data": {
+        "invalidInput": "輸入的數字不能超過 21600 或低於 0",
+        "title": "頻道慢速模式",
+        "smRemoved": "頻道 **{{name}}** 的慢速模式已被移除",
+        "smAdded": "**{{amount}}** 秒的慢速模式已應用到頻道 **{{channel}}**"
+      }
+    },
+    "softban": {
+      "description": "封禁並解除封禁指定用戶,並刪除其消息。",
+      "data": {
+        "unable": "我無法對此成員進行軟封禁。",
+        "dmMsg": "你已被管理員 **{{mod}}** 在 **{{gName}}** 伺服器上進行軟封禁\n原因: {{reason}}",
+        "embed": {
+          "title": "用戶已被軟封禁",
+          "description": "{{victim}} 已被軟封禁,以下為原因.\n原因: {{reason}}"
+        },
+        "softbanned": "已軟封禁"
+      }
+    },
+    "unban": {
+      "description": "解除封禁指定用戶",
+      "data": {
+        "inputNotNum": "指定的 ID 不是數字",
+        "notbanned": "指定的用戶未被封禁",
+        "unban": {
+          "title": "用戶已被解封",
+          "description": "**{{user}}** 已被解封"
+        },
+        "unbanned": "已解封"
+      }
+    },
+    "unmute": {
+      "description": "解除靜音已被靜音的成員",
+      "data": {
+        "notMuted": "指定的用戶未被靜音。",
+        "dmMsg": "你已在 **{{gName}}** 伺服器被管理員 **{{mod}}** 解除靜音",
+        "embed": {
+          "title": "用戶已被解除靜音",
+          "description": "{{user}} 已被解除靜音"
+        },
+        "unmuted": "已解除靜音"
+      }
+    },
+    "voicemod": {
+      "description": "語音頻道管理命令",
+      "data": {
+        "deaf": {
+          "alrdyDeaf": "指定的用戶已經被服務器端靜音了",
+          "success": "成功將指定成員服務器端靜音。"
+        },
+        "undeaf": {
+          "alrdyUndeaf": "指定的用戶已經被服務器端取消靜音了",
+          "success": "成功將指定成員服務器端取消靜音。"
+        },
+        "mute": {
+          "alrdyMuted": "指定的用戶已經被服務器端靜音了。",
+          "success": "成功將指定成員服務器端靜音"
+        },
+        "unmute": {
+          "alrdyUnmuted": "指定的用戶已經被服務器端取消靜音了",
+          "success": "成功將指定成員服務器端取消靜音"
+        },
+        "kick": {
+          "success": "成功將 {{user}} 從語音頻道踢出"
+        }
+      }
+    },
+    "warn": {
+      "description": "警告指定的用戶",
+      "data": {
+        "data": {
+          "dmMsg": "你已被 **{{gName}}** 伺服器的管理員 **{{mod}}** 警告\n原因: {{reason}}",
+          "embed": {
+            "title": "用戶已被警告",
+            "description": "{{victim}} 已被警告,以下為原因.\n原因: {{reason}}"
+          },
+          "warned": "已警告"
+        }
+      }
+    }
+  },
+  "music": {
+    "filters": {
+      "description": "啟用/停用特定音樂濾鏡",
+      "data": {
+        "onGoingFilter": "目前有一個正在運行的音樂濾鏡,請先取消它才能添加更多濾鏡。",
+        "eight_d": "8d",
+        "bassboos": "低音增強",
+        "daycore": "Daycore",
+        "demon": "惡魔",
+        "nightcore": "Nightcore",
+        "trebblebas": "高音增強",
+        "tremolo": "顫音",
+        "vaporwave": "Vaporwave",
+        "vibrato": "震音",
+        "reset": "重設",
+        "resetDesc": "音訊濾鏡已成功重設",
+        "filterAdd": "已成功添加 {{filter}} 音訊濾鏡。"
+      }
+    },
+    "leave": {
+      "description": "此命令允許您銷毀音樂播放器。",
+      "data": {
+        "destroy": "已銷毀音樂播放器。"
+      }
+    },
+    "loop": {
+      "description": "此命令允許您循環播放當前曲目或整個隊列。",
+      "data": {
+        "success": "已成功 {{type}} {{mode}} 重複播放。"
+      }
+    },
+    "nowplaying": {
+      "description": "此命令允許您查看當前播放的歌曲。",
+      "data": {
+        "noTrack": "目前沒有正在播放的曲目。",
+        "currentPlaying": "當前播放",
+        "sName": "歌曲名稱",
+        "vChannel": "語音頻道",
+        "loopMode": "循環模式",
+        "off": "關閉",
+        "repeat": "單曲循環",
+        "queue": "隊列循環",
+        "pVol": "播放器音量",
+        "pBar": "進度條"
+      }
+    },
+    "pause": {
+      "description": "此命令允許您暫停播放器。",
+      "data": {
+        "alrdyPaused": "音樂播放器已經暫停了",
+        "pause": "已成功暫停音樂播放器。"
+      }
+    },
+    "play": {
+      "description": "播放音樂",
+      "data": {
+        "nthFound": "找不到與給定查詢相匹配的任何內容",
+        "loadSuccess": "我已成功將 {{item}} 添加到隊列中。",
+        "ssmCancelOpt": {
+          "label": "點擊取消",
+          "description": "點擊此項取消此查詢。"
+        },
+        "selectMsg": "請選擇您要添加的歌曲。如果您想取消選擇,請選擇「取消」。",
+        "addReq": "已成功添加請求的歌曲",
+        "cancel": "已成功取消歌曲選擇菜單",
+        "addMultiple": "我已成功將 **{{amount}}** 首歌曲添加到隊列中"
+      }
+    },
+    "queue": {
+      "description": "此命令允許您查看隊列。",
+      "data": {
+        "qTitle": "{{gName}} 的隊列",
+        "np": "正在播放",
+        "niq": "接下來播放",
+        "page": "頁面",
+        "song": "首歌",
+        "td": "總時長",
+        "errOnSelect": "請提供有效的數字,且不能大於 {{total}} 頁",
+        "nthPlaying": "沒有正在播放的內容"
+      }
+    },
+    "remove": {
+      "description": "此命令允許您從隊列中移除曲目",
+      "data": {
+        "provideTrack": "請提供有效的曲目。",
+        "success": "已成功從隊列中移除 [{{track}}]。"
+      }
+    },
+    "resume": {
+      "description": "此命令允許您恢復音樂播放器",
+      "data": {
+        "alrdyResumed": "音樂播放器已經恢復了",
+        "resume": "已成功恢復音樂播放器"
+      }
+    },
+    "shuffle": {
+      "description": "此命令允許您隨機播放隊列",
+      "data": {
+        "shuffle": "已成功打亂音樂隊列"
+      }
+    },
+    "skip": {
+      "description": "此命令允許您跳過當前正在播放的歌曲。",
+      "data": {
+        "skip": "已成功跳過當前正在播放的歌曲。"
+      }
+    },
+    "volume": {
+      "description": "此命令允許您調整音量",
+      "data": {
+        "inputExceed": "請提供 1 到 200 之間的數字。",
+        "success": "已成功將音量調整到 {{volume}}%"
+      }
+    }
+  },
+  "utility": {
+    "afk": {
+      "description": "設定您為離開中",
+      "data": {
+        "afkDefault": "我正在離開中!",
+        "alrdyAFK": "您已經在這個伺服器上離開中了!",
+        "success": "您現在在這個伺服器上離開中了!\n原因: {{string}}"
+      }
+    },
+    "avatar": {
+      "description": "顯示指定使用者的個人頭像",
+      "data": {
+        "avatar": "{{user}}的頭像",
+        "linkAs": "連結為"
+      }
+    },
+    "echo": {
+      "description": "發送指定文字的訊息。",
+      "data": {
+        "inputExceed": "輸入不能超過900個字元。"
+      }
+    },
+    "embedcreator": {
+      "description": "建立自訂標題、顏色、說明和頻道發送的嵌入式",
+      "data": {
+        "title": "嵌入式建立器",
+        "inputPrompts": {
+          "eTitle": "請輸入嵌入式標題或輸入 `cancel` 取消此操作",
+          "eDesc": "請輸入嵌入式說明或輸入 `cancel` 取消此操作",
+          "eColor": "請輸入嵌入式顏色十六進位代碼或輸入 `cancel` 取消此操作"
+        },
+        "inputErrors": {
+          "title": "嵌入式標題不能超過100個字元",
+          "description": "嵌入式說明不能超過4096個字元",
+          "hex": "十六進位代碼無效。請再試一次。"
+        },
+        "sendError": "發送嵌入式訊息到指定頻道時出現了問題。",
+        "success": "成功將嵌入式訊息發送到指定頻道"
+      }
+    },
+    "emoji": {
+      "description": "表情符號相關命令 (檢視/伺服器/放大)",
+      "data": {
+        "inputExceed": "您一次最多只能查看5個表情符號的資訊。",
+        "eName": "表情符號名稱",
+        "eId": "表情符號ID",
+        "animated": "動態",
+        "link": "連結",
+        "noCe": "在您的輸入中找不到自訂表情符號。",
+        "sLeft": "剩餘空位",
+        "sEmojis": "靜態表情符號",
+        "aEmojis": "動態表情符號",
+        "tEmoji": "總表情符號",
+        "title": "伺服器表情符號",
+        "emoji": "表情符號",
+        "gif": "GIF",
+        "img": "圖片",
+        "invalid": "提供的表情符號無效! 請提供一個表情符號來放大."
+      }
+    },
+    "github": {
+      "description": "顯示Github存儲庫資訊",
+      "data": {
+        "formatErr": "儲存庫必須採用 `EternalGaiusOfficial/Translations` 的格式",
+        "invalidRepo": "您輸入了無效的儲存庫",
+        "forked": "**Fork** 自",
+        "noi": "無其他資訊",
+        "nDesc": "無描述",
+        "lang": "語言",
+        "nLang": "未指定",
+        "fc": "Fork數",
+        "license": "授權",
+        "oi": "開放問題",
+        "wc": "觀看者數",
+        "sc": "Star數",
+        "size": "大小",
+        "ia": "已存檔",
+        "id": "已禁用",
+        "oin": "其他資訊",
+        "uError": "您輸入了無效的Github使用者名稱",
+        "nBio": "未輸入簡介",
+        "uname": "使用者名稱",
+        "hireable": "可雇用",
+        "twt": "Twitter",
+        "nTwt": "未附加Twitter",
+        "pr": "公開儲存庫",
+        "pg": "公開Gist",
+        "followers": "關注者"
+      }
+    },
+    "info": {
+      "description": "獲取各種信息",
+      "data": {
+        "channel": {
+          "pos": "位置",
+          "type": "類型",
+          "ut": "不支持的類型",
+          "ca": "創建於",
+          "nsfw": "成人內容",
+          "sm": "慢速模式",
+          "sec": "秒",
+          "nsm": "無慢速模式",
+          "fm": "第一條消息",
+          "ct": "頻道主題",
+          "nct": "無主題"
+        },
+        "server": {
+          "owner": "擁有者",
+          "ca": "創建於",
+          "pl": "首選語言",
+          "roles": "身分組",
+          "emojis": "表情符號",
+          "boost": "加成",
+          "vl": "驗證級別",
+          "cf": "內容過濾",
+          "afkChan": "AFK頻道",
+          "mem": "成員",
+          "channels": "頻道"
+        },
+        "role": {
+          "hCode": "十六進制代碼",
+          "hoisted": "浮出",
+          "mention": "可提及",
+          "ca": "創建於",
+          "pos": "位置",
+          "mc": "成員數量"
+        },
+        "user": {
+          "ub": "用戶徽章",
+          "eBadges": "EternalGaius徽章",
+          "dBadges": "Discord徽章",
+          "nb": "無徽章",
+          "uName": "使用者名稱",
+          "dName": "顯示名稱",
+          "accType": "帳戶類型",
+          "bot": "🤖 機器人",
+          "human": "🧍 人類",
+          "jd": "加入Discord",
+          "js": "加入伺服器",
+          "uc": "用戶顏色",
+          "nc": "無顏色",
+          "uid": "用戶ID",
+          "acknowledgement": "確認",
+          "roles": "角色",
+          "dev": "機器人開發者",
+          "owner": "伺服器擁有者",
+          "admin": "伺服器管理員",
+          "mod": "伺服器管理員",
+          "mem": "伺服器成員"
+        },
+        "discordstatus": {
+          "services": "Discord 狀態 - 服務",
+          "rs": "Discord 狀態 - 地區服務"
+        },
+        "worldclock": {
+          "wtz": "世界時區",
+          "yComp": "**{{year}}** 年已完成 {{percentage}}%! 剩餘 {{remaining}}% 即可完成本年度!"
+        },
+        "snowflake": {
+          "inputErr": "請輸入有效的訊息ID",
+          "diff": "兩個訊息ID之間的差異為: **{{diff}}** 秒"
+        },
+        "bmi": {
+          "invalidInputs": "請在體重和身高欄位中輸入有效的數字。",
+          "lessThan0": "體重和身高輸入不能小於或等於0",
+          "uw": "體重過輕",
+          "nor": "正常",
+          "ow": "超重",
+          "ob": "肥胖",
+          "bmiCalc": "BMI計算器",
+          "height": "身高",
+          "weight": "體重",
+          "bmi": "BMI",
+          "disclaimer": "*BMI等級數據可能因所在地區而有所不同。\n我們目前使用世界衛生組織(WHO)的標準。*"
+        },
+        "npm": {
+          "nthFound": "未能找到與給定輸入相關的任何內容。",
+          "nDesc": "無描述",
+          "ver": "版本",
+          "auth": "作者",
+          "modified": "修改",
+          "maintain": "維護者",
+          "download": "下載",
+          "keywords": "關鍵字"
+        },
+        "color": {
+          "rcg": "隨機生成的顏色",
+          "ci": "顏色資訊",
+          "err": "獲取顏色圖像時發生錯誤。請再試一次。",
+          "name": "名稱",
+          "hex": "十六進制",
+          "rgb": "RGB",
+          "hsl": "HSL",
+          "CMYK": "CMYK"
+        }
+      }
+    },
+    "list": {
+      "description": "列出指定的資訊",
+      "data": {
+        "nData": "找不到數據",
+        "joinposition": {
+          "title": "{{guild}} 成員加入位置"
+        },
+        "badges": {
+          "title": "{{guild}} 成員的徽章資訊"
+        },
+        "bots": {
+          "title": "{{guild}} 機器人"
+        },
+        "boosters": {
+          "title": "{{guild}} 加成者"
+        },
+        "has-role": {
+          "title": "擁有指定身分組的用戶",
+          "rc": "身分組檢查"
+        }
+      }
+    },
+    "randompw": {
+      "description": "生成隨機的 20 個字符的密碼",
+      "data": {
+        "title": "生成的隨機密碼",
+        "description": "生成的隨機密碼:\n{{pw}}"
+      }
+    },
+    "roles": {
+      "description": "查看服務器身分組或指定用戶的身分組",
+      "data": {
+        "server": {
+          "title": "服務器身分組",
+          "description": "**身分組名稱 | 身分組 ID**\n{{result}}"
+        },
+        "user": {
+          "title": "{{user}} 的服務器身分組",
+          "hr": "最高身分組",
+          "ra": "身分組數量",
+          "rl": "身分組列表"
+        }
+      }
+    },
+    "servericon": {
+      "description": "顯示服務器圖標",
+      "data": {
+        "desc": "[{{guild}} 的圖標]",
+        "linkAs": "鏈接方式"
+      }
+    },
+    "urban": {
+      "description": "在城市詞典上搜索指定的詞語",
+      "data": {
+        "nthFound": "找不到 **{{string}}** 的結果",
+        "title": "{{word}} 定義",
+        "rf": "結果找到",
+        "def": "定義",
+        "od": "其他詳細信息",
+        "auth": "作者",
+        "wo": "撰寫於",
+        "dId": "定義 ID",
+        "link": "鏈接"
+      }
+    },
+    "zodiac": {
+      "description": "根據給定日期顯示您的星座",
+      "data": {
+        "bdayInputPrompt": "請以此格式輸入您的生日日期: `MM/DD`",
+        "bdayNotNum": "給定的信息不是數字",
+        "lessThan1MoreThan31": "日期值不能小於 1 且大於 31",
+        "lessThan1MoreThan12": "月份值不能小於 1 且大於 12",
+        "febMoreThan29": "二月不能超過 29 天",
+        "invalidDate": "請按照格式: MM/DD (例如: 09/13)",
+        "zodSign": "星座",
+        "bday": "生日",
+        "desc": "您的星座是 {{zodiac}} 而且您的元素是 {{element}}"
+      }
+    }
+  }
 }
