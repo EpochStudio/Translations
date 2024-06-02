@@ -1,4 +1,3 @@
-
 {
     "ownerOnly": "This command is only available to Bot Owners only.",
     "catDisabledGlob": "The category this command belongs to is currently globally disabled. Please come back later!",
@@ -34,9 +33,6 @@
                 ],
                 "remAfk": "I've removed your AFK Status!\nYou were afking for **{{time}}**\nYou were pinged **{{pTimes}}** {{plural}} while you were afking.",
                 "curAfk": "Hey! That user is currently afking!\nReason: **{{reason}}**"
-            },
-            "stickymsg": {
-                "title": "Sticky Message"
             }
         },
         "interaction": {

@@ -795,7 +795,7 @@
     "profile": {
       "description": "Displays the specified user profile",
       "data": {
-        "feching": "Fetching request material... Please wait...",
+        "fetching": "Fetching request material... Please wait...",
         "profile": "{{user}}'s Profile",
         "bl": "Blacklisted",
         "wl": "Whitelisted",

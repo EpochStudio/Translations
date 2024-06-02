@@ -1,0 +1,92 @@
+{
+  "2048": {
+    "embed": {
+      "title": "2048 Minigame",
+      "cs": "Current Score",
+      "cancelReason": {
+        "req": "Request Game Cancel",
+        "noMoves": "No More Moves/Board Is Full"
+      },
+      "endMessage": "**Game Over! GG!**\nReason: {{reason}}\nScore Obtained: {{score}}"
+    }
+  },
+  "calculator": {
+    "belong": "This calculator does not belong to you!\nYou can create your own calculator by doing `/calculator`",
+    "tooLong": "The current inputted equation is too long! Please shorten your equation or break them up into multiple equation!",
+    "invalid": "Invalid Equation",
+    "btnCalc": "Button Calculator"
+  },
+  "connect4": {
+    "bots": "You cannot play Connect4 with Bots",
+    "invitation": "{{challenger}} has invited you to a game of Connect4\nClick the buttons below to accept or deny.\n\nYou have 60 seconds to decide.",
+    "req": "Connect4 Request",
+    "notBelong": "You are not allowed to press the buttons for this message.",
+    "decline": "The opponent declined your Connect4 Request",
+    "battleEmbed": {
+        "title": "Connect4 Battle",
+        "gs": "Game Status"
+    },
+    "notTurn": "It is not your turn yet!",
+    "tie": "This game ends in a tie",
+    "win": "{{playerEmoji}} **{{player}}** won the game!",
+    "turn": "It is {{playerEmoji}} **{{player}}** turn!"
+  },
+  "flood": {
+    "title": "Flood Minigame",
+    "field": "Turns",
+    "win": "Congrats! You won this round of flood.",
+    "lose": "Better luck next time",
+    "go": "Game Over",
+    "turns": "You took **{{amount}}** turns"
+  },
+  "hangman": {
+    "word": "Word ({{length}})",
+    "notBelong": "You are not allowed to press the buttons for this message.",
+    "lettGuess": "Letters Guessed",
+    "won": "Congrats! You won!",
+    "lose": "What a shame, you lost."
+  },
+  "rps": {
+    "title": "Rock Paper Scissors",
+    "description": "Rock (🌑), Paper (📃), Scissors (✂️)",
+    "desc2": "React below within 1 minute (60 seconds)",
+    "rock": {
+        "win": "I chose {{option}}\nYou chose 🌑\n\nYou won! Congratulations!",
+        "tied": "I chose {{option}}\nYou chose 🌑\n\nWe tied! GG!",
+        "lose": "I chose {{option}}\nYou chose 🌑\n\nYou lost! Better luck next time!"
+    },
+    "paper": {
+        "win": "I chose {{option}}\nYou chose 📃\n\nYou won! Congratulations!",
+        "tied": "I chose {{option}}\nYou chose 📃\n\nWe tied! GG!",
+        "lose": "I chose {{option}}\nYou chose 📃\n\nYou lost! Better luck next time!"
+    },
+    "scissors": {
+        "win": "I chose {{option}}\nYou chose ✂️\n\nYou won! Congratulations!",
+        "tied": "I chose {{option}}\nYou chose ✂️\n\nWe tied! GG!",
+        "lose": "I chose {{option}}\nYou chose ✂️\n\nYou lost! Better luck next time!"
+    },
+    "timeout": "You did not provide a reaction in time"
+  },
+  "slots": {
+    "title": "Slots Minigame",
+    "ss": "Slot Status",
+    "win": "Congratulations! You won!",
+    "lose": "You lost! Better luck next time."
+  },
+  "trivia": {
+    "guessCorrect": "Your guess was correct! GG!",
+    "guessIncorrect": "Your guess was incorrect! Better luck next time!"
+  },
+  "wordle": {
+    "title": "Wordle Minigame",
+    "gip": "Game In Progress",
+    "won": {
+        "title": "Game Completed!",
+        "desc": "You Won! Congratulations!\nThe word was **{{word}}**"
+    },
+    "lost": {
+        "title": "Game Over!",
+        "desc": "You Lost! Better luck next time!\nThe word was **{{word}}**"
+    }
+  }
+}
