@@ -763,7 +763,33 @@
     "premium": {
       "description": "Premium details command",
       "data": {
-        
+        "active": "Active",
+        "title": "EternalGaius Premium",
+        "info": {
+          "description": "What is EternalGaius Premium?\nEternalGaius Premium grants you access to exclusive perks, features, bypass-vote requirement for vote only commands and accessing the in-development features through our Beta Bot!\nAfter confirming your purchase, you will also get an \"EternalGaius Premium\" Badge to your profile indicating your support to EternalGaius!\nBy purchasing, you are also helping EternalGaius to continue to be online and running!",
+          "fields": [
+            {
+              "name": "Prices",
+              "value": "Monthly Subscription: USD$4.99\nYearly Subscription: USD$14.99"
+            },
+            {
+              "name": "Purchasing",
+              "value": "To purchase EternalGaius Premium, please join our [support server](https://discord.gg/9PnUBeu) and contact one of our Developers!"
+            }
+          ]  
+        },
+        "status": {
+          "fields": [
+            {
+              "name": "Your Subscription",
+              "value": "{{status}}"
+            },
+            {
+              "name": "Time Remaining",
+              "value": "{{time}}"
+            }
+          ]
+        }
       }
     },
     "profile": {
