@@ -1,1 +1,59 @@
-
+{
+    "ownerOnly": "此命令仅适用于机器人所有者。",
+    "catDisabledGlob": "该命令所属的类别当前被全局禁用。请稍后再来!",
+    "cmdDisabledGlob": "此命令当前被全局禁用。请稍后再来。",
+    "catDisabledGui": "该命令所属的类别当前已被服务器管理员禁用。\n请联系您的服务器管理员获取更多详细信息。",
+    "cmdDisabledGui": "此命令当前已被服务器管理员禁用。\n请联系您的服务器管理员获取更多详细信息。",
+    "nsfwOnly": "此命令仅可在NSFW频道中使用",
+    "lavalinkConnectionNotEstablished": "客户端当前未连接到Lavalink服务器。请稍后再试。",
+    "noDispatch": "此公会中没有正在播放的音乐系统",
+    "notConnectedToVc": "您必须连接到语音频道才能运行此命令。",
+    "notSameVc": "您必须连接到与我相同的语音频道才能运行此命令。",
+    "reason": "原因",
+    "blOn": "列入黑名单时间",
+    "dur": "持续时间",
+    "uBlacklist": "您无权运行此命令,因为\n您当前已被列入EternalGaius的黑名单\n要上诉列入黑名单,请加入我们的[支持服务器](https://discord.gg/9PnUBeu)。",
+    "gBlacklist": "您无权运行此命令,因为\n您正在执行此命令的服务器当前已被列入EternalGaius的黑名单\n服务器代表可以加入我们的[支持服务器](https://discord.gg/9PnUBeu)来上诉这个列入黑名单的情况。",
+    "mentionMsg": ":wave: 嘿!使用**/help**来获取有关我的更多信息!",
+    "interactonResponse": {
+        "message": {
+            "afk": {
+                "rtm": "重定向到消息",
+                "embed": {
+                    "title": "AFK 信息",
+                    "nData": "此页面上没有信息",
+                    "footer": "要求者: {{username}} | 第 {{page}} 页,共 {{pages}} 页"
+                },
+                "btns": [
+                    "删除",
+                    "首页",
+                    "上一页",
+                    "下一页",
+                    "尾页"
+                ],
+                "remAfk": "我已经移除了你的AFK状态!\n你已经AFK了 **{{time}}**\n你AFK的时候被提到了 **{{pTimes}}** 次{{plural}}。",
+                "curAfk": "嘿!该用户目前AFK中!\n原因: **{{reason}}**"
+            }
+        },
+        "interaction": {
+            "verification": {
+                "disabled": "该服务器上的验证系统已被禁用。请联系服务器管理员以获取更多详细信息。",
+                "missingPerms": "我缺少`管理身分组`权限。请联系服务器管理员以获得进一步帮助。",
+                "rNotFound": "先前确定的验证身分组不再存在。请联系服务器管理员以获得进一步帮助。",
+                "higherAuthority": "验证的身分组当前高于我的最高角色。请联系服务器管理员以获得进一步帮助。",
+                "ongoing": "您已经有一个正在进行的验证过程!",
+                "alrdyVerified": "您已在此公会中验证。",
+                "verificationInProg": "您有60秒的时间来解决下面的验证码!\n输入 `cancel` 取消验证过程。",
+                "dmsDisabled": "您当前已禁用私信。请再次按下 \"验证\" 按钮前打开私信。",
+                "err": "在发送验证消息时发生了一些问题。此异常已被记录。",
+                "cancel": "已成功取消验证过程。",
+                "success": "嘿 {{user}}，您已成功在 **{{gName}}** 中被验证。",
+                "fail": "您未能在 60 秒内完成验证码。请再次按下 \"验证\" 按钮重试。",
+                "timeout": "您未能在 60 秒内完成验证码。"
+            }
+        },
+        "automated": {
+            "unmute": "您已在 **{{gName}}** 中被管理员 **EternalGaius** (自动解禁) 取消静音"
+        }
+    }
+}

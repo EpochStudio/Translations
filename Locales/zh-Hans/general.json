@@ -1,30 +1,47 @@
 {
     "uNotFound": "找不到指定的用户",
-    "cannotBeAuth": "被提及的用户不能成为指令作者",
-    "dbErr": "写入数据库时出了问题！请稍后再试。",
-    "cmdExeFail": "指令执行失败",
+    "cNotFound": "找不到指定的频道",
+    "rNotFound": "找不到指定的身分组",
+    "uNotInVc": "指定的用户不在语音频道中",
+    "cannotBeAuth": "提及的用户不能是命令作者",
+    "uNoPfp": "指定的用户没有自定义个人头像",
+    "sNoIcon": "当前的服务器没有自定义服务器图标",
+    "dbErr": "写入数据库时发生错误！请稍后再试",
+    "timeout": "已超时！请重试",
+    "opCan": "操作已取消",
+    "none": "无",
+    "ena": "启用",
+    "dis": "禁用",
+    "yes": "是",
+    "no": "否",
+    "na": "不适用",
+    "naa": "不可用",
+    "cm": "点击我",
+    "unknown": "未知",
+    "permanent": "永久",
+    "cmdExeFail": "命令执行失败",
     "permissions": {
-        "client": "我没有足够的权限执行此指令。",
-        "user": "您没有足够的权限执行此指令。",
+        "client": "我没有足够的权限来执行此命令。",
+        "user": "您没有足够的权限来执行此命令。",
         "missing": "缺少权限"
     },
     "args": {
-        "missing": "您缺少一些指令参数",
+        "missing": "您遗漏了一些命令参数",
         "missingArgs": "缺少参数"
     },
     "category": {
-        "title": "分类已停用",
-        "disabled": "该命令所在的分类当前在此服务器中已停用。\n请联系您的服务器管理员获取更多信息。"
+        "title": "类别已禁用",
+        "disabled": "此命令所属的类别目前在此服务器中已被禁用。\n请联系您的服务器管理员以了解更多信息。"
     },
     "error": {
-        "faulty": "执行此指令时出现问题！",
+        "faulty": "在执行此命令时发生错误！",
         "exceptStatus": {
             "title": "异常状态",
-            "field": "异常已记录到控制台"
+            "field": "已记录到控制台的异常"
         },
         "errCode": {
-            "title": "错误码",
-            "notFound": "无法使用",
+            "title": "错误代码",
+            "notFound": "不适用",
             "message": "错误消息"
         }
     }
