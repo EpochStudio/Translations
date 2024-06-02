@@ -1,0 +1,92 @@
+{
+    "2048": {
+      "embed": {
+        "title": "2048 小遊戏",
+        "cs": "目前得分",
+        "cancelReason": {
+          "req": "要求取消遊戏",
+          "noMoves": "没有更多移动/棋盘已满"
+        },
+        "endMessage": "**遊戏结束!**\n原因: {{reason}}\n获得分数: {{score}}"
+      }
+    },
+    "calculator": {
+      "belong": "这个计算器不属於您!\n您可以通过输入 `/calculator` 来创建自己的计算器",
+      "tooLong": "目前输入的方程式太长! 请缩短您的方程式或将其分成多个方程式!",
+      "invalid": "无效的方程式",
+      "btnCalc": "按钮计算器"
+    },
+    "connect4": {
+      "bots": "您不能与机器人玩 Connect4",
+      "invitation": "{{challenger}} 邀请您玩 Connect4\n点击下面的按钮来接受或拒绝。\n\n您有 60 秒的时间决定。",
+      "req": "Connect4 请求",
+      "notBelong": "您不允许按下此消息的按钮。",
+      "decline": "对手拒绝了您的 Connect4 请求",
+      "battleEmbed": {
+          "title": "Connect4 对战",
+          "gs": "遊戏状态"
+      },
+      "notTurn": "现在还不是你的回合!",
+      "tie": "这场遊戏是平局",
+      "win": "{{playerEmoji}} **{{player}}** 获胜了!",
+      "turn": "现在轮到 {{playerEmoji}} **{{player}}** 回合!"
+    },
+    "flood": {
+      "title": "水灾小遊戏",
+      "field": "回合",
+      "win": "恭喜! 您赢得了这局水灾遊戏。",
+      "lose": "下次好运",
+      "go": "遊戏结束",
+      "turns": "您共用了 **{{amount}}** 回合"
+    },
+    "hangman": {
+      "word": "单字 ({{length}})",
+      "notBelong": "您不允许按下此消息的按钮。",
+      "lettGuess": "猜测的字母",
+      "won": "恭喜! 您获胜了!",
+      "lose": "真可惜, 您输了。"
+    },
+    "rps": {
+      "title": "剪刀石头布",
+      "description": "石头 (🌑), 布 (📃), 剪刀 (✂️)",
+      "desc2": "在 1 分钟 (60 秒)内做出反应",
+      "rock": {
+          "win": "我选择了 {{option}}\n你选择了 🌑\n\n你获胜了! 恭喜!",
+          "tied": "我选择了 {{option}}\n你选择了 🌑\n\n我们平局了! 好玩!",
+          "lose": "我选择了 {{option}}\n你选择了 🌑\n\n你输了! 下次努力!"
+      },
+      "paper": {
+          "win": "我选择了 {{option}}\n你选择了 📃\n\n你获胜了! 恭喜!",
+          "tied": "我选择了 {{option}}\n你选择了 📃\n\n我们平局了! 好玩!",
+          "lose": "我选择了 {{option}}\n你选择了 📃\n\n你输了! 下次努力!"
+      },
+      "scissors": {
+          "win": "我选择了 {{option}}\n你选择了 ✂️\n\n你获胜了! 恭喜!",
+          "tied": "我选择了 {{option}}\n你选择了 ✂️\n\n我们平局了! 好玩!",
+          "lose": "我选择了 {{option}}\n你选择了 ✂️\n\n你输了! 下次努力!"
+      },
+      "timeout": "您未能及时提供反应"
+    },
+    "slots": {
+      "title": "老虎机小遊戏",
+      "ss": "老虎机状态",
+      "win": "恭喜! 您获胜了!",
+      "lose": "您输了! 下次好运。"
+    },
+    "trivia": {
+      "guessCorrect": "您的猜测是正确的! 好玩!",
+      "guessIncorrect": "您的猜测是错误的! 下次努力!"
+    },
+    "wordle": {
+      "title": "Wordle 小遊戏",
+      "gip": "遊戏进行中",
+      "won": {
+          "title": "遊戏完成!",
+          "desc": "您赢了! 恭喜!\n单字是 **{{word}}**"
+      },
+      "lost": {
+          "title": "遊戏结束!",
+          "desc": "您输了! 下次加油!\n单字是 **{{word}}**"
+      }
+    }
+  }
