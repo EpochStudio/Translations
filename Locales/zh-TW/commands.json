@@ -795,7 +795,7 @@
     "profile": {
       "description": "顯示指定用戶的個人資料",
       "data": {
-        "feching": "正在獲取請求資料... 請稍候...",
+        "fetching": "正在獲取請求資料... 請稍候...",
         "profile": "{{user}}'s 個人資料",
         "bl": "黑名單",
         "wl": "白名單",

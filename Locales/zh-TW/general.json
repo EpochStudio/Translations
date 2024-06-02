@@ -19,6 +19,7 @@
     "cm": "點擊我",
     "unknown": "未知",
     "permanent": "永久",
+    "reason": "原因",
     "cmdExeFail": "命令執行失敗",
     "permissions": {
         "client": "我沒有足夠的權限來執行此命令。",
