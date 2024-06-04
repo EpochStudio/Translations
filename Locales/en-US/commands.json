@@ -859,7 +859,21 @@
         "host": "Host",
         "prize": "Prize",
         "noActive": "There are no active giveaways in this server.",
-        "actGiveaway": "Currently Active Giveaways"
+        "actGiveaway": "Currently Active Giveaways",
+        "requirePremium": "You need premium in order to add moe than 10 role requirements",
+        "inputPrompt": "What role should be required for members to enter the giveaway? - Mention a role name or mention the role or mention the role id.\nIf more than 1 role then please seperate each role with a space."
+      }
+    },
+    "managegiveaway": {
+      "description": "Manages the giveaway settings in this guild.",
+      "data": {
+        "listDescBonus": "__Role Name__ - __Role ID__ - __Bonus (x Entries)__",
+        "listDescNormal": "___Role Name__ - __Role ID__",
+        "alrdyExists": "This role already exists in the {{group}} list",
+        "premiumRequired": "You need premium in order to add more than {{limit}} {{group}} roles.",
+        "success": "Successfully updated giveaway configuration settings.",
+        "empty": "The {{group}} list is empty",
+        "notInGroup": "The inserted role id is not in the {{group}} list"
       }
     }
   },
