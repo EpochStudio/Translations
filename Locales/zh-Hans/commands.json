@@ -37,10 +37,10 @@
         "setleaveChan": "已成功将离开频道设置为 {{channel}}",
         "setleaveMsg": "已成功将离开消息设置为\n{{msg}}",
         "resetLeave": "已成功将离开配置重置为默认设置",
-        "arrExist": "此角色已经在自动身分组配置系统中",
+        "arrExist": "此身分組已经在自动身分组配置系统中",
         "arrMax": "您目前已达到自动身分组配置的最大限制！(最多 5 个)",
         "arrAdd": "已成功将 {{role}} 添加到自动身分组配置",
-        "arrNotFound": "我在自动身分组配置中没有找到给定的角色",
+        "arrNotFound": "我在自动身分组配置中没有找到给定的身分組",
         "arrRemove": "已成功从自动身分组配置中移除 {{role}}",
         "arrReset": "已成功重置自动身分组配置",
         "variables": "欢迎/再见消息的变数"
@@ -845,21 +845,35 @@
   },
   "giveaway": {
     "giveaway": {
-      "description": "创建/结束/重新抽奖/列出/抽奖活动",
+      "description": "创建/结束/重抽/列出/抽奖",
       "data": {
-        "maxGiveaway": "最多可同时运行10个抽奖活动",
-        "invalidTime": "您输入的时间无效。请输入1分钟到31天之间的时间段。",
-        "giveawaySuccess": "已在频道 {{channel}} 成功创建一个抽奖活动",
-        "giveawayNotFound": "在资料库中找不到您输入的抽奖 ID",
-        "endedGiveaway": "已成功结束指定的抽奖活动",
-        "deleteGiveaway": "已成功从资料库中删除抽奖活动条目",
-        "rerollGiveaway": "已成功为指定抽奖活动重新抽取获奖者",
+        "maxGiveaway": "最多可以同时进行10个抽奖.",
+        "invalidTime": "输入的时间无效. 请输入1分钟到31天之间的时间.",
+        "giveawaySuccess": "已在频道 {{channel}} 成功创建抽奖",
+        "giveawayNotFound": "找不到输入的抽奖ID",
+        "endedGiveaway": "已成功结束指定的抽奖",
+        "deleteGiveaway": "已从资料库中成功删除抽奖",
+        "rerollGiveaway": "已成功重新抽取指定抽奖的得奖者",
         "id": "ID",
         "channel": "频道",
-        "host": "主办人",
+        "host": "主办者",
         "prize": "奖品",
-        "noActive": "此伺服器上没有正在进行的抽奖活动。",
-        "actGiveaway": "目前进行中的抽奖活动"
+        "noActive": "此伺服器没有正在进行的抽奖.",
+        "actGiveaway": "目前进行的抽奖",
+        "requirePremium": "您需要有高级会员资格才能添加超过10个身分组要求",
+        "inputPrompt": "您希望参加此抽奖的成员需要拥有哪个身分组? - 请输入身分组名称或提及身分组或输入身分组ID.\n如果需要多个身分组,请用空格隔开."
+      }
+    },
+    "managegiveaway": {
+      "description": "管理此伺服器的抽奖设置.",
+      "data": {
+        "listDescBonus": "__身分组名称__ - __身分组ID__ - __额外加成(x 次参加)__",
+        "listDescNormal": "__身分组名称__ - __身分组ID__",
+        "alrdyExists": "此身分组已存在於 {{group}} 列表中",
+        "premiumRequired": "您需要有高级会员资格才能添加超过 {{limit}} 个 {{group}} 身分组.",
+        "success": "已成功更新抽奖设置.",
+        "empty": "{{group}} 列表为空",
+        "notInGroup": "输入的身分组ID不在 {{group}} 列表中"
       }
     }
   },
