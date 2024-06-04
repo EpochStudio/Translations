@@ -22,6 +22,8 @@
     "req": "Connect4 Request",
     "notBelong": "You are not allowed to press the buttons for this message.",
     "decline": "The opponent declined your Connect4 Request",
+    "join": "Join Game",
+    "nthx": "No, Thanks",
     "battleEmbed": {
         "title": "Connect4 Battle",
         "gs": "Game Status"
@@ -44,36 +46,38 @@
     "notBelong": "You are not allowed to press the buttons for this message.",
     "lettGuess": "Letters Guessed",
     "won": "Congrats! You won!",
-    "lose": "What a shame, you lost."
+    "lose": "What a shame, you lost.",
+    "go": "Game Over"
   },
   "rps": {
     "title": "Rock Paper Scissors",
-    "description": "Rock (🌑), Paper (📃), Scissors (✂️)",
-    "desc2": "React below within 1 minute (60 seconds)",
+    "desc2": "Rock (🌑), Paper (📃), Scissors (✂️)\n\nReact below within 1 minute (60 seconds)",
     "rock": {
-        "win": "I chose {{option}}\nYou chose 🌑\n\nYou won! Congratulations!",
-        "tied": "I chose {{option}}\nYou chose 🌑\n\nWe tied! GG!",
-        "lose": "I chose {{option}}\nYou chose 🌑\n\nYou lost! Better luck next time!"
+        "win": "Rock (🌑), Paper (📃), Scissors (✂️)\n\nI chose {{option}}\nYou chose 🌑\n\nYou won! Congratulations!",
+        "tied": "Rock (🌑), Paper (📃), Scissors (✂️)\n\nI chose {{option}}\nYou chose 🌑\n\nWe tied! GG!",
+        "lose": "Rock (🌑), Paper (📃), Scissors (✂️)\n\nI chose {{option}}\nYou chose 🌑\n\nYou lost! Better luck next time!"
     },
     "paper": {
-        "win": "I chose {{option}}\nYou chose 📃\n\nYou won! Congratulations!",
-        "tied": "I chose {{option}}\nYou chose 📃\n\nWe tied! GG!",
-        "lose": "I chose {{option}}\nYou chose 📃\n\nYou lost! Better luck next time!"
+        "win": "Rock (🌑), Paper (📃), Scissors (✂️)\n\nI chose {{option}}\nYou chose 📃\n\nYou won! Congratulations!",
+        "tied": "Rock (🌑), Paper (📃), Scissors (✂️)\n\nI chose {{option}}\nYou chose 📃\n\nWe tied! GG!",
+        "lose": "Rock (🌑), Paper (📃), Scissors (✂️)\n\nI chose {{option}}\nYou chose 📃\n\nYou lost! Better luck next time!"
     },
     "scissors": {
-        "win": "I chose {{option}}\nYou chose ✂️\n\nYou won! Congratulations!",
-        "tied": "I chose {{option}}\nYou chose ✂️\n\nWe tied! GG!",
-        "lose": "I chose {{option}}\nYou chose ✂️\n\nYou lost! Better luck next time!"
+        "win": "Rock (🌑), Paper (📃), Scissors (✂️)\n\nI chose {{option}}\nYou chose ✂️\n\nYou won! Congratulations!",
+        "tied": "Rock (🌑), Paper (📃), Scissors (✂️)\n\nI chose {{option}}\nYou chose ✂️\n\nWe tied! GG!",
+        "lose": "Rock (🌑), Paper (📃), Scissors (✂️)\n\nI chose {{option}}\nYou chose ✂️\n\nYou lost! Better luck next time!"
     },
     "timeout": "You did not provide a reaction in time"
   },
   "slots": {
-    "title": "Slots Minigame",
-    "ss": "Slot Status",
+    "title": "• Slots Minigame",
+    "ss": "• Slot Status",
     "win": "Congratulations! You won!",
     "lose": "You lost! Better luck next time."
   },
   "trivia": {
+    "title": "Trivia Minigame",
+    "description": "{{question}}\n\nCategory: {{category}}\nDifficulty: {{diff}}\n\nYou have 60 seconds to respond.",
     "guessCorrect": "Your guess was correct! GG!",
     "guessIncorrect": "Your guess was incorrect! Better luck next time!"
   },
@@ -87,6 +91,7 @@
     "lost": {
         "title": "Game Over!",
         "desc": "You Lost! Better luck next time!\nThe word was **{{word}}**"
-    }
+    },
+    "stop": "Stop Game"
   }
 }
