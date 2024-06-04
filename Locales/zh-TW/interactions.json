@@ -1,92 +1,97 @@
 {
-    "2048": {
-      "embed": {
-        "title": "2048 小遊戲",
-        "cs": "目前得分",
-        "cancelReason": {
-          "req": "要求取消遊戲",
-          "noMoves": "沒有更多移動/棋盤已滿"
-        },
-        "endMessage": "**遊戲結束!**\n原因: {{reason}}\n獲得分數: {{score}}"
-      }
-    },
-    "calculator": {
-      "belong": "這個計算器不屬於您!\n您可以通過輸入 `/calculator` 來創建自己的計算器",
-      "tooLong": "目前輸入的方程式太長! 請縮短您的方程式或將其分成多個方程式!",
-      "invalid": "無效的方程式",
-      "btnCalc": "按鈕計算器"
-    },
-    "connect4": {
-      "bots": "您不能與機器人玩 Connect4",
-      "invitation": "{{challenger}} 邀請您玩 Connect4\n點擊下面的按鈕來接受或拒絕。\n\n您有 60 秒的時間決定。",
-      "req": "Connect4 請求",
-      "notBelong": "您不允許按下此消息的按鈕。",
-      "decline": "對手拒絕了您的 Connect4 請求",
-      "battleEmbed": {
-          "title": "Connect4 對戰",
-          "gs": "遊戲狀態"
+  "2048": {
+    "embed": {
+      "title": "2048 迷你遊戲",
+      "cs": "目前得分",
+      "cancelReason": {
+        "req": "請求取消遊戲",
+        "noMoves": "沒有更多移動/棋盤已滿"
       },
-      "notTurn": "現在還不是你的回合!",
-      "tie": "這場遊戲是平局",
-      "win": "{{playerEmoji}} **{{player}}** 獲勝了!",
-      "turn": "現在輪到 {{playerEmoji}} **{{player}}** 回合!"
-    },
-    "flood": {
-      "title": "水災小遊戲",
-      "field": "回合",
-      "win": "恭喜! 您贏得了這局水災遊戲。",
-      "lose": "下次好運",
-      "go": "遊戲結束",
-      "turns": "您共用了 **{{amount}}** 回合"
-    },
-    "hangman": {
-      "word": "單字 ({{length}})",
-      "notBelong": "您不允許按下此消息的按鈕。",
-      "lettGuess": "猜測的字母",
-      "won": "恭喜! 您獲勝了!",
-      "lose": "真可惜, 您輸了。"
-    },
-    "rps": {
-      "title": "剪刀石頭布",
-      "description": "石頭 (🌑), 布 (📃), 剪刀 (✂️)",
-      "desc2": "在 1 分鐘 (60 秒)內做出反應",
-      "rock": {
-          "win": "我選擇了 {{option}}\n你選擇了 🌑\n\n你獲勝了! 恭喜!",
-          "tied": "我選擇了 {{option}}\n你選擇了 🌑\n\n我們平局了! 好玩!",
-          "lose": "我選擇了 {{option}}\n你選擇了 🌑\n\n你輸了! 下次努力!"
-      },
-      "paper": {
-          "win": "我選擇了 {{option}}\n你選擇了 📃\n\n你獲勝了! 恭喜!",
-          "tied": "我選擇了 {{option}}\n你選擇了 📃\n\n我們平局了! 好玩!",
-          "lose": "我選擇了 {{option}}\n你選擇了 📃\n\n你輸了! 下次努力!"
-      },
-      "scissors": {
-          "win": "我選擇了 {{option}}\n你選擇了 ✂️\n\n你獲勝了! 恭喜!",
-          "tied": "我選擇了 {{option}}\n你選擇了 ✂️\n\n我們平局了! 好玩!",
-          "lose": "我選擇了 {{option}}\n你選擇了 ✂️\n\n你輸了! 下次努力!"
-      },
-      "timeout": "您未能及時提供反應"
-    },
-    "slots": {
-      "title": "老虎機小遊戲",
-      "ss": "老虎機狀態",
-      "win": "恭喜! 您獲勝了!",
-      "lose": "您輸了! 下次好運。"
-    },
-    "trivia": {
-      "guessCorrect": "您的猜測是正確的! 好玩!",
-      "guessIncorrect": "您的猜測是錯誤的! 下次努力!"
-    },
-    "wordle": {
-      "title": "Wordle 小遊戲",
-      "gip": "遊戲進行中",
-      "won": {
-          "title": "遊戲完成!",
-          "desc": "您贏了! 恭喜!\n單字是 **{{word}}**"
-      },
-      "lost": {
-          "title": "遊戲結束!",
-          "desc": "您輸了! 下次加油!\n單字是 **{{word}}**"
-      }
+      "endMessage": "**遊戲結束! 太棒了!**\n原因: {{reason}}\n獲得的分數: {{score}}"
     }
+  },
+  "calculator": {
+    "belong": "這計算器不屬於您!\n您可以透過輸入 `/calculator` 來創建自己的計算器",
+    "tooLong": "當前輸入的方程式太長了! 請縮短您的方程式或將其分成多個方程式!",
+    "invalid": "無效的方程式",
+    "btnCalc": "按鈕計算器"
+  },
+  "connect4": {
+    "bots": "您無法與機器人玩 Connect4",
+    "invitation": "{{challenger}} 已邀請您玩一局 Connect4\n點擊下面的按鈕來接受或拒絕。\n\n您有 60 秒的時間決定。",
+    "req": "Connect4 請求",
+    "notBelong": "您不允許按這個訊息的按鈕。",
+    "decline": "對手拒絕了您的 Connect4 請求",
+    "join": "加入遊戲",
+    "nthx": "不,謝謝",
+    "battleEmbed": {
+        "title": "Connect4 戰鬥",
+        "gs": "遊戲狀態"
+    },
+    "notTurn": "還不是您的回合!",
+    "tie": "這場比賽是平局",
+    "win": "{{playerEmoji}} **{{player}}** 獲勝!",
+    "turn": "現在是 {{playerEmoji}} **{{player}}** 的回合!"
+  },
+  "flood": {
+    "title": "Flood 迷你遊戲",
+    "field": "回合",
+    "win": "恭喜! 您贏得了這回合的 Flood。",
+    "lose": "下次好運",
+    "go": "遊戲結束",
+    "turns": "您總共用了 **{{amount}}** 回合"
+  },
+  "hangman": {
+    "word": "單字 ({{length}})",
+    "notBelong": "您不允許按這個訊息的按鈕。",
+    "lettGuess": "已猜的字母",
+    "won": "恭喜! 您贏了!",
+    "lose": "太遺憾了,您輸了。",
+    "go": "遊戲結束"
+  },
+  "rps": {
+    "title": "剪刀石頭布",
+    "desc2": "石頭 (🌑), 布 (📃), 剪刀 (✂️)\n\n在 1 分鐘內 (60 秒) 做出反應",
+    "rock": {
+        "win": "石頭 (🌑), 布 (📃), 剪刀 (✂️)\n\n我選擇了 {{option}}\n您選擇了 🌑\n\n您贏了! 恭喜!",
+        "tied": "石頭 (🌑), 布 (📃), 剪刀 (✂️)\n\n我選擇了 {{option}}\n您選擇了 🌑\n\n我們平局了! 太棒了!",
+        "lose": "石頭 (🌑), 布 (📃), 剪刀 (✂️)\n\n我選擇了 {{option}}\n您選擇了 🌑\n\n您輸了! 下次加油!"
+    },
+    "paper": {
+        "win": "石頭 (🌑), 布 (📃), 剪刀 (✂️)\n\n我選擇了 {{option}}\n您選擇了 📃\n\n您贏了! 恭喜!",
+        "tied": "石頭 (🌑), 布 (📃), 剪刀 (✂️)\n\n我選擇了 {{option}}\n您選擇了 📃\n\n我們平局了! 太棒了!",
+        "lose": "石頭 (🌑), 布 (📃), 剪刀 (✂️)\n\n我選擇了 {{option}}\n您選擇了 📃\n\n您輸了! 下次加油!"
+    },
+    "scissors": {
+        "win": "石頭 (🌑), 布 (📃), 剪刀 (✂️)\n\n我選擇了 {{option}}\n您選擇了 ✂️\n\n您贏了! 恭喜!",
+        "tied": "石頭 (🌑), 布 (📃), 剪刀 (✂️)\n\n我選擇了 {{option}}\n您選擇了 ✂️\n\n我們平局了! 太棒了!",
+        "lose": "石頭 (🌑), 布 (📃), 剪刀 (✂️)\n\n我選擇了 {{option}}\n您選擇了 ✂️\n\n您輸了! 下次加油!"
+    },
+    "timeout": "您沒有及時作出反應"
+  },
+  "slots": {
+    "title": "• 老虎機迷你遊戲",
+    "ss": "• 老虎機狀態",
+    "win": "恭喜! 您獲勝了!",
+    "lose": "您輸了! 下次好運。"
+  },
+  "trivia": {
+    "title": "智力問答迷你遊戲",
+    "description": "{{question}}\n\n類別: {{category}}\n難度: {{diff}}\n\n您有 60 秒的時間回答。",
+    "guessCorrect": "您的猜測正確! 太棒了!",
+    "guessIncorrect": "您的猜測不正確! 下次加油!"
+  },
+  "wordle": {
+    "title": "Wordle 迷你遊戲",
+    "gip": "遊戲進行中",
+    "won": {
+        "title": "遊戲完成!",
+        "desc": "您贏了! 恭喜!\n單字是 **{{word}}**"
+    },
+    "lost": {
+        "title": "遊戲結束!",
+        "desc": "您輸了! 下次好運!\n單字是 **{{word}}**"
+    },
+    "stop": "停止遊戲"
   }
+}

@@ -4,7 +4,13 @@
       "description": "禁用/啟用指定的類別",
       "data": {
         "enabled": "已成功啟用 {{cat}} 類別。",
-        "disabled": "已成功禁用 {{cat}} 類別。"
+        "disabled": "已成功禁用 {{cat}} 類別。",
+        "moderation": "審核",
+        "fun": "娛樂",
+        "utility": "工具",
+        "music": "音樂",
+        "economy": "經濟",
+        "giveaway": "抽獎"
       }
     },
     "commands": {
@@ -69,7 +75,9 @@
           "verifChan": "驗證頻道",
           "nVerifChan": "尚未配置",
           "verifRole": "已驗證身分組",
-          "nVerifRole": "尚未配置"
+          "nVerifRole": "尚未配置",
+          "verifLog": "驗證日誌",
+          "nVerifLog": "未配置"
         },
         "greet": {
           "greSett": "問候系統設定",
@@ -128,7 +136,8 @@
         "enabled": "成功啟用驗證系統",
         "disabled": "成功禁用驗證系統",
         "setVerChan": "驗證頻道設置為 {{channel}}",
-        "setVerRole": "驗證身分組設置為 {{role}}"
+        "setVerRole": "驗證身分組設置為 {{role}}",
+        "setVerLogChan": "驗證日誌設置為 {{channel}}"
       }
     }
   },
@@ -648,7 +657,8 @@
       "description": "關於EternalGaius",
       "data": {
         "title": "關於EternalGaius",
-        "description": "EternalGaius從未被設計為永久性項目,我原本只是為了好玩而創造它。但是,在收到如此大的支持和積極的反饋後,我決定讓EternalGaius成為一個長期的項目!在EternalGaius,我們致力於為用戶提供最佳體驗,同時保持穩定性和用戶數據的安全性。\n\n這一切都要感謝我們出色的開發人員、工作人員、合作夥伴和貢獻者!特別感謝他們!",        "dev": "我們的開發團隊",
+        "description": "EternalGaius從未被設計為永久性項目,我原本只是為了好玩而創造它。但是,在收到如此大的支持和積極的反饋後,我決定讓EternalGaius成為一個長期的項目!在EternalGaius,我們致力於為用戶提供最佳體驗,同時保持穩定性和用戶數據的安全性。\n\n這一切都要感謝我們出色的開發人員、工作人員、合作夥伴和貢獻者!特別感謝他們!",
+        "dev": "我們的開發團隊",
         "staff": "我們的工作人員",
         "partner": "我們的合作夥伴",
         "contri": "我們的貢獻者"
@@ -765,29 +775,7 @@
         "active": "活躍",
         "title": "EternalGaius Premium",
         "info": {
-          "description": "什麼是 EternalGaius Premium?\nEternalGaius Premium 將為您提供獨家權益、功能、免除投票要求並訪問我們正在開發的測試版機器人!\n確認您的購買後,您還將獲得「EternalGaius Premium」徽章,以表示您對 EternalGaius 的支持!\n通過購買,您也在幫助 EternalGaius 繼續在線運行!",
-          "fields": [
-            {
-              "name": "價格",
-              "value": "月訂閱: 4.99 美元\n年訂閱: 14.99 美元"
-            },
-            {
-              "name": "購買",
-              "value": "要購買 EternalGaius Premium,請加入我們的[支援伺服器](https://discord.gg/9PnUBeu)並聯繫我們的開發人員之一!"
-            }
-          ]
-        },
-        "status": {
-          "fields": [
-            {
-              "name": "您的訂閱",
-              "value": "{{status}}"
-            },
-            {
-              "name": "剩餘時間",
-              "value": "{{time}}"
-            }
-          ]
+          "description": "什麼是 EternalGaius Premium?\nEternalGaius Premium 將為您提供獨家權益、功能、免除投票要求並訪問我們正在開發的測試版機器人!\n確認您的購買後,您還將獲得「EternalGaius Premium」徽章,以表示您對 EternalGaius 的支持!\n通過購買,您也在幫助 EternalGaius 繼續在線運行!"
         }
       }
     },
