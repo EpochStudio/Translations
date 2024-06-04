@@ -37,10 +37,10 @@
         "setleaveChan": "已成功將離開頻道設置為 {{channel}}",
         "setleaveMsg": "已成功將離開消息設置為\n{{msg}}",
         "resetLeave": "已成功將離開配置重置為默認設置",
-        "arrExist": "此角色已經在自動身分組配置系統中",
+        "arrExist": "此身分組已經在自動身分組配置系統中",
         "arrMax": "您目前已達到自動身分組配置的最大限制！(最多 5 個)",
         "arrAdd": "已成功將 {{role}} 添加到自動身分組配置",
-        "arrNotFound": "我在自動身分組配置中沒有找到給定的角色",
+        "arrNotFound": "我在自動身分組配置中沒有找到給定的身分組",
         "arrRemove": "已成功從自動身分組配置中移除 {{role}}",
         "arrReset": "已成功重置自動身分組配置",
         "variables": "歡迎/再見消息的變數"
@@ -845,21 +845,35 @@
   },
   "giveaway": {
     "giveaway": {
-      "description": "創建/結束/重新抽獎/列出/抽獎活動",
+      "description": "創建/結束/重抽/列出/抽獎",
       "data": {
-        "maxGiveaway": "最多可同時運行10個抽獎活動",
-        "invalidTime": "您輸入的時間無效。請輸入1分鐘到31天之間的時間段。",
-        "giveawaySuccess": "已在頻道 {{channel}} 成功創建一個抽獎活動",
-        "giveawayNotFound": "在資料庫中找不到您輸入的抽獎 ID",
-        "endedGiveaway": "已成功結束指定的抽獎活動",
-        "deleteGiveaway": "已成功從資料庫中刪除抽獎活動條目",
-        "rerollGiveaway": "已成功為指定抽獎活動重新抽取獲獎者",
+        "maxGiveaway": "最多可以同時進行10個抽獎.",
+        "invalidTime": "輸入的時間無效. 請輸入1分鐘到31天之間的時間.",
+        "giveawaySuccess": "已在頻道 {{channel}} 成功創建抽獎",
+        "giveawayNotFound": "找不到輸入的抽獎ID",
+        "endedGiveaway": "已成功結束指定的抽獎",
+        "deleteGiveaway": "已從資料庫中成功刪除抽獎",
+        "rerollGiveaway": "已成功重新抽取指定抽獎的得獎者",
         "id": "ID",
         "channel": "頻道",
-        "host": "主辦人",
+        "host": "主辦者",
         "prize": "獎品",
-        "noActive": "此伺服器上沒有正在進行的抽獎活動。",
-        "actGiveaway": "目前進行中的抽獎活動"
+        "noActive": "此伺服器沒有正在進行的抽獎.",
+        "actGiveaway": "目前進行的抽獎",
+        "requirePremium": "您需要有高級會員資格才能添加超過10個身分組要求",
+        "inputPrompt": "您希望參加此抽獎的成員需要擁有哪個身分組? - 請輸入身分組名稱或提及身分組或輸入身分組ID.\n如果需要多個身分組,請用空格隔開."
+      }
+    },
+    "managegiveaway": {
+      "description": "管理此伺服器的抽獎設置.",
+      "data": {
+        "listDescBonus": "__身分組名稱__ - __身分組ID__ - __額外加成(x 次參加)__",
+        "listDescNormal": "__身分組名稱__ - __身分組ID__",
+        "alrdyExists": "此身分組已存在於 {{group}} 列表中",
+        "premiumRequired": "您需要有高級會員資格才能添加超過 {{limit}} 個 {{group}} 身分組.",
+        "success": "已成功更新抽獎設置.",
+        "empty": "{{group}} 列表為空",
+        "notInGroup": "輸入的身分組ID不在 {{group}} 列表中"
       }
     }
   },
@@ -1363,7 +1377,7 @@
           "nc": "無顏色",
           "uid": "用戶ID",
           "acknowledgement": "確認",
-          "roles": "角色",
+          "roles": "身分組",
           "dev": "機器人開發者",
           "owner": "伺服器擁有者",
           "admin": "伺服器管理員",
