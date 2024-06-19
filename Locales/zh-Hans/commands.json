@@ -1,5 +1,33 @@
 {
   "admin": {
+    "alt": {
+      "description": "此命令允许您配置替帐号检测器",
+      "data": {
+        "listOrView": {
+          "channel": "频道: {{channel}}",
+          "role": "角色: {{role}}",
+          "age": {
+            "kick": "踢出帐号年龄",
+            "ban": "封禁帐号年龄"
+          },
+          "message": {
+            "kick": "踢出信息",
+            "ban": "封禁信息"
+          }
+        },
+        "notConfigured": "尚未配置替帐号纪录",
+        "alreadySame": "替帐号频道已设置为此频道",
+        "success": "已成功更新资料库设定.",
+        "notConfiguredRole": "尚未配置替帐号警示角色.",
+        "alreadySameRole": "替帐号警示角色已设置为此频道.",
+        "requirePremiumCustom": "您需要有高级会员资格才能配置自定义信息.",
+        "overLimit": "自订信息不能超过1000个字符",
+        "alreadyInclude": "指定的使用者已包含在过滤列表中.",
+        "requirePremiumOver": "您需要有高级会员资格才能添加超过10个用户.",
+        "emptyArray": "过滤列表已为空且未进行配置.",
+        "cannotFind": "在过滤列表中找不到指定的使用者."
+      }
+    },
     "categories": {
       "description": "禁用/启用指定的类别",
       "data": {
@@ -28,6 +56,63 @@
         "updated": "伺服器配置已更新"
       }
     },
+    "customcmd": {
+      "description": "管理此公会的自定义命令",
+      "data": {
+        "header": "您已选择创建一个 `{{type}}` 命令",
+        "premiumRequired": "您需要高级会员资格才能创建超过2个自定义命令.",
+        "instructions": {
+          "identifier": "在下一条消息中,请输入此命令的触发短语.\n\n例如,如果您希望触发短语为 `-hello`,\n然後请在下一条消息中输入 `hello`.\n\n标识符不能超过20个字符.\n\n如果您想取消此操作,请在下一条消息中输入 `cancel`.\n\n触发短语不能是机器人已经存在的命令.",
+          "identifierExceed": "自定义命令的标识符不能超过20个字符.",
+          "invalidType2": "已经存在一个使用该标识符的自定义命令.",
+          "invalid": "命令标识符不能与机器人已经存在的命令同名.",
+          "identifierConfirm": "很好,这个命令的标识符将是 `{{identifier}}`",
+          "traditional": {
+            "replyPrompt": "现在,请输入机器人在输入此标识符时将回复的内容.\n\n回复内容不能超过1000个字符.\n如果您想取消此操作,请在下一条消息中输入 `cancel`",
+            "exceedLimit": "传统自定义命令的回复不能超过1000个字符",
+            "editPrompt": "这是一个 `traditional` 命令.\n在下一条消息中,请输入此命令的新回复.\n\n回复内容不能超过1000个字符.\n如果您想取消此操作,请在下一条消息中输入 `cancel`."
+          },
+          "embed": {
+            "title": {
+              "titlePrompt": "现在,请输入在输入此标识符时将作为回复的嵌入标题.\n\n回复内容不能超过256个字符\n如果您想取消此操作,请在下一条消息中输入 'cancel`.",
+              "exceedLimit": "嵌入自定义命令的嵌入标题不能超过256个字符."
+            },
+            "description": {
+              "descPrompt": "现在,请输入在输入此标识符时将作为回复的嵌入描述.\n\n回复内容不能超过4096个字符.\n如果您想取消此操作,请在下一条消息中输入 `cancel`.",
+              "exceedLimit": "嵌入自定义命令的嵌入描述不能超过4096个字符."
+            },
+            "color": {
+              "colorPrompt": "现在,请输入在输入此标识符时将作为回复的嵌入颜色.\n\n回复内容必须采用[十六进制格式](https://en.wikipedia.org/wiki/Hexadecimal).\n如果您想取消此操作,请在下一条消息中输入 `cancel`.",
+              "colorInvalid": "输入的值必须是有效的十六进制."
+            },
+            "footer": {
+              "footerPrompt": "现在,请输入在输入此标识符时将作为回复的嵌入页脚.\n\n回复内容不能超过2048个字符\n\n如果您不希望回复有嵌入页脚,请在下一条消息中回复 `next`\n\n如果您想取消此操作,请在下一条消息中输入 'cancel`.",
+              "exceedLimit": "嵌入自定义命令的嵌入页脚不能超过2048个字符."
+            },
+            "author": {
+              "authorPrompt": "现在,请输入在输入此标识符时将作为回复的嵌入作者名称.\n\n回复内容不能超过256个字符\n\n如果您不希望回复有嵌入作者名称,请在下一条消息中回复 `next`.\n\n如果您想取消此操作,请在下一条消息中输入 'cancel`.",
+              "exceedLimit": "嵌入自定义命令的嵌入作者不能超过256个字符."
+            },
+            "thumbnail": {
+              "thumbnailPrompt": "现在,请输入在输入此标识符时将作为回复的嵌入缩略图.\n\n回复内容必须是有效的URL链接.\n\n如果您不希望回复有嵌入缩略图,请在下一条消息中回复 `next`\n\n如果您想取消此操作,请在下一条消息中输入 'cancel`.",
+              "urlInvalid": "嵌入缩略图未保存,因为它不是有效的URL."
+            },
+            "image": {
+              "imagePrompt": "现在,请输入在输入此标识符时将作为回复的嵌入图像.\n\n回复内容必须是有效的URL链接\n如果您不希望回复有嵌入图像,请在下一条消息中回复 `next`.\n\n如果您想取消此操作,请在下一条消息中输入 'cancel`.",
+              "urlInvalid": "嵌入图像未保存,因为它不是有效的URL."
+            },
+            "editPrompt": "这是一个 `embed` 命令.\n在下一条消息中,请输入您想要更改的嵌入元素.\n\n**可用选择:**\n`title` | `description` | `color` | `footer` | `author` | `image` | `thumbnail`\n\n如果您想取消此操作,请在下一条消息中输入 `cancel`.",
+            "elementEdit": "很好,您已选择编辑 `{{element}}` 元素.\n\n在下一条消息中,请说明该元素的新值.\n如果您想取消此操作,请在下一条消息中输入 `cancel`.",
+            "elementInvalid": "输入的元素无效."
+          }
+        },
+        "notFound": "没有找到具有该标识符的自定义命令.",
+        "rolePremiumRequired": "您需要高级会员资格才能拥有超过2个已列入黑名单的身分组.",
+        "exceedLimit": "您不能拥有超过10个已列入黑名单的身分组.",
+        "embedTitle": "**__标识符__ - __类型__ - __创建者__**",
+        "blRole": "已列入黑名单的身分组"
+      }
+    },
     "greet": {
       "description": "配置欢迎频道/消息，离开频道/消息",
       "data": {
@@ -50,6 +135,39 @@
       "description": "暂停/恢复当前伺服器的邀请",
       "data": {
         "msg": "已成功在此伺服器 {{status}} 邀请!"
+      }
+    },
+    "premium": {
+      "description": "配置您此公会的高级设定",
+      "data": {
+        "disclaimer": "所有购买都将受到[以下条款](https://github.com/EternalGaiusOfficial/EternalGaius-ToS-Privacy)的约束。",
+        "disclaimerDescription": "已经读完我们的服务条款,希望购买 EternalGaius 的高级套餐以获得比普通用户更多的特权?以下是您在购买完成後将获得的特权列表:",
+        "egPerksTitle": "与 EternalGaius 相关",
+        "egPerks": [
+          "能够在 ALT 侦测器响应日誌(伺服器端)上设置自定义讯息",
+          "解除对 10 个 bypass_user 的限制(改为无限)",
+          "能够创建超过 2 个自定义命令",
+          "能够添加超过 2 个自定义命令的黑名单角色",
+          "能够创建超过 5 个钉选讯息",
+          "钉选讯息的刷新速率更高/更低(文字: 2~20 到 1~50) (附件: 1~5 到 1~35)",
+          "能够在抽奖系统中添加超过 1 个 bypass/blacklist 角色",
+          "能够在抽奖系统中添加超过 10 个奖励身分组",
+          "能够在配置抽奖时添加超过 10 个身分组要求"
+        ],
+        "osPerksTile": "其他侧面的特权",
+        "osPerksDescription": "> 购买後,买家将获得",
+        "osPerks": [
+          "在 EternalGaius 个人资料页面上获得 **高级徽章**",
+          "在支援伺服器上获得 **高级身分组**,买家将有机会高於所有角色**除了**工作人员身分组。",
+          "在伺服器上获得 **图片** 和 **反应** 权限,在购买完成後自动获得。"
+        ],
+        "mirppTitle": "有关高级套餐的更多资讯",
+        "mirppDescription": "高级套餐的费用为 **4.99 美元**,您将可以享受一个月的特权。之後,您将需要再次购买高级套餐才能恢复这些特权。\n\n如果买家在支援伺服器中滥用这些伺服器端特权,这些特权将被从他们那里移除,他们将不再有在伺服器内发送图片或反应的权限。\n被认为是滥用的行为包括但不限於:",
+        "abuse": [
+          "发送不适当的图像,使用不适当的表情进行反应,使用图片和反应权限来绕过聊天过滤器,刷图",
+          "对一条消息进行过度反应"
+        ],
+        "purchaseTitle": "準备好购买了吗? 点击[此处]()开始!"
       }
     },
     "settings": {
@@ -98,6 +216,7 @@
       "description": "为此伺服器配置置顶消息",
       "data": {
         "alrExist": "此频道已存在置顶消息！",
+        "premiumRequired": "你需要高级会员才能创建超过 5 个钉选讯息。",
         "inputPrompt": "请输入置顶消息的显示内容。\n或输入 `cancel` 取消此过程。",
         "lengthExceed": "置顶消息长度不能超过 900 个字符！",
         "addStick": "成功为频道 {{channel}} 添加置顶消息",
@@ -106,9 +225,9 @@
         "status": "成功 {{status}} 频道 {{channel}} 的置顶消息！",
         "editConPrompt": "请输入置顶消息的新显示内容\n或输入 `cancel` 取消此过程。",
         "editContent": "成功更新 {{channel}} 置顶消息的内容\n置顶消息将在下次刷新时更新。",
-        "invalidTextAmt": "文字数量不能低於 2 或高於 20！",
+        "invalidTextAmt": "文字数量不能低於 {{min}} 或高於 {{max}}！",
         "updateTxtAmt": "成功将重新发送置顶消息所需的文字数量更新为 `{{integer}}` 条消息。",
-        "invalidAttachAmt": "附件数量不能低於 1 或高於 5！",
+        "invalidAttachAmt": "附件数量不能低於 {{min}} 或高於 {{max}}！",
         "updateAttachAmt": "成功将重新发送置顶消息所需的附件数量更新为 `{{integer}}`！",
         "noStick": "此伺服器未配置任何置顶消息！",
         "sm": "置顶消息",
@@ -735,7 +854,6 @@
         "administrator": "管理员",
         "fun": "趣味",
         "utility": "实用工具",
-        "music": "音乐",
         "economy": "经济",
         "giveaway": "抽奖",
         "hFieldDesc": "• {{category}} 命令 ({amount}})",
@@ -1116,121 +1234,6 @@
           },
           "warned": "已警告"
         }
-      }
-    }
-  },
-  "music": {
-    "filters": {
-      "description": "启用/停用特定音乐滤镜",
-      "data": {
-        "onGoingFilter": "目前有一个正在运行的音乐滤镜,请先取消它才能添加更多滤镜。",
-        "eight_d": "8d",
-        "bassboos": "低音增强",
-        "daycore": "Daycore",
-        "demon": "恶魔",
-        "nightcore": "Nightcore",
-        "trebblebas": "高音增强",
-        "tremolo": "颤音",
-        "vaporwave": "Vaporwave",
-        "vibrato": "震音",
-        "reset": "重设",
-        "resetDesc": "音讯滤镜已成功重设",
-        "filterAdd": "已成功添加 {{filter}} 音讯滤镜。"
-      }
-    },
-    "leave": {
-      "description": "此命令允许您销毁音乐播放器。",
-      "data": {
-        "destroy": "已销毁音乐播放器。"
-      }
-    },
-    "loop": {
-      "description": "此命令允许您循环播放当前曲目或整个队列。",
-      "data": {
-        "success": "已成功 {{type}} {{mode}} 重複播放。"
-      }
-    },
-    "nowplaying": {
-      "description": "此命令允许您查看当前播放的歌曲。",
-      "data": {
-        "noTrack": "目前没有正在播放的曲目。",
-        "currentPlaying": "当前播放",
-        "sName": "歌曲名称",
-        "vChannel": "语音频道",
-        "loopMode": "循环模式",
-        "off": "关闭",
-        "repeat": "单曲循环",
-        "queue": "队列循环",
-        "pVol": "播放器音量",
-        "pBar": "进度条"
-      }
-    },
-    "pause": {
-      "description": "此命令允许您暂停播放器。",
-      "data": {
-        "alrdyPaused": "音乐播放器已经暂停了",
-        "pause": "已成功暂停音乐播放器。"
-      }
-    },
-    "play": {
-      "description": "播放音乐",
-      "data": {
-        "nthFound": "找不到与给定查询相匹配的任何内容",
-        "loadSuccess": "我已成功将 {{item}} 添加到队列中。",
-        "ssmCancelOpt": {
-          "label": "点击取消",
-          "description": "点击此项取消此查询。"
-        },
-        "selectMsg": "请选择您要添加的歌曲。如果您想取消选择,请选择「取消」。",
-        "addReq": "已成功添加请求的歌曲",
-        "cancel": "已成功取消歌曲选择菜单",
-        "addMultiple": "我已成功将 **{{amount}}** 首歌曲添加到队列中"
-      }
-    },
-    "queue": {
-      "description": "此命令允许您查看队列。",
-      "data": {
-        "qTitle": "{{gName}} 的队列",
-        "np": "正在播放",
-        "niq": "接下来播放",
-        "page": "页面",
-        "song": "首歌",
-        "td": "总时长",
-        "errOnSelect": "请提供有效的数字,且不能大於 {{total}} 页",
-        "nthPlaying": "没有正在播放的内容"
-      }
-    },
-    "remove": {
-      "description": "此命令允许您从队列中移除曲目",
-      "data": {
-        "provideTrack": "请提供有效的曲目。",
-        "success": "已成功从队列中移除 [{{track}}]。"
-      }
-    },
-    "resume": {
-      "description": "此命令允许您恢复音乐播放器",
-      "data": {
-        "alrdyResumed": "音乐播放器已经恢复了",
-        "resume": "已成功恢复音乐播放器"
-      }
-    },
-    "shuffle": {
-      "description": "此命令允许您随机播放队列",
-      "data": {
-        "shuffle": "已成功打乱音乐队列"
-      }
-    },
-    "skip": {
-      "description": "此命令允许您跳过当前正在播放的歌曲。",
-      "data": {
-        "skip": "已成功跳过当前正在播放的歌曲。"
-      }
-    },
-    "volume": {
-      "description": "此命令允许您调整音量",
-      "data": {
-        "inputExceed": "请提供 1 到 200 之间的数字。",
-        "success": "已成功将音量调整到 {{volume}}%"
       }
     }
   },

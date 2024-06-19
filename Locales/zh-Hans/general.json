@@ -21,6 +21,7 @@
     "unknown": "未知",
     "permanent": "永久",
     "cmdExeFail": "命令执行失败",
+    "successUpdateConf": "已成功更新伺服器配置",
     "permissions": {
         "client": "我没有足够的权限来执行此命令。",
         "user": "您没有足够的权限来执行此命令。",
