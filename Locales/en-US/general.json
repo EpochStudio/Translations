@@ -21,6 +21,7 @@
     "permanent": "Permanent",
     "reason": "Reason",
     "cmdExeFail": "Command Execution Failed",
+    "successUpdateConf": "Successfully updated the server configuration",
     "permissions": {
         "client": "I do not have the sufficient permission to execute this command.",
         "user": "You do not have the sufficient permission to execute this command.",

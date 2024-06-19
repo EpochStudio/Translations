@@ -1,5 +1,33 @@
 {
   "admin": {
+    "alt": {
+      "description": "This command allows you to configure the alt detector",
+      "data": {
+        "listOrView": {
+          "channel": "Channel: {{channel}}",
+          "role": "Role: {{role}}",
+          "age": {
+            "kick": "Kick Age",
+            "ban": "Ban Age"
+          },
+          "message": {
+            "kick": "Kick Message",
+            "ban": "Ban Message"
+          }
+        },
+        "notConfigured": "An ALT Log has not been configurd yet",
+        "alreadySame": "The ALT Channel is already set to this channel",
+        "success": "Successfully updated the database settings.",
+        "notConfiguredRole": "An ALT alertion role has not been configured yet.",
+        "alreadySameRole": "The ALT alertion role is already set to this channel.",
+        "requirePremiumCustom": "You need premium in order to configure custom messages.",
+        "overLimit": "The custom message cannot be over 1000 characters",
+        "alreadyInclude": "The specified user is already included in the filter list.",
+        "requirePremiumOver": "You need premium in order to add more than 10 bypass users.",
+        "emptyArray": "The bypass filter list is already empty and has not been configured.",
+        "cannotFind": "Cannot find the specified user in the filter list."
+      }
+    },
     "categories": {
       "description": "Disables/Enables the specified category",
       "data": {
@@ -28,6 +56,63 @@
         "updated": "Server Configuration updated"
       }
     },
+    "customcmd": {
+      "description": "Manage Custom Commands of this Guild",
+      "data": {
+        "header": "You have chosen to create a `{{type}}` command",
+        "premiumRequired": "You need premium in order to create more than 2 custom commands.",
+        "instructions": {
+          "identifier": "In the next message, please enter the trigger phrase for this command.\n\nFor example, if you wish for the trigger phrase to be `-hello`,\nThen please enter `hello` on your next message.\n\nThe identifier cannot be longer than 20 characters.\n\nIf you wish to cancel the operation, please enter `cancel` on your next message.\n\nThe trigger phrase cannot be an already existing command of the bot.",
+          "identifierExceed": "The identifier for a custom command cannot exceed 20 characters.",
+          "invalidType2": "A custom command already exists with this identifier.",
+          "invalid": "The command identifier cannot be named after an already existing command of the bot.",
+          "identifierConfirm": "Very well, the identifier for this command will be `{{identifier}}`",
+          "traditional": {
+            "replyPrompt": "Now, please enter the content that the bot will reply with when this identifier is typed out.\n\nThe reply cannot be longer than 1000 characters.\nIf you wish to cancel this operation, then please type `cancel` on your next message",
+            "exceedLimit": "The response for a traditional custom command cannot exceed 1000 characters",
+            "editPrompt": "This command is a `traditional` command.\nIn your next message please type out the new reply of this command.\n\nThe reply cannot exceed 1000 characters.\nIf you want to cancel this operation, please type `cancel` on your next message."
+          },
+          "embed": {
+            "title": {
+              "titlePrompt": "Now, please enter the Embed Title of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 256 characters\nIf you wish to cancel this operation, then please type 'cancel` on your next message.",
+              "exceedLimit": "The response for an embed custom command's Embed Title cannot exceed 256 characters."
+            },
+            "description": {
+              "descPrompt": "Now, please enter the Embed Description of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 4096 characters.\nIf you wish to cancel this operaton, then please type `cancel` on your next message.",
+              "exceedLimit": "The response for an embed custom command's Embed Description cannot exceed 4096 characters."
+            },
+            "color": {
+              "colorPrompt": "Now, please enter the Embed Color of the embed that will be replied with when this identifier is typed out.\n\nThe reply must be in [hexadecimal format](https://en.wikipedia.org/wiki/Hexadecimal).\nIf you wish to cancel this operation, then please type `cancel` on your next message.",
+              "colorInvalid": "The entered value must be a valid hexadecimal."
+            },
+            "footer": {
+              "footerPrompt": "Now, please enter the Embed Footer Field of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 2048 characters\n\nIf you do not wish for the reply to have an Embed Footer Field, then please reply with `next` on your next message\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
+              "exceedLimit": "The response for an embed custom command's Embed Footer cannot exceed 2048 characters."
+            },
+            "author": {
+              "authorPrompt": "Now, please enter the Embed Author name of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 256 characters\n\nIf you do not wish for the reply to have an Embed Author Name, then please reply with `next` on your next message.\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
+              "exceedLimit": "the response for an embed custom command's Embed Author cannot exceed 256 characters."
+            },
+            "thumbnail": {
+              "thumbnailPrompt": "Now, please enter the Embed Thumbnail of the embed that will be replied with when this identifier is typed out.\n\nThe reply must be a valid URL Link.\n\nIf you do not wish for the reply to have an Embed Thumbnail, then please reply with `next` on your next message\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
+              "urlInvalid": "The embed thumbnail was not saved, as it was not a valid URL."
+            },
+            "image": {
+              "imagePrompt": "Now, please enter the Embed Image of the embed that will be replied with when this identifier is typed out.\n\nThe reply must be a valid URL Link\nIf you do not wish for the reply to have an Embed Image, then please reply with `next` on your next message.\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
+              "urlInvalid": "The embed image was not saved, as it was not a valid URL."
+            },
+            "editPrompt": "This command is an `embed` command.\nIn your next message please type out the element you wish to change about the embed.\n\n**Available Choices:**\n`title` | `description` | `color` | `footer` | `author` | `image` | `thumbnail`\n\nIf you wish to cancel this operation, please type `cancel` on your next message.",
+            "elementEdit": "Very well, you have chosen to edit the `{{element}}` element.\n\nIn your next message please state the element's new value.\nIf you wish to cancel this operation, then please type `cancel` on your next message.",
+            "elementInvalid": "The element entered is not valid."
+          }
+        },
+        "notFound": "There is no custom command with that identifier.",
+        "rolePremiumRequired": "You require premium to have more than 2 blacklisted role.",
+        "exceedLimit": "You cannot have more than 10 blacklisted roles.",
+        "embedTitle": "**__Identifier__ - __Type__ - __Created By__**",
+        "blRole": "Blacklisted Roles"
+      }
+    },
     "greet": {
       "description": "Configure the Welcome Channel/Message, Leave Channel/Message",
       "data": {
@@ -50,6 +135,39 @@
       "description": "Pause/resume invites for the current server",
       "data": {
         "msg": "Successfully {{status}} server invites on this server!"
+      }
+    },
+    "premium": {
+      "description": "Configures your premium settings of this Guild",
+      "data": {
+        "disclaimer": "All purchase done will be subject to the [following terms](https://github.com/EternalGaiusOfficial/EternalGaius-ToS-Privacy).",
+        "disclaimerDescription": "Finished reading our Terms of Service and wish to buy a Premium Pack of EternalGaius to get more perks than normal users do? Here is a list of the perks you will be getting once the purhcase is done:",
+        "egPerksTitle": "Related to EternalGaius",
+        "egPerks": [
+          "Able to set Custom Messages on ALT Detector response-log (server-side)",
+          "Restriction of 10 bypass_user only lifted (changed to unlimited)",
+          "Able to create more than 2 custom commands",
+          "Able to add more than 2 blacklisted roles for Custom Command",
+          "Able to create more than 5 sticky messages.",
+          "Higher/Lower refresh rate for Sticky Messages (Text: 2~20 to 1~50) (Attachment: 1~5 to 1~35)",
+          "Ability to add more than 1 bypass/blacklist role in the Giveaway System",
+          "Ability to add more than 10 bonus-roles in the Giveaway System",
+          "Ability to add more than 10 role requirements when configuring a Giveaway"
+        ],
+        "osPerksTile": "Other Side Perks",
+        "osPerksDescription": "> Upon purchase, buyer will receive",
+        "osPerks": [
+          "A **Premium Badge** on the EternalGaius Profile page",
+          "A hoisted **Premium Role** on the support server, the buyer will have a chance to be above all roles **excluding** staff roles.",
+          "**Image** and **reaction** permissions on the server, given automatically after the purchase is done."
+        ],
+        "mirppTitle": "More Information Regarding Premium Pack",
+        "mirppDescription": "The Premium Pack costs **USD$4.99** and you will have access to the perks for 1 month. After that, you will have to re-purchase the Premium Pack again in order to get it back.\n\nIf the buyer is caught abusing the support server-side perks in the support server, the said perks will be removed from them and they will no longer have the permission to react on messages or send images within the server.\nThings that will be considered as abusing, include but is not limited to:",
+        "abuse": [
+          "Sending inappropriate images, reacting with inappropriate emotes, using image and reaction permission to bypass the chat filter, spamming images",
+          "Spamming reaction emotes on one message"
+        ],
+        "purchaseTitle": "Ready to make a purchase? Click [here]() to start!"
       }
     },
     "settings": {
@@ -98,6 +216,7 @@
       "description": "Configures sticky messages for this server",
       "data": {
         "alrExist": "A Sticky Message already exists for this channel!",
+        "premiumRequired": "You need premium in order to create more than 5 sticky messages.",
         "inputPrompt": "Please enter the message displayed on the Sticky Message.\nOr type `cancel` to cancel this process.",
         "lengthExceed": "Stciky Message length cannot exceed more than 900 characters!",
         "addStick": "Successfully added a Sticky Message for Channel {{channel}}",
@@ -106,9 +225,9 @@
         "status": "Successfully {{status}} the Sticky Message for Channel {{channel}}!",
         "editConPrompt": "Please enter the new message displayed on the Sticky Message\nOr type `cancel` to cancel this process.",
         "editContent": "Successfully updated the message contnet for {{channel}}'s Sticky Message\nThe Sticky Message will be updated on the next refresh.",
-        "invalidTextAmt": "The text amount cannot be below 2 or higher than 20!",
+        "invalidTextAmt": "The text amount cannot be below {{min}} or higher than {{max}}!",
         "updateTxtAmt": "Successfully updated the text amount required before reposting Sticky Message to `{{integer}}` messages.",
-        "invalidAttachAmt": "The Attachment Amount cannot be below 1 or higher than 5!",
+        "invalidAttachAmt": "The Attachment Amount cannot be below {{min}} or higher than {{max}}!",
         "updateAttachAmt": "Successfully updated the attachment amount required before reposting Sticky Message to `{{integer}}`!",
         "noStick": "This server does not have any sticky messages configured!",
         "sm": "Sticky Messages",
@@ -735,7 +854,6 @@
         "administrator": "Administrator",
         "fun": "Fun",
         "utility": "Utility",
-        "music": "Music",
         "economy": "Economy",
         "giveaway": "Giveaway",
         "hFieldDesc": "• {{category}} Commands ({amount}})",
@@ -1122,121 +1240,6 @@
           },
           "warned": "warned"
         }
-      }
-    }
-  },
-  "music": {
-    "filters": {
-      "description": "Activates/Deactivates a cretain music filter",
-      "data": {
-        "onGoingFilter": "There is an on going music filter, please cancel that one before adding more filters.",
-        "eight_d": "8d",
-        "bassboos": "Bassboost",
-        "daycore": "Daycore",
-        "demon": "Demon",
-        "nightcore": "Nightcore",
-        "trebblebas": "Trebblebass",
-        "tremolo": "Tremolo",
-        "vaporwave": "Vaporwave",
-        "vibrato": "Vibrato",
-        "reset": "Reset",
-        "resetDesc": "Successfully reset audio filters",
-        "filterAdd": "Successfully added {{filter}} audio filter."
-      }
-    },
-    "leave": {
-      "description": "This comand allows you to destroy the music player.",
-      "data": {
-        "destroy": "Destroyed the music player."
-      }
-    },
-    "loop": {
-      "description": "This command allows you to loop current playing track or the entire queue.",
-      "data": {
-        "success": "Successfully {{type}} {{mode}} repeat."
-      }
-    },
-    "nowplaying": {
-      "description": "This command allows you to view the current platying song.",
-      "data": {
-        "noTrack": "There is no track playing currently.",
-        "currentPlaying": "Currently Playing",
-        "sName": "Song Name",
-        "vChannel": "Voice Channel",
-        "loopMode": "Loop Mode",
-        "off": "off",
-        "repeat": "repeat",
-        "queue": "queue",
-        "pVol": "Player Volume",
-        "pBar": "Progress Bar"
-      }
-    },
-    "pause": {
-      "description": "This command allows you to pause the player.",
-      "data": {
-        "alrdyPaused": "The music player is already paused",
-        "pause": "Successfully paused the music player."
-      }
-    },
-    "play": {
-      "description": "Plays Music",
-      "data": {
-        "nthFound": "Nothing found with the given query",
-        "loadSuccess": "I have successfully added {{item}} to the queue.",
-        "ssmCancelOpt": {
-          "label": "Click to Cancel",
-          "description": "Click this to cancel this query."
-        },
-        "selectMsg": "Please select the songs you would like to add. Select `cancel` if you wish to cancel selecting.",
-        "addReq": "Successfully added the requested songs",
-        "cancel": "Successfully cancelled the song selection menu",
-        "addMultiple": "I have successfully added **{{amount}}** songs(s) to the queue"
-      }
-    },
-    "queue": {
-      "description": "This command allows you to view the queue.",
-      "data": {
-        "qTitle": "{{gName}}'s Queue",
-        "np": "Now Playing",
-        "niq": "Next in Queue",
-        "page": "Page",
-        "song": "songs(s)",
-        "td": "total duration",
-        "errOnSelect": "Please provide a valid number and a number that is not larger than {{total}} page(s)",
-        "nthPlaying": "Nothing Playing"
-      }
-    },
-    "remove": {
-      "description": "This command allows you to remove tracks from the queue",
-      "data": {
-        "provideTrack": "Please provide a valid track.",
-        "success": "Successfully removed [{{track}}] from the queue."
-      }
-    },
-    "resume": {
-      "description": "This command allows you to resume the music player",
-      "data": {
-        "alrdyResumed": "The music player is already resumed",
-        "resume": "Successfully resumed the music player"
-      }
-    },
-    "shuffle": {
-      "description": "This command allows you to shuffle the queue",
-      "data": {
-        "shuffle": "Successfully shuffled the music queue"
-      }
-    },
-    "skip": {
-      "description": "This command allows you to skip the currently playing song.",
-      "data": {
-        "skip": "Successfully skipped the currently playing song."
-      }
-    },
-    "volume": {
-      "description": "This command allows you to change the volume",
-      "data": {
-        "inputExceed": "Please provide a number between 1 and 200.",
-        "success": "Successfully adjusted the volume to {{volume}}%"
       }
     }
   },
