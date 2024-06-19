@@ -21,6 +21,7 @@
     "permanent": "永久",
     "reason": "原因",
     "cmdExeFail": "命令執行失敗",
+    "successUpdateConf": "已成功更新伺服器配置",
     "permissions": {
         "client": "我沒有足夠的權限來執行此命令。",
         "user": "您沒有足夠的權限來執行此命令。",
