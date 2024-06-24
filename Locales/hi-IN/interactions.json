@@ -90,7 +90,7 @@
       },
       "lost": {
           "title": "Game Over!",
-          "desc": "You Lost! Better luck next time!\nशब्द था **{{word}}**"
+          "desc": "तुम हार गये! अगली बार किस्मत तुम्हारा साथ देगी!\nशब्द था **{{word}}**"
       },
       "stop": "खेल बंद"
     }
