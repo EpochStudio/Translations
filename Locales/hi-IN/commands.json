@@ -29,53 +29,53 @@
         }
       },
       "categories": {
-      "description": "Disables/Enables the specified category",
+      "description": "यह निर्दिष्ट श्रेणी को चालू या बंद करो करता है",
       "data": {
-        "enabled": "Successfully enabled the `{{cat}}` category.",
-        "disabled": "Successfully disabled the `{{cat}}` category.",
-        "moderation": "Moderation",
-        "fun": "Fun",
-        "utility": "Utility",
-        "music": "Music",
-        "economy": "Economy",
-        "giveaway": "Giveaway"
+        "enabled": "`{{cat}}` श्रेणी सफलतापूर्वक चालू हो गई।",
+        "disabled": "`{{cat}}` श्रेणी सफलतापूर्वक बंद हो गई।",
+        "moderation": "मॉडरेशन",
+        "fun": "मज़ा",
+        "utility": "उपयोगिता",
+        "music": "संगीत",
+        "economy": "अर्थव्यवस्था",
+        "giveaway": "गिवअवे"
       }
     },
     "commands": {
-      "description": "Disables/Enables the specified command",
+      "description": "निर्दिष्ट कमांड को चालू या बंद करो करता है",
       "data": {
-        "notFound": "The specified command does not exist.",
-        "removed": "Successfully removed `{{cmdName}}` from the disabled commands list.",
-        "added": "Successfully added `{{cmdName}}` to the disabled commands list."
+        "notFound": "निर्दिष्ट कमांड मौजूद नहीं है.",
+        "removed": "बंद कमांड सूची से `{{cmdName}}` को सफलतापूर्वक हटा दिया गया।",
+        "added": "बंद कमांड सूची में  `{{cmdName}}` को सफलतापूर्वक जोड़ा गया।"
       }
     },
     "configure": {
-      "description": "Configure the Mute Role/Mod Log Settings",
+      "description": "म्यूट रोल/मॉड लॉग सेटिंग्स कॉन्फ़िगर करें",
       "data": {
-        "mrole": "Successfully set the server mute role to {{role}}",
-        "updated": "Server Configuration updated"
+        "mrole": "सर्वर म्यूट भूमिका को {{role}} पर सफलतापूर्वक सेट हो गया",
+        "updated": "सर्वर कॉन्फ़िगरेशन अद्यतन किया गया"
       }
     },
     "customcmd": {
-      "description": "Manage Custom Commands of this Guild",
+      "description": "इस गिल्ड के कस्टम कमांड प्रबंधित करें",
       "data": {
-        "header": "You have chosen to create a `{{type}}` command",
-        "premiumRequired": "You need premium in order to create more than 2 custom commands.",
+        "header": "आपने `{{type}}` कमांड बनाना चुना है",
+        "premiumRequired": "२ से अधिक कस्टम कमांड बनाने के लिए आपको प्रीमियम की आवश्यकता है।",
         "instructions": {
-          "identifier": "In the next message, please enter the trigger phrase for this command.\n\nFor example, if you wish for the trigger phrase to be `-hello`,\nThen please enter `hello` on your next message.\n\nThe identifier cannot be longer than 20 characters.\n\nIf you wish to cancel the operation, please enter `cancel` on your next message.\n\nThe trigger phrase cannot be an already existing command of the bot.",
-          "identifierExceed": "The identifier for a custom command cannot exceed 20 characters.",
-          "invalidType2": "A custom command already exists with this identifier.",
-          "invalid": "The command identifier cannot be named after an already existing command of the bot.",
-          "identifierConfirm": "Very well, the identifier for this command will be `{{identifier}}`",
+          "identifier": "अगले संदेश में, कृपया इस कमांड के लिए ट्रिगर वाक्यांश दर्ज करें।\n\nउदाहरण के लिए, यदि आप चाहते हैं कि ट्रिगर वाक्यांश `-नमस्ते` हो,\nफिर कृपया अपने अगले संदेश पर `नमस्ते` दर्ज करें।\n\nपहचानकर्ता २० वर्णों से अधिक लंबा नहीं हो सकता.\n\nयदि आप ऑपरेशन रद्द करना चाहते हैं, तो कृपया अपने अगले संदेश पर 'रद्द करें' दर्ज करें।\n\nट्रिगर वाक्यांश बॉट का पहले से मौजूद कमांड नहीं हो सकता।",
+          "identifierExceed": "कस्टम कमांड के लिए पहचानकर्ता २० अक्षरों से अधिक नहीं हो सकता।",
+          "invalidType2": "इस पहचानकर्ता के साथ एक कस्टम कमांड पहले से मौजूद है।",
+          "invalid": "कमांड पहचानकर्ता का नाम बॉट के पहले से मौजूद कमांड के नाम पर नहीं रखा जा सकता है।",
+          "identifierConfirm": "बहुत अच्छा, इस कमांड के लिए पहचानकर्ता होगा `{{identifier}}`",
           "traditional": {
-            "replyPrompt": "Now, please enter the content that the bot will reply with when this identifier is typed out.\n\nThe reply cannot be longer than 1000 characters.\nIf you wish to cancel this operation, then please type `cancel` on your next message",
-            "exceedLimit": "The response for a traditional custom command cannot exceed 1000 characters",
-            "editPrompt": "This command is a `traditional` command.\nIn your next message please type out the new reply of this command.\n\nThe reply cannot exceed 1000 characters.\nIf you want to cancel this operation, please type `cancel` on your next message."
+            "replyPrompt": "अब, कृपया वह वाक्य दर्ज करें जिसका उत्तर इस पहचानकर्ता के टाइप करने पर बॉट देगा।\n\nउत्तर १००० वर्णों से अधिक लंबा नहीं हो सकता.\nयदि आप इस ऑपरेशन को रद्द करना चाहते हैं, तो कृपया अपने अगले संदेश पर 'रद्द करें' टाइप करें",
+            "exceedLimit": "पारंपरिक कस्टम कमांड की प्रतिक्रिया १००० वर्णों से अधिक नहीं हो सकती",
+            "editPrompt": "यह कमांड एक `पारंपरिक` कमांड है।\nअपने अगले संदेश में कृपया इस कमांड का नया उत्तर टाइप करें।\n\nउत्तर १००० अक्षरों से अधिक नहीं हो सकता.\nयदि आप इस ऑपरेशन को रद्द करना चाहते हैं, तो कृपया अपने अगले संदेश पर 'रद्द करें' टाइप करें।"
           },
           "embed": {
             "title": {
-              "titlePrompt": "Now, please enter the Embed Title of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 256 characters\nIf you wish to cancel this operation, then please type 'cancel` on your next message.",
-              "exceedLimit": "The response for an embed custom command's Embed Title cannot exceed 256 characters."
+              "titlePrompt": "अब, कृपया एंबेड का एंबेड शीर्षक दर्ज करें जिसका उत्तर इस पहचानकर्ता के टाइप किए जाने पर दिया जाएगा।\n\nउत्तर २५६ अक्षरों से अधिक नहीं हो सकता\nयदि आप इस ऑपरेशन को रद्द करना चाहते हैं, तो कृपया अपने अगले संदेश पर 'रद्द करें' टाइप करें।",
+              "exceedLimit": "एंबेड कस्टम कमांड के एंबेड शीर्षक के लिए प्रतिक्रिया २५६ वर्णों से अधिक नहीं हो सकती।"
             },
             "description": {
               "descPrompt": "Now, please enter the Embed Description of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 4096 characters.\nIf you wish to cancel this operaton, then please type `cancel` on your next message.",
