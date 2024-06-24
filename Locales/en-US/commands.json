@@ -91,7 +91,7 @@
             },
             "author": {
               "authorPrompt": "Now, please enter the Embed Author name of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 256 characters\n\nIf you do not wish for the reply to have an Embed Author Name, then please reply with `next` on your next message.\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
-              "exceedLimit": "the response for an embed custom command's Embed Author cannot exceed 256 characters."
+              "exceedLimit": "The response for an embed custom command's Embed Author cannot exceed 256 characters."
             },
             "thumbnail": {
               "thumbnailPrompt": "Now, please enter the Embed Thumbnail of the embed that will be replied with when this identifier is typed out.\n\nThe reply must be a valid URL Link.\n\nIf you do not wish for the reply to have an Embed Thumbnail, then please reply with `next` on your next message\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",

@@ -78,24 +78,24 @@
               "exceedLimit": "एंबेड कस्टम कमांड के एंबेड शीर्षक के लिए प्रतिक्रिया २५६ वर्णों से अधिक नहीं हो सकती।"
             },
             "description": {
-              "descPrompt": "Now, please enter the Embed Description of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 4096 characters.\nIf you wish to cancel this operaton, then please type `cancel` on your next message.",
-              "exceedLimit": "The response for an embed custom command's Embed Description cannot exceed 4096 characters."
+              "descPrompt": "अब, कृपया एंबेड का एंबेड विवरण दर्ज करें जिसका उत्तर इस पहचानकर्ता के टाइप किए जाने पर दिया जाएगा।\n\nउत्तर ४०९६ अक्षरों से अधिक नहीं हो सकता।\nयदि आप इस ऑपरेशन को रद्द करना चाहते हैं, तो कृपया अपने अगले संदेश पर 'रद्द करें' टाइप करें।",
+              "exceedLimit": "एंबेड कस्टम कमांड के एंबेड विवरण के लिए प्रतिक्रिया ४०९६ वर्णों से अधिक नहीं हो सकती।"
             },
             "color": {
-              "colorPrompt": "Now, please enter the Embed Color of the embed that will be replied with when this identifier is typed out.\n\nThe reply must be in [hexadecimal format](https://en.wikipedia.org/wiki/Hexadecimal).\nIf you wish to cancel this operation, then please type `cancel` on your next message.",
-              "colorInvalid": "The entered value must be a valid hexadecimal."
+              "colorPrompt": "अब, कृपया एंबेड का एंबेड रंग दर्ज करें जिसका उत्तर इस पहचानकर्ता के टाइप करने पर दिया जाएगा।\n\nउत्तर [हेक्साडेसिमल प्रारूप](https://en.wikipedia.org/wiki/Hexadecimal) में होना चाहिए।\nयदि आप इस ऑपरेशन को रद्द करना चाहते हैं, तो कृपया अपने अगले संदेश पर 'रद्द करें' टाइप करें।",
+              "colorInvalid": "दर्ज किया गया मान वैध हेक्साडेसिमल होना चाहिए।"
             },
             "footer": {
-              "footerPrompt": "Now, please enter the Embed Footer Field of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 2048 characters\n\nIf you do not wish for the reply to have an Embed Footer Field, then please reply with `next` on your next message\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
-              "exceedLimit": "The response for an embed custom command's Embed Footer cannot exceed 2048 characters."
+              "footerPrompt": "अब, कृपया एंबेड के एंबेड फ़ूटर फ़ील्ड को दर्ज करें जिसका उत्तर इस पहचानकर्ता के टाइप किए जाने पर दिया जाएगा।\n\nउत्तर २०४८ अक्षरों से अधिक नहीं हो सकता\n\nयदि आप नहीं चाहते कि उत्तर में एंबेड फ़ुटर फ़ील्ड हो, तो कृपया अपने अगले संदेश पर `अगला` के साथ उत्तर दें\n\nयदि आप इस ऑपरेशन को रद्द करना चाहते हैं, तो कृपया अगले संदेश में 'रद्द करें' टाइप करें।",
+              "exceedLimit": "एंबेड कस्टम कमांड के एंबेड फ़ुटर की प्रतिक्रिया २०४८ वर्णों से अधिक नहीं हो सकती।"
             },
             "author": {
-              "authorPrompt": "Now, please enter the Embed Author name of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 256 characters\n\nIf you do not wish for the reply to have an Embed Author Name, then please reply with `next` on your next message.\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
-              "exceedLimit": "the response for an embed custom command's Embed Author cannot exceed 256 characters."
+              "authorPrompt": "अब, कृपया एंबेड के एंबेड लेखक का नाम दर्ज करें जिसका उत्तर इस पहचानकर्ता के टाइप किए जाने पर दिया जाएगा।\n\nउत्तर २५६ अक्षरों से अधिक नहीं हो सकता\n\nयदि आप उत्तर में लेखक का नाम एम्बेड नहीं करना चाहते हैं, तो कृपया अपने अगले संदेश में `अगला` लिखकर उत्तर दें।\n\nयदि आप इस ऑपरेशन को रद्द करना चाहते हैं, तो कृपया अगले संदेश में 'रद्द करें' टाइप करें।",
+              "exceedLimit": "एंबेड कस्टम कमांड के एंबेड लेखक के लिए प्रतिक्रिया २५६ वर्णों से अधिक नहीं हो सकती।"
             },
             "thumbnail": {
-              "thumbnailPrompt": "Now, please enter the Embed Thumbnail of the embed that will be replied with when this identifier is typed out.\n\nThe reply must be a valid URL Link.\n\nIf you do not wish for the reply to have an Embed Thumbnail, then please reply with `next` on your next message\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
-              "urlInvalid": "The embed thumbnail was not saved, as it was not a valid URL."
+              "thumbnailPrompt": "अब, कृपया एंबेड का एंबेड थंबनेल दर्ज करें जिसका उत्तर इस पहचानकर्ता के टाइप किए जाने पर दिया जाएगा।\n\nउत्तर एक वैध URL लिंक होना चाहिए।\n\nयदि आप नहीं चाहते कि उत्तर में एंबेड थंबनेल हो, तो कृपया अपने अगले संदेश पर `अगला` के साथ उत्तर दें\n\nयदि आप इस ऑपरेशन को रद्द करना चाहते हैं, तो कृपया अगले संदेश में 'रद्द करें' टाइप करें।",
+              "urlInvalid": "एम्बेड थंबनेल सहेजा नहीं गया था, क्योंकि यह एक वैध URL नहीं था।"
             },
             "image": {
               "imagePrompt": "Now, please enter the Embed Image of the embed that will be replied with when this identifier is typed out.\n\nThe reply must be a valid URL Link\nIf you do not wish for the reply to have an Embed Image, then please reply with `next` on your next message.\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
