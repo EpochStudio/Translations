@@ -12,8 +12,8 @@
     "reason": "Reason",
     "blOn": "Blacklisted On",
     "dur": "Duration",
-    "uBlacklist": "You do not have permission to run this command because\nYou are currently blacklisted from EternalGaius\nTo appeal a blacklist, please join our [support server](https://discord.gg/9PnUBeu).",
-    "gBlacklist": "You do not have permission to run this command because\nThe server you are executing this command in is currently blacklisted from EternalGaius\nA server representative can join our [support server](https://discord.gg/9PnUBeu) to appeal this blacklist.",
+    "uBlacklist": "You do not have permission to run this command because\nYou are currently blacklisted from Galaxies\nTo appeal a blacklist, please join our [support server](https://discord.gg/9PnUBeu).",
+    "gBlacklist": "You do not have permission to run this command because\nThe server you are executing this command in is currently blacklisted from Galaxies\nA server representative can join our [support server](https://discord.gg/9PnUBeu) to appeal this blacklist.",
     "mentionMsg": ":wave: Hey! Use **/help** (Slash Commands) to get more information about me!",
     "interactonResponse": {
         "message": {
@@ -35,25 +35,8 @@
                 "curAfk": "Hey! That user is currently afking!\nReason: **{{reason}}**"
             }
         },
-        "interaction": {
-            "verification": {
-                "disabled": "The verification system is disabled in this server. Please contact the Server Administrator for further details.",
-                "missingPerms": "I am missing the `ManageRoles` permission. Please contact the Server Administrator for further assistance .",
-                "rNotFound": "The previously determined verification role no longer exists. Please contact the Server Administrator for further assistance.",
-                "higherAuthority": "The verified role is currently above my highest role. Please contact the Server Administrator for further assistance.",
-                "ongoing": "You already have an active verification process going on!",
-                "alrdyVerified": "You are already verified in this guild.",
-                "verificationInProg": "You have 60 seconds to solve the Captcha below!\nType `cancel` to cancel the verification process.",
-                "dmsDisabled": "You currently have your dms disabled. Please turn them on before pressing the \"Verify\" button again.",
-                "err": "Something went wrong while sending the verification message. This exception has been logged.",
-                "cancel": "Successfully cancelled the verification process.",
-                "success": "Hey {{user}}, you have successfully been verified in **{{gName}}**.",
-                "fail": "You failed to complete the captcha. Please try again by pressing on the \"Verifiy\" button again.",
-                "timeout": "You failed to complete the captcha in 60 seconds."
-            }
-        },
         "automated": {
-            "unmute": "You have been unmuted in **{{gName}}** by the Moderator **EternalGaius** (Auto-Unmute)"
+            "unmute": "You have been unmuted in **{{gName}}** by the Moderator **Galaxies** (Auto-Unmute)"
         }
     }
 }

@@ -140,41 +140,69 @@
     "premium": {
       "description": "Configures your premium settings of this Guild",
       "data": {
-        "disclaimer": "All purchase done will be subject to the [following terms](https://github.com/EternalGaiusOfficial/EternalGaius-ToS-Privacy).",
-        "disclaimerDescription": "Finished reading our Terms of Service and wish to buy a Premium Pack of EternalGaius to get more perks than normal users do? Here is a list of the perks you will be getting once the purhcase is done:",
-        "egPerksTitle": "Related to EternalGaius",
+        "disclaimer": "All purchase done will be subject to the [following terms](https://github.com/EpochStudio/Galaxies-ToS-Privacy/blob/main/ToS.md).",
+        "disclaimerDescription": "Finished reading our Terms of Service and wish to buy a Premium Pack of Galaxies to get more perks than normal users do? Here is a list of the perks you will be getting once the purhcase is done:",
+        "egPerksTitle": "Related to Galaxies",
         "egPerks": [
-          "Able to set Custom Messages on ALT Detector response-log (server-side)",
-          "Restriction of 10 bypass_user only lifted (changed to unlimited)",
-          "Able to create more than 2 custom commands",
-          "Able to add more than 2 blacklisted roles for Custom Command",
-          "Able to create more than 5 sticky messages.",
-          "Higher/Lower refresh rate for Sticky Messages (Text: 2~20 to 1~50) (Attachment: 1~5 to 1~35)",
-          "Ability to add more than 1 bypass/blacklist role in the Giveaway System",
-          "Ability to add more than 10 bonus-roles in the Giveaway System",
-          "Ability to add more than 10 role requirements when configuring a Giveaway"
+          {
+            "title": "ALT Commands Limitations Lifted",
+            "perk": [
+              "Able to set Custom Messages on ALT Detector response-log (server-side)",
+              "Restriction of 10 bypass_user only lifted (changed to unlimited)"
+            ]
+          },
+          {
+            "title": "Custom Commands Limitations Lifted",
+            "perk": [
+              "Able to create more than 2 custom commands",
+              "Able to add more than 2 blacklisted roles for Custom Command"
+            ]
+          },
+          {
+            "title": "Sticky Messages Limitations Lifted",
+            "perk": [
+              "Able to create more than 5 sticky messages.",
+              "Higher/Lower refresh rate for Sticky Messages (Text: 2~20 to 1~50) (Attachment: 1~5 to 1~35)"
+            ]
+          },
+          {
+            "title": "Giveaway System Limitations Lifted",
+            "perk": [
+              "Ability to add more than 1 bypass/blacklist role in the Giveaway System",
+              "Ability to add more than 10 bonus-roles in the Giveaway System",
+              "Ability to add more than 10 role requirements when configuring a Giveaway"
+            ]
+          }
         ],
         "osPerksTile": "Other Side Perks",
         "osPerksDescription": "> Upon purchase, buyer will receive",
         "osPerks": [
-          "A **Premium Badge** on the EternalGaius Profile page",
+          "A **Premium Badge** on the Galaxies Profile page",
           "A hoisted **Premium Role** on the support server, the buyer will have a chance to be above all roles **excluding** staff roles.",
           "**Image** and **reaction** permissions on the server, given automatically after the purchase is done."
         ],
         "mirppTitle": "More Information Regarding Premium Pack",
-        "mirppDescription": "The Premium Pack costs **USD$4.99** and you will have access to the perks for 1 month. After that, you will have to re-purchase the Premium Pack again in order to get it back.\n\nIf the buyer is caught abusing the support server-side perks in the support server, the said perks will be removed from them and they will no longer have the permission to react on messages or send images within the server.\nThings that will be considered as abusing, include but is not limited to:",
+        "mirppDescription": "The Premium Pack costs **USD$4.99** and you will have access to the perks for 1 month. After that, you will have to re-purchase the Premium Pack again in order to get it back.\n\nIf the buyer is caught abusing the support server-side perks in the support server, the said perks will be removed from them and they will no longer have the permission to react on messages or send images within the server.",
+        "mirppDescription2": "> Things that will be considered as abusing, include but is not limited to:",
         "abuse": [
-          "Sending inappropriate images, reacting with inappropriate emotes, using image and reaction permission to bypass the chat filter, spamming images",
-          "Spamming reaction emotes on one message"
+          "Sending inappropriate images.",
+          "Reacting with inappropriate emotes.",
+          "Using image and reaction permission to bypass the chat filter.",
+          "Spamming images.",
+          "Spamming reaction emotes on one message."
         ],
-        "purchaseTitle": "Ready to make a purchase? Click [here]() to start!"
+        "purchaseTitle": "Ready to make a purchase? Click [here]() to start!",
+        "premConfig": "Premium Configuration",
+        "hasPrem": "Has Premium",
+        "endDate": "End Date",
+        "noPrem": "No Premium"
       }
     },
     "settings": {
       "description": "Displays the server settings",
       "data": {
         "general": {
-          "genSett": "EternalGaius Settings",
+          "genSett": "Galaxies Settings",
           "configuration": "Configuration",
           "disCmd": "Disabled Commands",
           "mr": "Mute Role",
@@ -184,18 +212,6 @@
         "module": {
           "modSett": "Module Settings",
           "mod": "Modules"
-        },
-        "verification": {
-          "verifSett": "Verification System Settings",
-          "status": {
-            "title": "Status"
-          },
-          "verifChan": "Verification Channel",
-          "nVerifChan": "Not Configured",
-          "verifRole": "Verified Role",
-          "nVerifRole": "Not Configured",
-          "verifLog": "Verification Log",
-          "nVerifLog": "Not Configured"
         },
         "greet": {
           "greSett": "Greet System Settings",
@@ -240,23 +256,6 @@
         "clickMe": "Click Me",
         "txtBeforeRepost": "Text Amount Before Repost",
         "attachBeforeRepost": "Attachment Amount Before Repost"
-      }
-    },
-    "verification": {
-      "description": "Configures the verification system",
-      "data": {
-        "notConfigured": "Please configure the Verification Channel and Verified Role before proceeding.",
-        "verifyEmbed": {
-          "content": "Click the button below to begin the Verification Process!\nIf you did not receive a DM, then please open your dms and press the button again."
-        },
-        "preChanNotExist": "The determined Verification Channel does not exist! Please reconfigure the Verification Channel",
-        "preRoleNotExist": "The determined Verified Role does not exist! Please reconfigure the Verified Role",
-        "errOnSend": "Something went wrong while sending the Verification Message to the Verification Channel. Please try again later.",
-        "enabled": "Successfully enabled the Verification System",
-        "disabled": "Successfully disabled the Verification System",
-        "setVerChan": "Verification Channel set to {{channel}}",
-        "setVerRole": "Verification Role set to {{role}}",
-        "setVerLogChan": "Verification Log set to {{channel}}"
       }
     }
   },
@@ -773,10 +772,10 @@
   },
   "general": {
     "aboutme": {
-      "description": "About EternalGaius",
+      "description": "About Galaxies",
       "data": {
-        "title": "About EternalGaius",
-        "description": "EternalGaius was never meant to be a permanent project, I originally made it for fun, however after the support and positive feedback I received, I've decided to make EternalGaius a long term project! At EternalGaius we strive to give our users the best experience while using our bot while maintaining stability and security for our users data.\n\nIt is all thanks to the amazing Developers, Staff Members, Partners and Contributors we have! Big kudos to them!",
+        "title": "About Galaxies",
+        "description": "Galaxies. A bot dependable to manage your discord server. It has powerful giveaway, greet system to welcome your new members on join. A sticky message system that allows you to highlight important messages, Moderation commands. It also has some utility commands and fun commands And more!",
         "dev": "Our Development Team",
         "staff": "Our Staff Members",
         "partner": "Our Partners",
@@ -784,17 +783,17 @@
       }
     },
     "badgeinfo": {
-      "description": "Explains the purpose of each EternalGaius Badges",
+      "description": "Explains the purpose of each Galaxies Badges",
       "data": {
-        "title": "About EternalGaius Badges",
-        "dev": "EternalGaius Developers",
-        "contri": "EternalGaius Contributor",
-        "staff": "EternalGaius Staff",
-        "partnership": "EternalGaius partnership",
-        "devExp": "Granted to the Developers of EternalGaius",
-        "contriExp": "Granted to people who have contributed to EternalGaius",
-        "staffExp": "Granted to people who are a Staff Member at EternalGaius Support Server",
-        "partnershipExp": "Granted to people who are partnered with EternalGaius"
+        "title": "About Galaxies Badges",
+        "dev": "Galaxies Developers",
+        "contri": "Galaxies Contributor",
+        "staff": "Galaxies Staff",
+        "partnership": "Galaxies partnership",
+        "devExp": "Granted to the Developers of Galaxies",
+        "contriExp": "Granted to people who have contributed to Galaxies",
+        "staffExp": "Granted to people who are a Staff Member at Galaxies Support Server",
+        "partnershipExp": "Granted to people who are partnered with Galaxies"
       }
     },
     "changelogs": {
@@ -804,7 +803,7 @@
       }
     },
     "customize": {
-      "description": "Customize your EternalGaius Settings/Experience",
+      "description": "Customize your Galaxies Settings/Experience",
       "data": {
         "bdayInputPrompt": "Please insert your birthday date in this format: `MM/DD`",
         "bdayNotNum": "The given information is not a number",
@@ -831,7 +830,7 @@
       }
     },
     "guilds": {
-      "description": "Displays the amount of guilds that EternalGaius is in",
+      "description": "Displays the amount of guilds that Galaxies is in",
       "data": {
         "title": "Currently Serving",
         "description": "I am currently serving **{{guilds}}** guilds and **{{user}}** users",
@@ -841,7 +840,7 @@
     },
     "help": {
       "description": "Sends the help menu",
-      "hDescription": "**Links:** <:invite:872645785408389181> [Invite](https://discord.com/api/oauth2/authorize?client_id=716248082865455174&permissions=8&scope=bot%20applications.commands) | <:vote:872646196299186176> [Vote](https://top.gg/bot/716248082865455174) | <:EG_tick:871711115086794752> [Support Server](https://discord.gg/9PnUBeu)\nSelect a Category to view the Category Commands",
+      "hDescription": "**Links:** <:invite:872645785408389181> [Invite](https://discord.com/api/oauth2/authorize?client_id=814441758037377045&permissions=8&scope=bot%20applications.commands) | <:vote:872646196299186176> [Vote](https://top.gg/bot/716248082865455174) | <:EG_tick:871711115086794752> [Support Server](https://discord.gg/9PnUBeu)\nSelect a Category to view the Category Commands",
       "hTitle": "Help »",
       "data": {
         "ssmPlaceholder": "Select a Category",
@@ -873,7 +872,7 @@
       "description": "Sends the link to invite the bot",
       "data": {
         "title": "Invite Me",
-        "description": "EternalGaius is a feature-rich, easy-to-use Discord multipurpose bot! Currently serving **{{amount}}** guilds",
+        "description": "Galaxies is a feature-rich, easy-to-use Discord multipurpose bot! Currently serving **{{amount}}** guilds",
         "reqPerm": "Required Permission",
         "adminPerm": "Admin Permission"
       }
@@ -884,17 +883,9 @@
         "clientLan": "Client Latency",
         "apiLan": "API Latency",
         "dataLan": "Database Latency",
-        "tpsLan": "TPS Latency"
-      }
-    },
-    "premium": {
-      "description": "Premium details command",
-      "data": {
-        "active": "Active",
-        "title": "EternalGaius Premium",
-        "info": {
-          "description": "What is EternalGaius Premium?\nEternalGaius Premium grants you access to exclusive perks, features, bypass-vote requirement for vote only commands and accessing the in-development features through our Beta Bot!\nAfter confirming your purchase, you will also get an \"EternalGaius Premium\" Badge to your profile indicating your support to EternalGaius!\nBy purchasing, you are also helping EternalGaius to continue to be online and running!"
-        }
+        "tpsLan": "TPS Latency",
+        "shardNo": "Shard ID",
+        "clusterNo": "Cluster ID"
       }
     },
     "profile": {
@@ -912,7 +903,7 @@
         "accType": "Account Type",
         "bot": "🤖 Bot",
         "human": "🧍 Human",
-        "eBadges": "EternalGaius Badges",
+        "eBadges": "Galaxies Badges",
         "dBadges": "Discord Badges",
         "bday": "Birthday",
         "nBday": "No Birthday Set",
@@ -926,10 +917,10 @@
     "stats": {
       "description": "Displays the bot statistic",
       "data": {
-        "title": "EternalGaius Statistics",
-        "description": "**[Invite](https://discord.com/api/oauth2/authorize?client_id=716248082865455174&permissions=8&scope=bot%20applications.commands) | [Support Server](https://discord.gg/9PnUBeu) | [Vote](https://top.gg/bot/716248082865455174)**",
-        "general": "• __General__",
-        "system": "• __System__",
+        "title": "Galaxies Statistics",
+        "description": "**[Invite](https://discord.com/api/oauth2/authorize?client_id=814441758037377045&permissions=8&scope=bot%20applications.commands) | [Support Server](https://discord.gg/9PnUBeu) | [Vote](https://top.gg/bot/716248082865455174)**",
+        "general": "• __General Metric__",
+        "system": "• __System Metric__",
         "memory": "Memory",
         "uc": "User Count",
         "gc": "Guild Count",
@@ -945,17 +936,17 @@
     "tos": {
       "description": "Shows the bot Terms of Service or Privacy Policy",
       "data": {
-        "tosTitle": "Terms of Service - EternalGaius",
-        "privacyTitle": "Privacy Policy - EternalGaius",
-        "tos": "Click [me](https://github.com/EternalGaiusOfficial/EternalGaiusToS-Privacy/blob/main/TOS.md) to read our Terms of Service!",
-        "privacy": "Click [me](https://github.com/EternalGaiusOfficial/EternalGaiusToS-Privacy/blob/main/Privacy.md) to read our Privacy Policy"
+        "tosTitle": "Terms of Service - Galaxies",
+        "privacyTitle": "Privacy Policy - Galaxies",
+        "tos": "Click [me](https://github.com/EpochStudio/Galaxies-ToS-Privacy/blob/main/ToS.md) to read our Terms of Service!",
+        "privacy": "Click [me](https://github.com/EpochStudio/Galaxies-ToS-Privacy/blob/main/Privacy_Policy.md) to read our Privacy Policy"
       }
     },
     "upvote": {
-      "description": "Displays all the links to vote for EternalGaius",
+      "description": "Displays all the links to vote for Galaxies",
       "data": {
-        "vTitle": "EternalGaius - Vote",
-        "vDesc": "By voting, you show your support to us!\nWant to vote? Click [here](https://top.gg/bot/716248082865455174)!",
+        "vTitle": "Galaxies - Vote",
+        "vDesc": "By voting, you show your support to us!\nWant to vote? Click [here](https://top.gg/bot/814441758037377045)!",
         "ssmPlaceholder": "Other Botlist",
         "obReply": "You can use this link to vote for us on **{{botlist_name}}**\n{{vLink}}"
       }
@@ -1259,6 +1250,12 @@
         "linkAs": "Link As"
       }
     },
+    "discorddate": {
+      "description": "Converts your human readable time to a Discord Timestamp",
+      "data": {
+        "invalidTime": "An invalid time has been entered. Please try again."
+      }
+    },
     "echo": {
       "description": "Send a message with the specified text.",
       "data": {
@@ -1300,7 +1297,10 @@
         "emoji": "Emoji",
         "gif": "Gif",
         "img": "Image",
-        "invalid": "Invalide Emoji Provided! Please provide an emoji to enlarge."
+        "invalid": "Invalide Emoji Provided! Please provide an emoji to enlarge.",
+        "invalidInput": "Either no valid emojis were inputted, or more than 5 emojis were inserted.",
+        "maxSlot": "The current server has hit the max emoji slots.",
+        "success": "Successfully added the emojis!"
       }
     },
     "github": {
@@ -1372,7 +1372,7 @@
         },
         "user": {
           "ub": "User Badges",
-          "eBadges": "EternalGaius Badges",
+          "eBadges": "Galaxies Badges",
           "dBadges": "Discord Badges",
           "nb": "No Badges",
           "uName": "Username",
