@@ -98,133 +98,133 @@
               "urlInvalid": "एम्बेड थंबनेल सहेजा नहीं गया था, क्योंकि यह एक वैध URL नहीं था।"
             },
             "image": {
-              "imagePrompt": "Now, please enter the Embed Image of the embed that will be replied with when this identifier is typed out.\n\nThe reply must be a valid URL Link\nIf you do not wish for the reply to have an Embed Image, then please reply with `next` on your next message.\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
-              "urlInvalid": "The embed image was not saved, as it was not a valid URL."
+              "imagePrompt": "अब, कृपया एंबेड की एंबेड चित्र दर्ज करें जिसका उत्तर इस पहचानकर्ता के टाइप किए जाने पर दिया जाएगा।\n\nउत्तर एक वैध URL लिंक होना चाहिए।\n\nयदि आप नहीं चाहते कि उत्तर में एंबेड थंबनेल हो, तो कृपया अपने अगले संदेश पर `अगला` के साथ उत्तर दें\n\nयदि आप इस ऑपरेशन को रद्द करना चाहते हैं, तो कृपया अगले संदेश में 'रद्द करें' टाइप करें।",
+              "urlInvalid": "एम्बेड किया गया चित्र सहेजा नहीं गया, क्योंकि यह एक वैध URL नहीं था।."
             },
-            "editPrompt": "This command is an `embed` command.\nIn your next message please type out the element you wish to change about the embed.\n\n**Available Choices:**\n`title` | `description` | `color` | `footer` | `author` | `image` | `thumbnail`\n\nIf you wish to cancel this operation, please type `cancel` on your next message.",
-            "elementEdit": "Very well, you have chosen to edit the `{{element}}` element.\n\nIn your next message please state the element's new value.\nIf you wish to cancel this operation, then please type `cancel` on your next message.",
-            "elementInvalid": "The element entered is not valid."
+            "editPrompt": "यह कमांड एक `एम्बेड` कमांड है।\nअपने अगले संदेश में कृपया एंबेड के बारे में वह तत्व टाइप करें जिसे आप बदलना चाहते हैं।\n\n**उपलब्ध विकल्प:**\n`शीर्षक` | `विवरण` | `रंग` | `फ़ुटर` | `लेखक` | `चित्र` | `थंबनेल`\n\nयदि आप इस ऑपरेशन को रद्द करना चाहते हैं, तो कृपया अपने अगले संदेश पर 'रद्द करें' टाइप करें।",
+            "elementEdit": "बहुत बढ़िया, आपने `{{element}}` तत्व को संपादित करना चुना है।\n\nअपने अगले संदेश में कृपया तत्व की नयी कीमत बताएं।\nयदि आप इस ऑपरेशन को रद्द करना चाहते हैं, तो कृपया अपने अगले संदेश पर 'रद्द करें' टाइप करें।",
+            "elementInvalid": "दर्ज किया गया तत्व मान्य नहीं है।"
           }
         },
-        "notFound": "There is no custom command with that identifier.",
-        "rolePremiumRequired": "You require premium to have more than 2 blacklisted role.",
-        "exceedLimit": "You cannot have more than 10 blacklisted roles.",
-        "embedTitle": "**__Identifier__ - __Type__ - __Created By__**",
-        "blRole": "Blacklisted Roles"
+        "notFound": "उस पहचानकर्ता के साथ कोई कस्टम कमांड नहीं है।",
+        "rolePremiumRequired": "आपको २ से अधिक ब्लैकलिस्टेड भूमिका के लिए प्रीमियम की आवश्यकता है।",
+        "exceedLimit": "आपके पास १० से अधिक ब्लैकलिस्टेड भूमिकाएँ नहीं हो सकतीं।",
+        "embedTitle": "**__पहचानकर्ता__ - __प्रकार__ - __के द्वारा बनाई गई__**",
+        "blRole": "ब्लैकलिस्टेड भूमिकाएँ"
       }
     },
     "greet": {
-      "description": "Configure the Welcome Channel/Message, Leave Channel/Message",
+      "description": "स्वागत चैनल/संदेश या छोड़ने वाले चैनल/संदेश कॉन्फ़िगर करें",
       "data": {
-        "setwelcomeChan": "Successfully set the Welcome Channel to {{channel}}",
-        "setwelcomeMsg": "Successfully set the Welcome Message to\n`{{msg}}`",
-        "resetWelcome": "Successfully reset the welcome configuration to the default settings",
-        "setleaveChan": "Successfully set the Leave Channel to {{channel}}",
-        "setleaveMsg": "Successfully set the Leave Message to\n`{{msg}}`",
-        "resetLeave": "Successfully reset the leave configuration to the default settings",
-        "arrExist": "This role is already in the auto role configuration system",
-        "arrMax": "You are currently at the max Auto Role Configuration limit! (Max 5)",
-        "arrAdd": "Successfully added {{role}} to the Auto Role Configuration",
-        "arrNotFound": "I did not find the given role in the Auto Role Configuration",
-        "arrRemove": "Successfully removed {{role}} from the Auto Role Configuration",
-        "arrReset": "Successfully reset the autorole configuration",
-        "variables": "Variables for Welcome/Goodbye Messages"
+        "setwelcomeChan": "स्वागत चैनल को सफलतापूर्वक {{channel}} पर सेट किया गया",
+        "setwelcomeMsg": "स्वागत संदेश को सफलतापूर्वक\n`{{msg}}` पर सेट किया गया",
+        "resetWelcome": "स्वागत कॉन्फ़िगरेशन को डिफ़ॉल्ट सेटिंग्स पर सफलतापूर्वक रीसेट किया गया",
+        "setleaveChan": "छोड़ने वाले चैनल को सफलतापूर्वक {{channel}} पर सेट किया गया",
+        "setleaveMsg": "छोड़ने के संदेश को सफलतापूर्वक\n`{{msg}}` पर सेट किया गया",
+        "resetLeave": "छोड़ने वाले कॉन्फ़िगरेशन को डिफ़ॉल्ट सेटिंग्स पर सफलतापूर्वक रीसेट करें",
+        "arrExist": "यह भूमिका ऑटो रोल कॉन्फ़िगरेशन प्रणाली में पहले से ही है",
+        "arrMax": "आप वर्तमान में अधिकतम ऑटो रोल कॉन्फ़िगरेशन सीमा पर हैं! (अधिकतम ५)",
+        "arrAdd": "{{role}} को ऑटो रोल कॉन्फ़िगरेशन में सफलतापूर्वक जोड़ा गया",
+        "arrNotFound": "मुझे ऑटो रोल कॉन्फ़िगरेशन में दी गई भूमिका नहीं मिली",
+        "arrRemove": "{{role}} को ऑटो रोल कॉन्फ़िगरेशन से सफलतापूर्वक हटा दिया गया",
+        "arrReset": "ऑटोरोल कॉन्फ़िगरेशन को सफलतापूर्वक रीसेट किया गया",
+        "variables": "स्वागत/अलविदा संदेशों के लिए चर"
       }
     },
     "pauseinvites": {
-      "description": "Pause/resume invites for the current server",
+      "description": "वर्तमान सर्वर के लिए आमंत्रण रोकें/फिर से शुरू करें",
       "data": {
         "msg": "Successfully {{status}} server invites on this server!"
       }
     },
     "premium": {
-      "description": "Configures your premium settings of this Guild",
+      "description": "इस गिल्ड की प्रीमियम सेटिंग्स कॉन्फ़िगर करता है",
       "data": {
-        "disclaimer": "All purchase done will be subject to the [following terms](https://github.com/EpochStudio/Galaxies-ToS-Privacy/blob/main/ToS.md).",
-        "disclaimerDescription": "Finished reading our Terms of Service and wish to buy a Premium Pack of Galaxies to get more perks than normal users do? Here is a list of the perks you will be getting once the purhcase is done:",
-        "egPerksTitle": "Related to Galaxies",
+        "disclaimer": "की गई सभी खरीदारी [निम्नलिखित शर्तों](https://github.com/EpochStudio/Galaxies-ToS-Privacy/blob/main/ToS.md) के अधीन होगी।",
+        "disclaimerDescription": "क्या आपने हमारी सेवा की शर्तें पढ़ ली हैं और क्या आप सामान्य उपयोगकर्ताओं की तुलना में अधिक सुविधाएं प्राप्त करने के लिए गैलेक्सीज़ का एक प्रीमियम पैक खरीदना चाहते हैं? खरीदारी पूरी होने के बाद आपको मिलने वाले लाभों की एक सूची यहां दी गई है:",
+        "egPerksTitle": "गैलेक्सीज़ से संबंधित",
         "egPerks": [
           {
-            "title": "ALT Commands Limitations Lifted",
+            "title": "ALT कमांड की सीमाएं हटा दी गईं",
             "perk": [
-              "Able to set Custom Messages on ALT Detector response-log (server-side)",
-              "Restriction of 10 bypass_user only lifted (changed to unlimited)"
+              "ALT डिटेक्टर प्रतिक्रिया-लॉग (सर्वर-साइड) पर कस्टम संदेश सेट कर सकते हैं",
+              "केवल १० बायपास_यूजर का प्रतिबंध हटाया गया (असीमित में बदला गया)"
             ]
           },
           {
-            "title": "Custom Commands Limitations Lifted",
+            "title": "कस्टम कमांड की सीमाएं हटाई गईं",
             "perk": [
-              "Able to create more than 2 custom commands",
-              "Able to add more than 2 blacklisted roles for Custom Command"
+              "२ से अधिक कस्टम कमांड बना सकते हैं",
+              "कस्टम कमांड के लिए २ से अधिक ब्लैकलिस्टेड भूमिकाएँ जोड़ सकते हैं"
             ]
           },
           {
-            "title": "Sticky Messages Limitations Lifted",
+            "title": "स्टिकी संदेशों की सीमाएं हटाई गईं",
             "perk": [
-              "Able to create more than 5 sticky messages.",
-              "Higher/Lower refresh rate for Sticky Messages (Text: 2~20 to 1~50) (Attachment: 1~5 to 1~35)"
+              "५ से अधिक स्टिकी संदेश बना सकते हैं।",
+              "स्टिकी संदेशों के लिए उच्च/निम्न ताज़ा दर (पाठ: २~२० से १~५०) (संलग्नक: १~५ से १~३५)"
             ]
           },
           {
-            "title": "Giveaway System Limitations Lifted",
+            "title": "गिवअवे प्रणाली की सीमाएँ हटा दी गईं",
             "perk": [
-              "Ability to add more than 1 bypass/blacklist role in the Giveaway System",
-              "Ability to add more than 10 bonus-roles in the Giveaway System",
-              "Ability to add more than 10 role requirements when configuring a Giveaway"
+              "गिवअवे प्रणाली में १ से अधिक बायपास/ब्लैकलिस्ट भूमिका जोड़ सकते हैं",
+              "गिवअवे प्रणाली में १० से अधिक बोनस-भूमिकाएँ जोड़ सकते हैं",
+              "किसी गिवअवे को कॉन्फ़िगर करते समय १० से अधिक भूमिका आवश्यकताओं को जोड़ सकते हैं"
             ]
           }
         ],
-        "osPerksTile": "Other Side Perks",
-        "osPerksDescription": "> Upon purchase, buyer will receive",
+        "osPerksTile": "अन्य लाभ",
+        "osPerksDescription": "> खरीदने पर, खरीदार को प्राप्त होगा",
         "osPerks": [
-          "A **Premium Badge** on the Galaxies Profile page",
-          "A hoisted **Premium Role** on the support server, the buyer will have a chance to be above all roles **excluding** staff roles.",
-          "**Image** and **reaction** permissions on the server, given automatically after the purchase is done."
+          "गैलेक्सीज़ प्रोफ़ाइल पेज पर एक **प्रीमियम बैज**",
+          "समर्थन सर्वर पर एक उन्नत **प्रीमियम भूमिका**, खरीदार के पास **कर्मचारी भूमिकाओं को छोड़कर** सभी भूमिकाओं से ऊपर होने का मौका होगा।",
+          "सर्वर पर **चित्र** और **प्रतिक्रिया** अनुमतियाँ, खरीदारी पूरी होने के बाद स्वचालित रूप से दी जायेंगी।"
         ],
-        "mirppTitle": "More Information Regarding Premium Pack",
-        "mirppDescription": "The Premium Pack costs **USD$4.99** and you will have access to the perks for 1 month. After that, you will have to re-purchase the Premium Pack again in order to get it back.\n\nIf the buyer is caught abusing the support server-side perks in the support server, the said perks will be removed from them and they will no longer have the permission to react on messages or send images within the server.",
-        "mirppDescription2": "> Things that will be considered as abusing, include but is not limited to:",
+        "mirppTitle": "प्रीमियम पैक के संबंध में अधिक जानकारी",
+        "mirppDescription": "प्रीमियम पैक की कीमत **USD$4.99** है और आप इसका लाभ १ माह तक ले सकते हैं। उसके बाद, आपको इसे वापस पाने के लिए प्रीमियम पैक को दोबारा खरीदना होगा।\n\nयदि खरीदार समर्थन सर्वर में समर्थन सर्वर-साइड अनुलाभों का दुरुपयोग करते हुए पकड़ा जाता है, उनसे उक्त सुविधाएं हटा दी जाएंगी और उन्हें अब संदेशों पर प्रतिक्रिया करने या सर्वर के भीतर चित्र भेजने की अनुमति नहीं होगी।",
+        "mirppDescription2": "> जिन चीज़ों को दुर्व्यवहार माना जाएगा, उनमें ये शामिल हैं, लेकिन यहीं तक सीमित नहीं हैं:",
         "abuse": [
-          "Sending inappropriate images.",
-          "Reacting with inappropriate emotes.",
-          "Using image and reaction permission to bypass the chat filter.",
-          "Spamming images.",
-          "Spamming reaction emotes on one message."
+          "अनुचित चित्र भेजना.",
+          "अनुचित भावों के साथ प्रतिक्रिया करना।",
+          "चैट फ़िल्टर को बायपास करने के लिए चित्रों और प्रतिक्रियाओं की अनुमति का उपयोग करना।",
+          "चित्र स्पैम करना।",
+          "एक संदेश पर भाव व्यक्त प्रतिक्रिया स्पैम करना।"
         ],
-        "purchaseTitle": "Ready to make a purchase? Click [here]() to start!",
-        "premConfig": "Premium Configuration",
-        "hasPrem": "Has Premium",
-        "endDate": "End Date",
-        "noPrem": "No Premium"
+        "purchaseTitle": "खरीदारी करने के लिए तैयार हैं? आरंभ करने के लिए [यहां]() दबाएं!",
+        "premConfig": "प्रीमियम कॉन्फ़िगरेशन",
+        "hasPrem": "प्रीमियम है",
+        "endDate": "अंतिम तिथि",
+        "noPrem": "प्रीमियम नही है"
       }
     },
     "settings": {
-      "description": "Displays the server settings",
+      "description": "सर्वर सेटिंग्स प्रदर्शित करता है",
       "data": {
         "general": {
-          "genSett": "Galaxies Settings",
-          "configuration": "Configuration",
-          "disCmd": "Disabled Commands",
-          "mr": "Mute Role",
-          "nMr": "No Mute Role",
-          "nDisCmd": "None"
+          "genSett": "गैलेक्सीज़ सेटिंग्स",
+          "configuration": "कॉन्फ़िगरेशन",
+          "disCmd": "बंद किये गये कमांड",
+          "mr": "म्यूट भूमिका",
+          "nMr": "म्यूट भूमिका नहीं है",
+          "nDisCmd": "कुछ नहीं"
         },
         "module": {
-          "modSett": "Module Settings",
-          "mod": "Modules"
+          "modSett": "मॉड्यूल सेटिंग्स",
+          "mod": "मॉड्यूल"
         },
         "greet": {
-          "greSett": "Greet System Settings",
-          "arList": "Auto Role List",
-          "nAr": "No Auto Role Added",
-          "welChan": "Welcome Channel",
-          "nWelChan": "No Welcome Chnanel Configured",
-          "leaChan": "Leave Channel",
-          "nLeaChan": "No Leave Channel Configured",
-          "welMsg": "Welcome Message",
-          "nWelMsg": "Default Welcome Message",
-          "leaMsg": "Leave Message",
-          "nLeaMsg": "Default Leave Message"
+          "greSett": "अभिवादन प्रणाली सेटिंग्स",
+          "arList": "ऑटो रोल सूची",
+          "nAr": "कोई ऑटोरोल नहीं जोड़ा गया",
+          "welChan": "स्वागत चैनल",
+          "nWelChan": "कोई स्वागत चैनल कॉन्फ़िगर नहीं किया गया",
+          "leaChan": "छोड़ने वाला चैनल",
+          "nLeaChan": "कोई छोड़ने वाला चैनल कॉन्फ़िगर नहीं किया गया",
+          "welMsg": "स्वागत संदेश",
+          "nWelMsg": "डिफ़ॉल्ट स्वागत संदेश",
+          "leaMsg": "छोड़नेपर संदेश",
+          "nLeaMsg": "डिफ़ॉल्ट छोड़नेपर संदेश"
         }
       }
     },
