@@ -12,8 +12,8 @@
     "reason": "原因",
     "blOn": "列入黑名單時間",
     "dur": "持續時間",
-    "uBlacklist": "您無權運行此命令,因為\n您目前已被列入EternalGaius的黑名單\n要上訴列入黑名單,請加入我們的[支援伺服器](https://discord.gg/9PnUBeu)。",
-    "gBlacklist": "您無權運行此命令,因為\n您正在執行此命令的伺服器目前已被列入EternalGaius的黑名單\n伺服器代表可以加入我們的[支援伺服器](https://discord.gg/9PnUBeu)來上訴這個列入黑名單的情況。",
+    "uBlacklist": "您無權運行此命令,因為\n您目前已被列入Galaxies的黑名單\n要上訴列入黑名單,請加入我們的[支援伺服器](https://discord.gg/9PnUBeu)。",
+    "gBlacklist": "您無權運行此命令,因為\n您正在執行此命令的伺服器目前已被列入Galaxies的黑名單\n伺服器代表可以加入我們的[支援伺服器](https://discord.gg/9PnUBeu)來上訴這個列入黑名單的情況。",
     "mentionMsg": ":wave: 嘿!使用**/help**來獲取有關我的更多資訊!",
     "interactonResponse": {
         "message": {
@@ -35,25 +35,8 @@
                 "curAfk": "嘿!該用戶目前AFK中!\n原因: **{{reason}}**"
             }
         },
-        "interaction": {
-            "verification": {
-                "disabled": "該伺服器上的驗證系統已被禁用。請聯繫伺服器管理員以獲取更多詳細資訊。",
-                "missingPerms": "我缺少`管理身分組`權限。請聯繫伺服器管理員以獲得進一步協助。",
-                "rNotFound": "先前確定的驗證身分組不再存在。請聯繫伺服器管理員以獲得進一步協助。",
-                "higherAuthority": "驗證的身公組目前高於我的最高身分組。請聯繫伺服器管理員以獲得進一步協助。",
-                "ongoing": "您已經有一個正在進行的驗證過程!",
-                "alrdyVerified": "您已在此公會中驗證。",
-                "verificationInProg": "您有60秒的時間來解決下面的驗證碼!\n輸入 `cancel` 取消驗證過程。",
-                "dmsDisabled": "您目前已禁用私信。請再次按下 \"驗證\" 按鈕前打開私信。",
-                "err": "在發送驗證消息時發生了一些問題。此異常已被記錄。",
-                "cancel": "已成功取消驗證過程。",
-                "success": "嘿 {{user}}，您已成功在 **{{gName}}** 中被驗證。",
-                "fail": "您未能在 60 秒內完成驗證碼。請再次按下 \"驗證\" 按鈕重試。",
-                "timeout": "您未能在 60 秒內完成驗證碼。"
-            }
-        },
         "automated": {
-            "unmute": "您已在 **{{gName}}** 中被管理員 **EternalGaius** (自動解禁) 取消靜音"
+            "unmute": "您已在 **{{gName}}** 中被管理員 **Galaxies** (自動解禁) 取消靜音"
         }
     }
 }
