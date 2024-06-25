@@ -1,12 +1,44 @@
 {
     "admin": {
-        "ena": "പ്രവർത്തനക്ഷമമാക്കി",
-        "dis": "പ്രവർത്തനരഹിതമാക്കി",
+        "alt": {
+            "description": "This command allows you to configure the alt detector",
+            "data": {
+                "listOrView": {
+                    "channel": "Channel: {{channel}}",
+                    "role": "Role: {{role}}",
+                    "age": {
+                        "kick": "Kick Age",
+                        "ban": "Ban Age"
+                    },
+                    "message": {
+                        "kick": "Kick Message",
+                        "ban": "Ban Message"
+                    }
+                },
+                "notConfigured": "An ALT Log has not been configurd yet",
+                "alreadySame": "The ALT Channel is already set to this channel",
+                "success": "Successfully updated the database settings.",
+                "notConfiguredRole": "An ALT alertion role has not been configured yet.",
+                "alreadySameRole": "The ALT alertion role is already set to this channel.",
+                "requirePremiumCustom": "You need premium in order to configure custom messages.",
+                "overLimit": "The custom message cannot be over 1000 characters",
+                "alreadyInclude": "The specified user is already included in the filter list.",
+                "requirePremiumOver": "You need premium in order to add more than 10 bypass users.",
+                "emptyArray": "The bypass filter list is already empty and has not been configured.",
+                "cannotFind": "Cannot find the specified user in the filter list."
+            }
+        },
         "categories": {
             "description": "നിർദ്ദിഷ്ട വിഭാഗത്തെ പ്രവർത്തനരഹിതമാക്കുക/പ്രവർത്തനക്ഷമമാക്കുക",
             "data": {
                 "enabled": "നിർദ്ദിഷ്ട `{{cat}}` വിഭാഗം വിജയകരമായി പ്രവർത്തനക്ഷമമാക്കി.",
-                "disabled": "നിർദ്ദിഷ്ട `{{cat}}` വിഭാഗം വിജയകരമായി പ്രവർത്തനരഹിതമാക്കി."
+                "disabled": "നിർദ്ദിഷ്ട `{{cat}}` വിഭാഗം വിജയകരമായി പ്രവർത്തനരഹിതമാക്കി.",
+                "moderation": "Moderation",
+                "fun": "Fun",
+                "utility": "Utility",
+                "music": "Music",
+                "economy": "Economy",
+                "giveaway": "Giveaway"
             }
         },
         "commands": {
@@ -21,8 +53,64 @@
             "description": "മ്യൂട്ട് റോൾ/മോഡ് ലോഗ് ക്രമീകരണങ്ങൾ ക്രമീകരിക്കുക",
             "data": {
                 "mrole": "സെർവർ മ്യൂട്ട് റോൾ {{role}} വിജയകരമായി സജ്ജമാക്കി",
-                "mlog": "സെർവർ മ്യൂട്ട് റോൾ {{role}} വിജയകരമായി സജ്ജമാക്കി",
                 "updated": "സെർവർ ക്രമീകരണം അപ്ഡേറ്റ് ചെയ്തു"
+            }
+        },
+        "customcmd": {
+            "description": "Manage Custom Commands of this Guild",
+            "data": {
+                "header": "You have chosen to create a `{{type}}` command",
+                "premiumRequired": "You need premium in order to create more than 2 custom commands.",
+                "instructions": {
+                    "identifier": "In the next message, please enter the trigger phrase for this command.\n\nFor example, if you wish for the trigger phrase to be `-hello`,\nThen please enter `hello` on your next message.\n\nThe identifier cannot be longer than 20 characters.\n\nIf you wish to cancel the operation, please enter `cancel` on your next message.\n\nThe trigger phrase cannot be an already existing command of the bot.",
+                    "identifierExceed": "The identifier for a custom command cannot exceed 20 characters.",
+                    "invalidType2": "A custom command already exists with this identifier.",
+                    "invalid": "The command identifier cannot be named after an already existing command of the bot.",
+                    "identifierConfirm": "Very well, the identifier for this command will be `{{identifier}}`",
+                    "traditional": {
+                        "replyPrompt": "Now, please enter the content that the bot will reply with when this identifier is typed out.\n\nThe reply cannot be longer than 1000 characters.\nIf you wish to cancel this operation, then please type `cancel` on your next message",
+                        "exceedLimit": "The response for a traditional custom command cannot exceed 1000 characters",
+                        "editPrompt": "This command is a `traditional` command.\nIn your next message please type out the new reply of this command.\n\nThe reply cannot exceed 1000 characters.\nIf you want to cancel this operation, please type `cancel` on your next message."
+                    },
+                    "embed": {
+                        "title": {
+                            "titlePrompt": "Now, please enter the Embed Title of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 256 characters\nIf you wish to cancel this operation, then please type 'cancel` on your next message.",
+                            "exceedLimit": "The response for an embed custom command's Embed Title cannot exceed 256 characters."
+                        },
+                        "description": {
+                            "descPrompt": "Now, please enter the Embed Description of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 4096 characters.\nIf you wish to cancel this operaton, then please type `cancel` on your next message.",
+                            "exceedLimit": "The response for an embed custom command's Embed Description cannot exceed 4096 characters."
+                        },
+                        "color": {
+                            "colorPrompt": "Now, please enter the Embed Color of the embed that will be replied with when this identifier is typed out.\n\nThe reply must be in [hexadecimal format](https://en.wikipedia.org/wiki/Hexadecimal).\nIf you wish to cancel this operation, then please type `cancel` on your next message.",
+                            "colorInvalid": "The entered value must be a valid hexadecimal."
+                        },
+                        "footer": {
+                            "footerPrompt": "Now, please enter the Embed Footer Field of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 2048 characters\n\nIf you do not wish for the reply to have an Embed Footer Field, then please reply with `next` on your next message\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
+                            "exceedLimit": "The response for an embed custom command's Embed Footer cannot exceed 2048 characters."
+                        },
+                        "author": {
+                            "authorPrompt": "Now, please enter the Embed Author name of the embed that will be replied with when this identifier is typed out.\n\nThe reply cannot be over 256 characters\n\nIf you do not wish for the reply to have an Embed Author Name, then please reply with `next` on your next message.\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
+                            "exceedLimit": "The response for an embed custom command's Embed Author cannot exceed 256 characters."
+                        },
+                        "thumbnail": {
+                            "thumbnailPrompt": "Now, please enter the Embed Thumbnail of the embed that will be replied with when this identifier is typed out.\n\nThe reply must be a valid URL Link.\n\nIf you do not wish for the reply to have an Embed Thumbnail, then please reply with `next` on your next message\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
+                            "urlInvalid": "The embed thumbnail was not saved, as it was not a valid URL."
+                        },
+                        "image": {
+                            "imagePrompt": "Now, please enter the Embed Image of the embed that will be replied with when this identifier is typed out.\n\nThe reply must be a valid URL Link\nIf you do not wish for the reply to have an Embed Image, then please reply with `next` on your next message.\n\nIf you wish to cancel this operation, then please type 'cancel` in the next message.",
+                            "urlInvalid": "The embed image was not saved, as it was not a valid URL."
+                        },
+                        "editPrompt": "This command is an `embed` command.\nIn your next message please type out the element you wish to change about the embed.\n\n**Available Choices:**\n`title` | `description` | `color` | `footer` | `author` | `image` | `thumbnail`\n\nIf you wish to cancel this operation, please type `cancel` on your next message.",
+                        "elementEdit": "Very well, you have chosen to edit the `{{element}}` element.\n\nIn your next message please state the element's new value.\nIf you wish to cancel this operation, then please type `cancel` on your next message.",
+                        "elementInvalid": "The element entered is not valid."
+                    }
+                },
+                "notFound": "There is no custom command with that identifier.",
+                "rolePremiumRequired": "You require premium to have more than 2 blacklisted role.",
+                "exceedLimit": "You cannot have more than 10 blacklisted roles.",
+                "embedTitle": "**__Identifier__ - __Type__ - __Created By__**",
+                "blRole": "Blacklisted Roles"
             }
         },
         "greet": {
@@ -40,13 +128,77 @@
                 "arrNotFound": "ഓട്ടോ റോൾ കോൺഫിഗറേഷനിൽ നൽകിയ റോൾ കാണുന്നില്ല ",
                 "arrRemove": "ഓട്ടോ റോൾ കോൺഫിഗറേഷനിൽ നിന്ന് {{role}} വിജയകരമായി നീക്കം ചെയ്തു",
                 "arrReset": "ഓട്ടോ റോൾ കോൺഫിഗറേഷൻ വിജയകരമായി പുനഃസജ്ജമാക്കി.",
-                "variables": "സ്വാഗത/ലീവ് സന്ദേശങ്ങളിക്കുള്ള വേരിയബിൾസ്"
+                "variables": "സ്വാഗത/ലീവ് സന്ദേശങ്ങളിക്കുള്ള വേരിയബിൾസ്",
+                "greetImg": "Successfully set the welcome-image value to `{{status}}`",
+                "welcomeAutoDelete": "Successfully set the Welcome Message Auto Delete value to `{{seconds}}`",
+                "leaveAutoDelete": "Successfully set the Leave Message Auto Delete value to `{{seconds}}`"
             }
         },
         "pauseinvites": {
             "description": "നിലവിലെ സെർവർക്കായി ഇൻവൈറ്റുകൾ നിർത്തുക/പുനരാരംഭിക്കുക",
             "data": {
                 "msg": "ഈ സെർവറിൽ സെർവർ ക്ഷണങ്ങൾ വിജയകരമായി {{status}}!"
+            }
+        },
+        "premium": {
+            "description": "Configures your premium settings of this Guild",
+            "data": {
+                "disclaimer": "All purchase done will be subject to the [following terms](https://github.com/EpochStudio/Galaxies-ToS-Privacy/blob/main/ToS.md).",
+                "disclaimerDescription": "Finished reading our Terms of Service and wish to buy a Premium Pack of Galaxies to get more perks than normal users do? Here is a list of the perks you will be getting once the purhcase is done:",
+                "egPerksTitle": "Related to Galaxies",
+                "egPerks": [
+                    {
+                        "title": "ALT Commands Limitations Lifted",
+                        "perk": [
+                            "Able to set Custom Messages on ALT Detector response-log (server-side)",
+                            "Restriction of 10 bypass_user only lifted (changed to unlimited)"
+                        ]
+                    },
+                    {
+                        "title": "Custom Commands Limitations Lifted",
+                        "perk": [
+                            "Able to create more than 2 custom commands",
+                            "Able to add more than 2 blacklisted roles for Custom Command"
+                        ]
+                    },
+                    {
+                        "title": "Sticky Messages Limitations Lifted",
+                        "perk": [
+                            "Able to create more than 5 sticky messages.",
+                            "Higher/Lower refresh rate for Sticky Messages (Text: 2~20 to 1~50) (Attachment: 1~5 to 1~35)"
+                        ]
+                    },
+                    {
+                        "title": "Giveaway System Limitations Lifted",
+                        "perk": [
+                            "Ability to add more than 1 bypass/blacklist role in the Giveaway System",
+                            "Ability to add more than 10 bonus-roles in the Giveaway System",
+                            "Ability to add more than 10 role requirements when configuring a Giveaway"
+                        ]
+                    }
+                ],
+                "osPerksTile": "Other Side Perks",
+                "osPerksDescription": "> Upon purchase, buyer will receive",
+                "osPerks": [
+                    "A **Premium Badge** on the Galaxies Profile page",
+                    "A hoisted **Premium Role** on the support server, the buyer will have a chance to be above all roles **excluding** staff roles.",
+                    "**Image** and **reaction** permissions on the server, given automatically after the purchase is done."
+                ],
+                "mirppTitle": "More Information Regarding Premium Pack",
+                "mirppDescription": "The Premium Pack costs **USD$4.99** and you will have access to the perks for 1 month. After that, you will have to re-purchase the Premium Pack again in order to get it back.\n\nIf the buyer is caught abusing the support server-side perks in the support server, the said perks will be removed from them and they will no longer have the permission to react on messages or send images within the server.",
+                "mirppDescription2": "> Things that will be considered as abusing, include but is not limited to:",
+                "abuse": [
+                    "Sending inappropriate images.",
+                    "Reacting with inappropriate emotes.",
+                    "Using image and reaction permission to bypass the chat filter.",
+                    "Spamming images.",
+                    "Spamming reaction emotes on one message."
+                ],
+                "purchaseTitle": "Ready to make a purchase? Click [here]() to start!",
+                "premConfig": "Premium Configuration",
+                "hasPrem": "Has Premium",
+                "endDate": "End Date",
+                "noPrem": "No Premium"
             }
         },
         "settings": {
@@ -64,7 +216,7 @@
                 },
                 "module": {
                     "modSett": "മോഡ്യൂൾ സെറ്റിംഗ്സ്",
-                    "mod": "മോഡ്യൂളുകൾ"    
+                    "mod": "മോഡ്യൂളുകൾ"
                 },
                 "verification": {
                     "verifSett": "വെറിഫിക്കേഷൻ സിസ്റ്റം സെറ്റിംഗുകൾ",
@@ -87,16 +239,18 @@
                     "welMsg": "Welcome Message",
                     "nWelMsg": "Default Welcome Message",
                     "leaMsg": "Leave Message",
-                    "nLeaMsg": "Default Leave Message"
+                    "nLeaMsg": "Default Leave Message",
+                    "welcomeAutoDelete": "Welcome Auto Delete",
+                    "leaveAutoDelete": "Leave Auto Delete",
+                    "greetImg": "Welcome Greet Image"
                 }
             }
         },
         "stickymsg": {
             "description": "Configures sticky messages for this server",
-            "timeout": "Timeout! Please reexecute the command again!",
-            "opCan": "Operation Canceled",
             "data": {
                 "alrExist": "A Sticky Message already exists for this channel!",
+                "premiumRequired": "You need premium in order to create more than 5 sticky messages.",
                 "inputPrompt": "Please enter the message displayed on the Sticky Message.\nOr type `cancel` to cancel this process.",
                 "lengthExceed": "Stciky Message length cannot exceed more than 900 characters!",
                 "addStick": "Successfully added a Sticky Message for Channel {{channel}}",
@@ -105,9 +259,9 @@
                 "status": "Successfully {{status}} the Sticky Message for Channel {{channel}}!",
                 "editConPrompt": "Please enter the new message displayed on the Sticky Message\nOr type `cancel` to cancel this process.",
                 "editContent": "Successfully updated the message contnet for {{channel}}'s Sticky Message\nThe Sticky Message will be updated on the next refresh.",
-                "invalidTextAmt": "The text amount cannot be below 2 or higher than 20!",
+                "invalidTextAmt": "The text amount cannot be below {{min}} or higher than {{max}}!",
                 "updateTxtAmt": "Successfully updated the text amount required before reposting Sticky Message to `{{integer}}` messages.",
-                "invalidAttachAmt": "The Attachment Amount cannot be below 1 or higher than 5!",
+                "invalidAttachAmt": "The Attachment Amount cannot be below {{min}} or higher than {{max}}!",
                 "updateAttachAmt": "Successfully updated the attachment amount required before reposting Sticky Message to `{{integer}}`!",
                 "noStick": "This server does not have any sticky messages configured!",
                 "sm": "Sticky Messages",
@@ -120,22 +274,6 @@
                 "clickMe": "Click Me",
                 "txtBeforeRepost": "Text Amount Before Repost",
                 "attachBeforeRepost": "Attachment Amount Before Repost"
-            }
-        },
-        "verification": {
-            "description": "Configures the verification system",
-            "data": {
-                "notConfigured": "Please configure the Verification Channel and Verified Role before proceeding.",
-                "verifyEmbed": {
-                    "content": "Click the button below to begin the Verification Process!\nIf you did not receive a DM, then please open your dms and press the button again."
-                },
-                "preChanNotExist": "The determined Verification Channel does not exist! Please reconfigure the Verification Channel",
-                "preRoleNotExist": "The determined Verified Role does not exist! Please reconfigure the Verified Role",
-                "errOnSend": "Something went wrong while sending the Verification Message to the Verification Channel. Please try again later.",
-                "enabled": "Successfully enabled the Verification System",
-                "disabled": "Successfully disabled the Verification System",
-                "setVerChan": "Verification Channel set to {{channel}}",
-                "setVerRole": "Verification Role set to {{role}}"
             }
         }
     },
@@ -256,9 +394,9 @@
                     "Ask again later",
                     "Better not tell you now",
                     "Cannot predict now",
-                    "Concentrate and ask again"            
+                    "Concentrate and ask again"
                 ]
-            }    
+            }
         },
         "choose": {
             "description": "Choose a random element from the supplied options, use a comma for multiple world selection.",
@@ -651,27 +789,31 @@
         }
     },
     "general": {
-        "yes": "Yes",
-        "no": "No",
         "aboutme": {
-            "description": "About EternalGaius",
+            "description": "About Galaxies",
             "data": {
-                "title": "About EternalGaius",
-                "description": "EternalGaius was never meant to be a permanent project, I originally made it for fun, however after the support and positive feedback I received, I've decided to make EternalGaius a long term project! At EternalGaius we strive to give our users the best experience while using our bot while maintaining stability and security for our users data."
+                "title": "About Galaxies",
+                "description": "Galaxies. A bot dependable to manage your discord server. It has powerful giveaway, greet system to welcome your new members on join. A sticky message system that allows you to highlight important messages, Moderation commands. It also has some utility commands and fun commands And more!\nAt Galaxies, we strive to to give our users the best experience while using our bot while maintaining stability and security for our users data.\nIt is all thnks to the amazing Developers, Staff Members, Partners and Contributors that we're able to be here today!",
+                "dev": "Our Development Team",
+                "staff": "Our Staff Members",
+                "partner": "Our Partners",
+                "contri": "Our Contributors"
             }
         },
         "badgeinfo": {
-            "description": "Explains the purpose of each EternalGaius Badges",
+            "description": "Explains the purpose of each Galaxies Badges",
             "data": {
-                "title": "About EternalGaius Badges",
-                "dev": "EternalGaius Developers",
-                "contri": "EternalGaius Contributor",
-                "staff": "EternalGaius Staff",
-                "partnership": "EternalGaius partnership",
-                "devExp": "Granted to the Developers of EternalGaius",
-                "contriExp": "Granted to people who have contributed to EternalGaius",
-                "staffExp": "Granted to people who are a Staff Member at EternalGaius Support Server",
-                "partnershipExp": "Granted to people who are partnered with EternalGaius"
+                "title": "About Galaxies Badges",
+                "dev": "Galaxies Developers",
+                "contri": "Galaxies Contributor",
+                "staff": "Galaxies Staff",
+                "partnership": "Galaxies Partnership",
+                "premium": "Galaxies Premium",
+                "devExp": "Granted to the Developers of Galaxies",
+                "contriExp": "Granted to people who have contributed to Galaxies",
+                "staffExp": "Granted to people who are a Staff Member at Galaxies Support Server",
+                "partnershipExp": "Granted to people who are partnered with Galaxies",
+                "premiumExp": "Granted to people who has purchased Galaxies Premium"
             }
         },
         "changelogs": {
@@ -681,7 +823,7 @@
             }
         },
         "customize": {
-            "description": "Customize your EternalGaius Settings",
+            "description": "Customize your Galaxies Settings/Experience",
             "data": {
                 "bdayInputPrompt": "Please insert your birthday date in this format: `MM/DD`",
                 "bdayNotNum": "The given information is not a number",
@@ -708,7 +850,7 @@
             }
         },
         "guilds": {
-            "description": "Displays the amount of guilds that EternalGaius is in",
+            "description": "Displays the amount of guilds that Galaxies is in",
             "data": {
                 "title": "Currently Serving",
                 "description": "I am currently serving **{{guilds}}** guilds and **{{user}}** users",
@@ -718,33 +860,41 @@
         },
         "help": {
             "description": "Sends the help menu",
-            "hDescription": "**Links:** <:invite:872645785408389181> [Invite](https://discord.com/api/oauth2/authorize?client_id=716248082865455174&permissions=8&scope=bot%20applications.commands) | <:vote:872646196299186176> [Vote](https://top.gg/bot/716248082865455174) | <:EG_tick:871711115086794752> [Support Server](https://discord.gg/9PnUBeu)\nSelect a Category to view the Category Commands",
-            "hTitle": "Help » {{page}}",
+            "hDescription": "**Links:** <:invite:872645785408389181> [Invite](https://discord.com/api/oauth2/authorize?client_id=814441758037377045&permissions=8&scope=bot%20applications.commands) | <:vote:872646196299186176> [Vote](https://top.gg/bot/716248082865455174) | <:EG_tick:871711115086794752> [Support Server](https://discord.gg/9PnUBeu)\nSelect a Category to view the Category Commands",
+            "hTitle": "Help »",
             "data": {
                 "ssmPlaceholder": "Select a Category",
                 "hp": "Homepage",
+                "categories": "Categories",
+                "cmds": "Commands",
+                "hpDesc": "Return to the homepage",
                 "general": "General",
-                "mod": "Moderaton",
-                "admin": "Administrator",
+                "moderation": "Moderaton",
+                "administrator": "Administrator",
                 "fun": "Fun",
                 "utility": "Utility",
-                "music": "Music",
                 "economy": "Economy",
                 "giveaway": "Giveaway",
                 "hFieldDesc": "• {{category}} Commands ({amount}})",
                 "notValidCmd": "That is not a valid command!",
+                "cannotAccess": "You cannot access this command information!",
                 "cmdInfo": "Command Informaton",
-                "noPermsReq": "No Permissions Required"
+                "noPermsReq": "No Permissions Required",
+                "cmdName": "Command Name",
+                "upr": "User Permission Required",
+                "bpr": "Bot Permission Required",
+                "nsfw": "NSFW",
+                "devOnly": "Developer Only",
+                "i": "Information"
             }
         },
         "invite": {
             "description": "Sends the link to invite the bot",
             "data": {
                 "title": "Invite Me",
-                "description": "EternalGaius is a feature-rich, easy-to-use Discord multipurpose bot! Currently serving **{{amount}}** guilds",
+                "description": "Galaxies is a feature-rich, easy-to-use Discord multipurpose bot! Currently serving **{{amount}}** guilds",
                 "reqPerm": "Required Permission",
-                "adminPerm": "Admin Permission",
-                "cm": "Click Me"
+                "adminPerm": "Admin Permission"
             }
         },
         "ping": {
@@ -753,14 +903,16 @@
                 "clientLan": "Client Latency",
                 "apiLan": "API Latency",
                 "dataLan": "Database Latency",
-                "tpsLan": "TPS Latency"
+                "tpsLan": "TPS Latency",
+                "shardNo": "Shard ID",
+                "clusterNo": "Cluster ID"
             }
         },
         "profile": {
             "description": "Displays the specified user profile",
             "data": {
-                "feching": "Fetching request material... Please wait...",
-                "profile": "Profile",
+                "fetching": "Fetching request material... Please wait...",
+                "profile": "{{user}}'s Profile",
                 "bl": "Blacklisted",
                 "wl": "Whitelisted",
                 "nBio": "We do not know much about this user, but I'm sure they're very cool!",
@@ -769,7 +921,9 @@
                 "uname": "Username",
                 "cOn": "Created On",
                 "accType": "Account Type",
-                "eBadges": "EternalGaius Badges",
+                "bot": "🤖 Bot",
+                "human": "🧍 Human",
+                "eBadges": "Galaxies Badges",
                 "dBadges": "Discord Badges",
                 "bday": "Birthday",
                 "nBday": "No Birthday Set",
@@ -783,14 +937,14 @@
         "stats": {
             "description": "Displays the bot statistic",
             "data": {
-                "title": "EternalGaius Statistics",
-                "description": "**[Invite](https://discord.com/api/oauth2/authorize?client_id=716248082865455174&permissions=8&scope=bot%20applications.commands) | [Support Server](https://discord.gg/9PnUBeu) | [Vote](https://top.gg/bot/716248082865455174)**",
-                "general": "• __General__",
-                "system": "• __System__",
+                "title": "Galaxies Statistics",
+                "description": "**[Invite](https://discord.com/api/oauth2/authorize?client_id=814441758037377045&permissions=8&scope=bot%20applications.commands) | [Support Server](https://discord.gg/9PnUBeu) | [Vote](https://top.gg/bot/716248082865455174)**",
+                "general": "• __General Metric__",
+                "system": "• __System Metric__",
                 "memory": "Memory",
                 "uc": "User Count",
-                "gd": "Guild Count",
-                "cc": "commands Count",
+                "gc": "Guild Count",
+                "cc": "Commands Count",
                 "cp": "Client Ping",
                 "pt": "Platform",
                 "arch": "Arch",
@@ -802,17 +956,17 @@
         "tos": {
             "description": "Shows the bot Terms of Service or Privacy Policy",
             "data": {
-                "tosTitle": "Terms of Service - EternalGaius",
-                "privacyTitle": "Privacy Policy - EternalGaius",
-                "tos": "Click [me](https://github.com/EternalGaiusOfficial/EternalGaiusToS-Privacy/blob/main/TOS.md) to read our Terms of Service!",
-                "privacy": "Click [me](https://github.com/EternalGaiusOfficial/EternalGaiusToS-Privacy/blob/main/Privacy.md) to read our Privacy Policy"
+                "tosTitle": "Terms of Service - Galaxies",
+                "privacyTitle": "Privacy Policy - Galaxies",
+                "tos": "Click [me](https://github.com/EpochStudio/Galaxies-ToS-Privacy/blob/main/ToS.md) to read our Terms of Service!",
+                "privacy": "Click [me](https://github.com/EpochStudio/Galaxies-ToS-Privacy/blob/main/Privacy_Policy.md) to read our Privacy Policy"
             }
         },
         "upvote": {
-            "description": "Displays all the links to vote for EternalGaius",
+            "description": "Displays all the links to vote for Galaxies",
             "data": {
-                "vTitle": "EternalGaius - Vote",
-                "vDesc": "By voting, you show your support to us!\nWant to vote? Click [here](https://top.gg/bot/716248082865455174)!",
+                "vTitle": "Galaxies - Vote",
+                "vDesc": "By voting, you show your support to us!\nWant to vote? Click [here](https://top.gg/bot/814441758037377045)!",
                 "ssmPlaceholder": "Other Botlist",
                 "obReply": "You can use this link to vote for us on **{{botlist_name}}**\n{{vLink}}"
             }
@@ -834,12 +988,25 @@
                 "host": "Host",
                 "prize": "Prize",
                 "noActive": "There are no active giveaways in this server.",
-                "actGiveaway": "Currently Active Giveaways"
+                "actGiveaway": "Currently Active Giveaways",
+                "requirePremium": "You need premium in order to add moe than 10 role requirements",
+                "inputPrompt": "What role should be required for members to enter the giveaway? - Mention a role name or mention the role or mention the role id.\nIf more than 1 role then please seperate each role with a space."
+            }
+        },
+        "managegiveaway": {
+            "description": "Manages the giveaway settings in this guild.",
+            "data": {
+                "listDescBonus": "__Role Name__ - __Role ID__ - __Bonus (x Entries)__",
+                "listDescNormal": "___Role Name__ - __Role ID__",
+                "alrdyExists": "This role already exists in the {{group}} list",
+                "premiumRequired": "You need premium in order to add more than {{limit}} {{group}} roles.",
+                "success": "Successfully updated giveaway configuration settings.",
+                "empty": "The {{group}} list is empty",
+                "notInGroup": "The inserted role id is not in the {{group}} list"
             }
         }
     },
     "moderation": {
-        "na": "Not Applicable",
         "permanent": "Permanent",
         "unknown": "Unknown",
         "ended": "Ended",
@@ -848,6 +1015,7 @@
         "punishSelf": "You cannot punish yourself.",
         "punishOwn": "You cannot punish the server owner",
         "higherAuthority": "You cannot punish someone that is higher or the same rank as you.",
+        "clientLowerAuthority": "The person specified has a higher role or the same role level as me!",
         "ownerOnly": "Only the server owner can execute this sub command.",
         "punishClient": "You cannot punish me with my own commands",
         "ban": {
@@ -886,7 +1054,7 @@
             }
         },
         "clone": {
-            "description": "Deletes a channel and cloen it",
+            "description": "Deletes a channel and clone it",
             "data": {
                 "cloneInvalidChannel": "You cannot clone System Channels, Rule Channels or Public Update Channels",
                 "cloneWait": "Cloning {{channel}}, stay tight!",
@@ -906,12 +1074,13 @@
                 "punishType": "Punishment Type",
                 "punishAct": "Punishment Activity",
                 "punishDur": "Punishment Duration",
+                "infraNotFound": "I cannot find the infraction `{{id}}` from the user **{{user}}**",
                 "infraRapsheet": {
                     "title": "{{user}}'s Infraction Rapsheet"
                 },
                 "infraRemoved": {
                     "title": "Infractions Removed",
-                    "description": "Successfully removed the infraction `{{str}}` from **{{user}}**"
+                    "description": "Successfully removed the infraction `{{id}}` from **{{user}}**"
                 },
                 "userInfraPurge": {
                     "title": "Infractions Purged",
@@ -967,9 +1136,9 @@
             "data": {
                 "inputExceed": "The role name cannot exceed 100 character letters.",
                 "invalidHex": "Please insert a valid Hex Code",
-                "createReason":"{{user}}: Created a role named {{name}}",
+                "createReason": "{{user}}: Created a role named {{name}}",
                 "create": {
-                    "description": "Successfully created the role {{name}}"
+                    "description": "Successfully created the role {{name}} with the color {{hex}}"
                 },
                 "higherAuth": "The role stated is higher than my highest role.",
                 "deleteReason": "{{user}}: Deleted a role named {{name}}",
@@ -985,12 +1154,12 @@
                 "pMrNotFound": "The determined muterole does not exist in this server! Please reconfigure the mute role config.",
                 "alrdyMuted": "The specified member is already muted!",
                 "invalidTimeString": "Invalid time string entered. Enter time must be above 60 seconds.",
-                "dmMsg": "You have been muted in **{{gName}}** by the Moderator **{{mod}}**\nReason: {{reason}}",
+                "dmMsg": "You have been muted in **{{gName}}** by the Moderator **{{mod}}**\nReason: {{reason}}\nDuration: {{dur}}",
                 "embed": {
                     "title": "User Muted",
-                    "description": "{{victim}} has been muted for the following reason.\nReason: {{reason}}"
+                    "description": "{{victim}} has been muted for the following reason.\nReason: {{reason}}\nDuration: {{dur}}"
                 },
-                "muted": "muted"                
+                "muted": "muted"
             }
         },
         "purge": {
@@ -1006,6 +1175,7 @@
             "description": "Sets the slowmode for the current channel.",
             "data": {
                 "invalidInput": "The number stated cannot be higher than 21600 or lower than 0",
+                "title": "Channel Slowmode",
                 "smRemoved": "Channel slowmode has been removed from the channel **{{name}}**",
                 "smAdded": "**{{amount}}** seconds of slowmode has been applied to the channel **{{channel}}**"
             }
@@ -1037,7 +1207,7 @@
         "unmute": {
             "description": "Unmutes a muted member",
             "data": {
-                "notMuted": "the specified user is not muted.",
+                "notMuted": "The specified user is not muted.",
                 "dmMsg": "You have been unmuted in **{{gName}}** by the Moderator **{{mod}}**",
                 "embed": {
                     "title": "User Unmuted",
@@ -1080,7 +1250,293 @@
                         "description": "{{victim}} has been warned for the following reason.\nReason: {{reason}}"
                     },
                     "warned": "warned"
-                }    
+                }
+            }
+        }
+    },
+    "utility": {
+        "afk": {
+            "description": "Set you as AFK",
+            "data": {
+                "afkDefault": "I'm currently afking!",
+                "alrdyAFK": "You are already AFKing in this server!",
+                "success": "You are now afking in this server!\nReason: {{string}}"
+            }
+        },
+        "avatar": {
+            "description": "Displays the specified user's display avatar",
+            "data": {
+                "avatar": "{{user}}'s Avatar",
+                "linkAs": "Link As"
+            }
+        },
+        "discorddate": {
+            "description": "Converts your human readable time to a Discord Timestamp",
+            "data": {
+                "invalidTime": "An invalid time has been entered. Please try again."
+            }
+        },
+        "echo": {
+            "description": "Send a message with the specified text.",
+            "data": {
+                "inputExceed": "The input cannot be over 900 character letters."
+            }
+        },
+        "embedcreator": {
+            "description": "Creates an embed with a custom title, color, description and channel to send to",
+            "data": {
+                "title": "Embed Creator",
+                "inputPrompts": {
+                    "eTitle": "Please enter the Embed Title or enter `cancel` to cancel the operation",
+                    "eDesc": "Please enter the Embed Description or enter `cancel` to cancel the operation",
+                    "eColor": "Please enter the Embed Color Hex Code or enter `cancel` to cancel the operation"
+                },
+                "inputErrors": {
+                    "title": "The embed title cannot exceed 100 characters",
+                    "description": "The embed description cannot exceed 4096 characters",
+                    "hex": "Invalid hex code. Please try again."
+                },
+                "sendError": "Something went wrong while sending the Embed Message to destinated channel.",
+                "success": "Successfully send the Embed Message to the specified channel"
+            }
+        },
+        "emoji": {
+            "description": "Emoji Related Commands (View/Server/Enlarge)",
+            "data": {
+                "inputExceed": "You cannot view information for more than 5 emojis at once.",
+                "eName": "Emoji Name",
+                "eId": "Emoji ID",
+                "animated": "Animated",
+                "link": "Link",
+                "noCe": "No custom emojis have been found from your input.",
+                "sLeft": "slot left",
+                "sEmojis": "Static Emojis",
+                "aEmojis": "Animated Emojis",
+                "tEmoji": "Total Emojis",
+                "title": "Server Emojis",
+                "emoji": "Emoji",
+                "gif": "Gif",
+                "img": "Image",
+                "invalid": "Invalide Emoji Provided! Please provide an emoji to enlarge.",
+                "invalidInput": "Either no valid emojis were inputted, or more than 5 emojis were inserted.",
+                "maxSlot": "The current server has hit the max emoji slots.",
+                "success": "Successfully added the emojis!"
+            }
+        },
+        "github": {
+            "description": "Display a Github Repo Information",
+            "data": {
+                "formatErr": "Repository must be in the format `EternalGaiusOfficial/Translations`",
+                "invalidRepo": "You did not enter a valid repository",
+                "forked": "**Forked** from",
+                "noi": "No Other Information",
+                "nDesc": "No Description",
+                "lang": "Language",
+                "nLang": "Not Specified",
+                "fc": "Forks Count",
+                "license": "License",
+                "oi": "Open Issues",
+                "wc": "Watchers Count",
+                "sc": "Stars Count",
+                "size": "Size",
+                "ia": "Is Archived",
+                "id": "Is Disabled",
+                "oin": "Other Information",
+                "uError": "You did not enter a valid github username",
+                "nBio": "No Bio Entered",
+                "uname": "Username",
+                "hireable": "Hireable",
+                "twt": "Twitter",
+                "nTwt": "No Twitter Attached",
+                "pr": "Public Repo",
+                "pg": "Public Gists",
+                "followers": "Followers"
+            }
+        },
+        "info": {
+            "description": "Get info on various things",
+            "data": {
+                "channel": {
+                    "pos": "Position",
+                    "type": "Type",
+                    "ut": "Unsupported Type",
+                    "ca": "Created At",
+                    "nsfw": "NSFW",
+                    "sm": "Slowmode",
+                    "sec": "Second(s)",
+                    "nsm": "No Slowmode",
+                    "fm": "First Message",
+                    "ct": "Channel Topic",
+                    "nct": "No Topic"
+                },
+                "server": {
+                    "owner": "Owner",
+                    "ca": "Created At",
+                    "pl": "Preferred Locale",
+                    "roles": "Roles",
+                    "emojis": "Emojis",
+                    "boost": "Boosting",
+                    "vl": "Verification Level",
+                    "cf": "Content Filter",
+                    "afkChan": "AFK Channel",
+                    "mem": "Members",
+                    "channels": "Channels"
+                },
+                "role": {
+                    "hCode": "Hex Codee",
+                    "hoisted": "Hoisted",
+                    "mention": "Mentionable",
+                    "ca": "Created At",
+                    "pos": "Position",
+                    "mc": "Member Count"
+                },
+                "user": {
+                    "ub": "User Badges",
+                    "eBadges": "Galaxies Badges",
+                    "dBadges": "Discord Badges",
+                    "nb": "No Badges",
+                    "uName": "Username",
+                    "dName": "Display Name",
+                    "accType": "Account Type",
+                    "bot": "🤖 Bot",
+                    "human": "🧍 Human",
+                    "jd": "Joined Discord",
+                    "js": "Joined Server",
+                    "uc": "User Color",
+                    "nc": "No Color",
+                    "uid": "User ID",
+                    "acknowledgement": "Acknowledgement",
+                    "roles": "Roles",
+                    "dev": "Bot Developer",
+                    "owner": "Server Owner",
+                    "admin": "Server Administrator",
+                    "mod": "Server Moderator",
+                    "mem": "Server Member"
+                },
+                "discordstatus": {
+                    "services": "Discord Status - Services",
+                    "rs": "Discord Status - Regional Services"
+                },
+                "worldclock": {
+                    "wtz": "World Time Zones",
+                    "yComp": "**{{year}}** is {{percentage}}% completed! {{remaining}}% until this year is over!"
+                },
+                "snowflake": {
+                    "inputErr": "Please enter a valid Message ID",
+                    "diff": "The difference between two messages IDs: **{{diff}}** second(s)"
+                },
+                "bmi": {
+                    "invalidInputs": "Please enter in valid numbers in the weight and height field.",
+                    "lessThan0": "The weight and height input cannot be less than or equal to 0",
+                    "uw": "Underweight",
+                    "nor": "Normal",
+                    "ow": "Overweight",
+                    "ob": "Obese",
+                    "bmiCalc": "BMI Calculator",
+                    "height": "Height",
+                    "weight": "Weight",
+                    "bmi": "BMI",
+                    "disclaimer": "*The BMI Class data could differ base on where you live.\nWe're currently using WHO's (World Health Organization) standards.*"
+                },
+                "npm": {
+                    "nthFound": "Failed to find anything with the given input.",
+                    "nDesc": "No Description",
+                    "ver": "Version",
+                    "auth": "Author",
+                    "modified": "Modified",
+                    "maintain": "Maintainers",
+                    "download": "Download",
+                    "keywords": "Keywords"
+                },
+                "color": {
+                    "rcg": "Random Color Generated",
+                    "ci": "Color Information",
+                    "err": "Something went wrong while fetching the color image. Please try again.",
+                    "name": "Name",
+                    "hex": "Hex",
+                    "rgb": "RGB",
+                    "hsl": "HSL",
+                    "CMYK": "CMYK"
+                }
+            }
+        },
+        "list": {
+            "description": "List the specified information",
+            "data": {
+                "nData": "No Data Found",
+                "joinposition": {
+                    "title": "{{guild}} Member Join Position"
+                },
+                "badges": {
+                    "title": "{{guild}}'s Members Badge Information"
+                },
+                "bots": {
+                    "title": "{{guild}} Bots"
+                },
+                "boosters": {
+                    "title": "{{guild}} Boosters"
+                },
+                "has-role": {
+                    "title": "Users that has the Specfied Role",
+                    "rc": "Role Checking"
+                }
+            }
+        },
+        "randompw": {
+            "description": "Generates a random 20 character password",
+            "data": {
+                "title": "Generated Random Password",
+                "description": "Random Password Generated:\n{{pw}}"
+            }
+        },
+        "roles": {
+            "description": "View the server roles or the specified user's roles",
+            "data": {
+                "server": {
+                    "title": "Server Roles",
+                    "description": "**Role Name | Role ID**\n{{result}}"
+                },
+                "user": {
+                    "title": "{{user}}'s Server Roles",
+                    "hr": "Highest Role",
+                    "ra": "Role Amount",
+                    "rl": "Role List"
+                }
+            }
+        },
+        "servericon": {
+            "description": "Display's the server icon",
+            "data": {
+                "desc": "[{{guild}}'s Icon]",
+                "linkAs": "Link As"
+            }
+        },
+        "urban": {
+            "description": "Search up the specified word on the urban dictionary",
+            "data": {
+                "nthFound": "No result found for **{{string}}**",
+                "title": "{{word}} Definition",
+                "rf": "Result Found",
+                "def": "Definition",
+                "od": "Other Details",
+                "auth": "Author",
+                "wo": "Written On",
+                "dId": "Definition ID",
+                "link": "Link"
+            }
+        },
+        "zodiac": {
+            "description": "Show's your zodaic sign with the given date",
+            "data": {
+                "bdayInputPrompt": "Please insert your birthday date in this format: `MM/DD`",
+                "bdayNotNum": "The given information is not a number",
+                "lessThan1MoreThan31": "Date value cannot be less than 1 and over 31",
+                "lessThan1MoreThan12": "Month value cannot be less than 1 and over 12",
+                "febMoreThan29": "February cannot have more than 29 days",
+                "invalidDate": "Follow the extension: MM/DD (example: 09/13)",
+                "zodSign": "Zodiac Sign",
+                "bday": "Birthday",
+                "desc": "Your Zodiac Sign is {{zodiac}} and your Element is {{element}}"
             }
         }
     }

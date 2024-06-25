@@ -795,11 +795,13 @@
         "dev": "Galaxies Developers",
         "contri": "Galaxies Contributor",
         "staff": "Galaxies Staff",
-        "partnership": "Galaxies partnership",
+        "partnership": "Galaxies Partnership",
+        "premium": "Galaxies Premium",
         "devExp": "Granted to the Developers of Galaxies",
         "contriExp": "Granted to people who have contributed to Galaxies",
         "staffExp": "Granted to people who are a Staff Member at Galaxies Support Server",
-        "partnershipExp": "Granted to people who are partnered with Galaxies"
+        "partnershipExp": "Granted to people who are partnered with Galaxies",
+        "premiumExp": "Granted to people who has purchased Galaxies Premium"
       }
     },
     "changelogs": {

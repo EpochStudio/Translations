@@ -128,7 +128,10 @@
         "arrNotFound": "我在自動身分組配置中沒有找到給定的身分組",
         "arrRemove": "已成功從自動身分組配置中移除 {{role}}",
         "arrReset": "已成功重置自動身分組配置",
-        "variables": "歡迎/再見消息的變數"
+        "variables": "歡迎/再見消息的變數",
+        "greetImg": "成功將歡迎圖像值設置為 `{{status}}`",
+        "welcomeAutoDelete": "成功將歡迎留言自動刪除值設置為 `{{seconds}}`",
+        "leaveAutoDelete": "成功將離開留言自動刪除值設置為 `{{seconds}}`"
       }
     },
     "pauseinvites": {
@@ -220,7 +223,10 @@
           "welMsg": "歡迎消息",
           "nWelMsg": "預設歡迎消息",
           "leaMsg": "離開消息",
-          "nLeaMsg": "預設離開消息"
+          "nLeaMsg": "預設離開消息",
+          "welcomeAutoDelete": "自動歡迎刪除",
+          "leaveAutoDelete": "自動離開刪除",
+          "greetImg": "歡迎問候圖像"  
         }
       }
     },
@@ -786,6 +792,8 @@
         "contri": "Galaxies貢獻者",
         "staff": "Galaxies工作人員",
         "partnership": "Galaxies合作夥伴",
+        "premium": "銀河系高級版",
+        "premiumExp": "授予已購買銀河系高級版的人",
         "devExp": "授予Galaxies的開發者",
         "contriExp": "授予對Galaxies有貢獻的人",
         "staffExp": "授予Galaxies支援服務器的工作人員",
