@@ -128,7 +128,10 @@
         "arrNotFound": "मुझे ऑटो रोल कॉन्फ़िगरेशन में दी गई भूमिका नहीं मिली",
         "arrRemove": "{{role}} को ऑटो रोल कॉन्फ़िगरेशन से सफलतापूर्वक हटा दिया गया",
         "arrReset": "ऑटोरोल कॉन्फ़िगरेशन को सफलतापूर्वक रीसेट किया गया",
-        "variables": "स्वागत/अलविदा संदेशों के लिए चर"
+        "variables": "स्वागत/अलविदा संदेशों के लिए चर",
+        "greetImg": "Successfully set the welcome-image value to `{{status}}`",
+        "welcomeAutoDelete": "Successfully set the Welcome Message Auto Delete value to `{{seconds}}`",
+        "leaveAutoDelete": "Successfully set the Leave Message Auto Delete value to `{{seconds}}`"
       }
     },
     "pauseinvites": {
@@ -224,7 +227,10 @@
           "welMsg": "स्वागत संदेश",
           "nWelMsg": "डिफ़ॉल्ट स्वागत संदेश",
           "leaMsg": "छोड़नेपर संदेश",
-          "nLeaMsg": "डिफ़ॉल्ट छोड़नेपर संदेश"
+          "nLeaMsg": "डिफ़ॉल्ट छोड़नेपर संदेश",
+          "welcomeAutoDelete": "Welcome Auto Delete",
+          "leaveAutoDelete": "Leave Auto Delete",
+          "greetImg": "Welcome Greet Image"
         }
       }
     },
