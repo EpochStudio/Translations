@@ -1,5 +1,5 @@
 {
-    "ownerOnly": "This command is only available to Bot Owners.",
+    "ownerOnly": "This command is only available to Bot Owners only.",
     "catDisabledGlob": "The category this command belongs to is currently globally disabled. Please come back later!",
     "cmdDisabledGlob": "This command is currently globally disabled. Please come back later.",
     "catDisabledGui": "The category this command belongs to is currently disabled by a Server Administrator.\nPlease contact your Server Administrator for further details.",

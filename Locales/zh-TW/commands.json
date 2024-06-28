@@ -49,7 +49,7 @@
         "added": "已成功將 {{cmdName}} 添加到禁用命令列表中。"
       }
     },
-    "configure": {
+    "setmuterole": {
       "description": "配置靜音身分組設置",
       "data": {
         "mrole": "已成功將伺服器靜音身分組設置為 {{role}}",
@@ -777,7 +777,7 @@
       "description": "關於Galaxies",
       "data": {
         "title": "關於Galaxies",
-        "description": "Galaxies。一個可靠的Discord伺服器管理機器人。它擁有強大的抽獎功能、歡迎新成員加入的系統。一個可以突顯重要訊息的置頂訊息系統、調節命令。它也有一些實用的命令和有趣的命令,以及更多功能!\n在Galaxies,我們努力為用戶提供最佳使用體驗,同時維持數據的穩定性和安全性。\n這都歸功於出色的開發人員、工作人員、合作夥伴和貢獻者,我們才得以今日。",
+        "description": "Galaxies。一個可靠的Discord伺服器管理機器人。它擁有強大的抽獎功能、歡迎新成員加入的系統。一個可以突顯重要訊息的置頂訊息系統、調節命令。它也有一些實用的命令和有趣的命令,以及更多功能!\n在Galaxies,我們努力為用戶提供最佳使用體驗,同時維持數據的穩定性和安全性。\n這都歸功於出色的開發人員、工作人員、合作夥伴和貢獻者,我們才得以今日。\n\n- 邀請・https://dsc.gg/galaxiesbot\n- 支援・https://dsc.gg//galaxiessupport/\n- 網站・https://galaxies-website.vercel.app/\n- Patreon・敬請期待",
         "dev": "我們的開發團隊",
         "staff": "我們的工作人員",
         "partner": "我們的合作夥伴",
@@ -792,8 +792,8 @@
         "contri": "Galaxies貢獻者",
         "staff": "Galaxies工作人員",
         "partnership": "Galaxies合作夥伴",
-        "premium": "銀河系高級版",
-        "premiumExp": "授予已購買銀河系高級版的人",
+        "premium": "Galaxies高級版",
+        "premiumExp": "授予已購買Galaxies高級版的人",
         "devExp": "授予Galaxies的開發者",
         "contriExp": "授予對Galaxies有貢獻的人",
         "staffExp": "授予Galaxies支援服務器的工作人員",
@@ -947,12 +947,9 @@
       }
     },
     "upvote": {
-      "description": "顯示所有投票 Galaxies 的鏈接",
+      "description": "返回為我們投票的連結",
       "data": {
-        "vTitle": "Galaxies - 投票",
-        "vDesc": "通過投票,您表示對我們的支持!\n想投票嗎?點擊[這裡](https://top.gg/bot/814441758037377045)!",
-        "ssmPlaceholder": "其他機器人列表",
-        "obReply": "您可以使用此鏈接在 **{{botlist_name}}** 上為我們投票\n{{vLink}}"
+        "upvoteMsg": "想要幫助我們繼續成長嗎？今天為我們在 top.gg 上投票吧！\n\nhttps://top.gg/bot/814441758037377045"
       }
     }
   },

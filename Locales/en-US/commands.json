@@ -49,7 +49,7 @@
         "added": "Successfully added `{{cmdName}}` to the disabled commands list."
       }
     },
-    "configure": {
+    "setmuterole": {
       "description": "Configure the Mute Role/Mod Log Settings",
       "data": {
         "mrole": "Successfully set the server mute role to {{role}}",
@@ -128,7 +128,10 @@
         "arrNotFound": "I did not find the given role in the Auto Role Configuration",
         "arrRemove": "Successfully removed {{role}} from the Auto Role Configuration",
         "arrReset": "Successfully reset the autorole configuration",
-        "variables": "Variables for Welcome/Goodbye Messages"
+        "variables": "Variables for Welcome/Goodbye Messages",
+        "greetImg": "Successfully set the welcome-image value to `{{status}}`",
+        "welcomeAutoDelete": "Successfully set the Welcome Message Auto Delete value to `{{seconds}}`",
+        "leaveAutoDelete": "Successfully set the Leave Message Auto Delete value to `{{seconds}}`"
       }
     },
     "pauseinvites": {
@@ -224,7 +227,10 @@
           "welMsg": "Welcome Message",
           "nWelMsg": "Default Welcome Message",
           "leaMsg": "Leave Message",
-          "nLeaMsg": "Default Leave Message"
+          "nLeaMsg": "Default Leave Message",
+          "welcomeAutoDelete": "Welcome Auto Delete",
+          "leaveAutoDelete": "Leave Auto Delete",
+          "greetImg": "Welcome Greet Image"
         }
       }
     },
@@ -775,7 +781,7 @@
       "description": "About Galaxies",
       "data": {
         "title": "About Galaxies",
-        "description": "Galaxies. A bot dependable to manage your discord server. It has powerful giveaway, greet system to welcome your new members on join. A sticky message system that allows you to highlight important messages, Moderation commands. It also has some utility commands and fun commands And more!\nAt Galaxies, we strive to to give our users the best experience while using our bot while maintaining stability and security for our users data.\nIt is all thnks to the amazing Developers, Staff Members, Partners and Contributors that we're able to be here today!",
+        "description": "Galaxies. A bot dependable to manage your discord server. It has powerful giveaway, greet system to welcome your new members on join. A sticky message system that allows you to highlight important messages, Moderation commands. It also has some utility commands and fun commands And more!\nAt Galaxies, we strive to to give our users the best experience while using our bot while maintaining stability and security for our users data.\nIt is all thnks to the amazing Developers, Staff Members, Partners and Contributors that we're able to be here today!\n\n- Invite・https://dsc.gg/galaxiesbot\n- Support・https://dsc.gg//galaxiessupport/\n- Website・https://galaxies-website.vercel.app/\n- Patreon・SOON",
         "dev": "Our Development Team",
         "staff": "Our Staff Members",
         "partner": "Our Partners",
@@ -789,11 +795,13 @@
         "dev": "Galaxies Developers",
         "contri": "Galaxies Contributor",
         "staff": "Galaxies Staff",
-        "partnership": "Galaxies partnership",
+        "partnership": "Galaxies Partnership",
+        "premium": "Galaxies Premium",
         "devExp": "Granted to the Developers of Galaxies",
         "contriExp": "Granted to people who have contributed to Galaxies",
         "staffExp": "Granted to people who are a Staff Member at Galaxies Support Server",
-        "partnershipExp": "Granted to people who are partnered with Galaxies"
+        "partnershipExp": "Granted to people who are partnered with Galaxies",
+        "premiumExp": "Granted to people who has purchased Galaxies Premium"
       }
     },
     "changelogs": {
@@ -943,12 +951,9 @@
       }
     },
     "upvote": {
-      "description": "Displays all the links to vote for Galaxies",
+      "description": "Returns the link for upvoting us.",
       "data": {
-        "vTitle": "Galaxies - Vote",
-        "vDesc": "By voting, you show your support to us!\nWant to vote? Click [here](https://top.gg/bot/814441758037377045)!",
-        "ssmPlaceholder": "Other Botlist",
-        "obReply": "You can use this link to vote for us on **{{botlist_name}}**\n{{vLink}}"
+        "upvoteMsg": "Want to help us continue growing? Vote for us on top.gg today!\n\nhttps://top.gg/bot/814441758037377045"
       }
     }
   },
