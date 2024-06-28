@@ -234,7 +234,7 @@
         }
       }
     },
-    "stickymsg": {
+   "stickymsg": {
       "description": "Configures sticky messages for this server",
       "data": {
         "alrExist": "A Sticky Message already exists for this channel!",
@@ -781,7 +781,7 @@
       "description": "About Galaxies",
       "data": {
         "title": "About Galaxies",
-        "description": "Galaxies. A bot dependable to manage your discord server. It has powerful giveaway, greet system to welcome your new members on join. A sticky message system that allows you to highlight important messages, Moderation commands. It also has some utility commands and fun commands And more!\nAt Galaxies, we strive to to give our users the best experience while using our bot while maintaining stability and security for our users data.\nIt is all thnks to the amazing Developers, Staff Members, Partners and Contributors that we're able to be here today!",
+        "description": "Galaxies. A bot dependable to manage your discord server. It has powerful giveaway, greet system to welcome your new members on join. A sticky message system that allows you to highlight important messages, Moderation commands. It also has some utility commands and fun commands And more!\nAt Galaxies, we strive to to give our users the best experience while using our bot while maintaining stability and security for our users data.\nIt is all thnks to the amazing Developers, Staff Members, Partners and Contributors that we're able to be here today!\n\n- Invite・https://dsc.gg/galaxiesbot\n- Support・https://dsc.gg//galaxiessupport/\n- Website・https://galaxies-website.vercel.app/\n- Patreon・SOON",
         "dev": "Our Development Team",
         "staff": "Our Staff Members",
         "partner": "Our Partners",
@@ -951,12 +951,9 @@
       }
     },
     "upvote": {
-      "description": "Displays all the links to vote for Galaxies",
+      "description": "Returns the link for upvoting us.",
       "data": {
-        "vTitle": "Galaxies - Vote",
-        "vDesc": "By voting, you show your support to us!\nWant to vote? Click [here](https://top.gg/bot/814441758037377045)!",
-        "ssmPlaceholder": "Other Botlist",
-        "obReply": "You can use this link to vote for us on **{{botlist_name}}**\n{{vLink}}"
+        "upvoteMsg": "Want to help us continue growing? Vote for us on top.gg today!\n\nhttps://top.gg/bot/814441758037377045"
       }
     }
   },
